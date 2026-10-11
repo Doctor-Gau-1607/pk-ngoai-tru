@@ -832,6 +832,112 @@
     "phim co tay",
     "chup khop"
    ]
+  },
+  {
+   "id": "xq_bung",
+   "ten": "X-quang bụng không chuẩn bị",
+   "nhom": "xquang",
+   "co_ban": false,
+   "gia": 120000,
+   "phut": 30,
+   "mac_dinh": "Không thấy dấu hiệu tắc ruột, không liềm hơi dưới hoành",
+   "tu_khoa": [
+    "x quang bung",
+    "xquang bung",
+    "chup bung",
+    "phim bung",
+    "kub",
+    "bung khong chuan bi",
+    "phim bung dung"
+   ]
+  },
+  {
+   "id": "canxi",
+   "ten": "Canxi máu toàn phần",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 40000,
+   "phut": 60,
+   "mac_dinh": "Canxi toàn phần 2,38 mmol/L",
+   "tu_khoa": [
+    "canxi",
+    "calci",
+    "calcium",
+    "ca mau",
+    "canxi mau",
+    "ca toan phan"
+   ]
+  },
+  {
+   "id": "celiac",
+   "ten": "Huyết thanh bệnh celiac (anti-tTG IgA)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 200000,
+   "phut": 240,
+   "mac_dinh": "Anti-tTG IgA âm tính.",
+   "tu_khoa": [
+    "celiac",
+    "benh celiac",
+    "anti ttg",
+    "ttg iga",
+    "khang the transglutaminase",
+    "khong dung nap gluten",
+    "huyet thanh celiac"
+   ]
+  },
+  {
+   "id": "calprotectin",
+   "ten": "Calprotectin phân",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 350000,
+   "phut": 240,
+   "mac_dinh": "Calprotectin phân dưới 50 µg/g.",
+   "tu_khoa": [
+    "calprotectin",
+    "calprotectin phan",
+    "fecal calprotectin",
+    "lactoferrin",
+    "viem ruot phan"
+   ]
+  },
+  {
+   "id": "fit",
+   "ten": "Thử phân tìm máu ẩn miễn dịch (FIT)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 150000,
+   "phut": 120,
+   "mac_dinh": "FIT định lượng dưới 10 µg Hb/g phân (âm tính).",
+   "tu_khoa": [
+    "fit",
+    "thu phan tim mau an",
+    "mau an trong phan",
+    "mau an",
+    "fobt",
+    "fit phan",
+    "test mau an",
+    "xet nghiem mau an trong phan"
+   ]
+  },
+  {
+   "id": "noi_soi_dt",
+   "ten": "Nội soi đại tràng",
+   "nhom": "noi_soi",
+   "co_ban": false,
+   "gia": 500000,
+   "phut": 60,
+   "mac_dinh": "Niêm mạc đại tràng và trực tràng bình thường, không polyp, không loét.",
+   "tu_khoa": [
+    "noi soi dai trang",
+    "soi dai trang",
+    "noi soi truc trang",
+    "soi dai truc trang",
+    "colonoscopy",
+    "noi soi ruot gia",
+    "noi soi duong tieu hoa duoi"
+   ]
   }
  ]
 }
