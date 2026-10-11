@@ -749,6 +749,89 @@
     "cay phan tim vi khuan",
     "coproculture"
    ]
+  },
+  {
+   "id": "dich_khop",
+   "ten": "Chọc hút dịch khớp: đếm tế bào, nhuộm Gram, soi tinh thể (kính phân cực), cấy",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 350000,
+   "phut": 120,
+   "mac_dinh": "Dịch vàng trong, bạch cầu < 2000/mm3, không thấy vi khuẩn, không thấy tinh thể",
+   "tu_khoa": [
+    "choc dich khop",
+    "choc hut khop",
+    "dich khop",
+    "soi tinh the",
+    "tinh the urat",
+    "cay dich khop",
+    "choc khop goi"
+   ]
+  },
+  {
+   "id": "mau_lang",
+   "ten": "Tốc độ máu lắng (VS)",
+   "nhom": "xn",
+   "co_ban": true,
+   "gia": 30000,
+   "phut": 60,
+   "mac_dinh": "10 mm/giờ",
+   "tu_khoa": [
+    "mau lang",
+    "toc do lang mau",
+    "vs",
+    "esr"
+   ]
+  },
+  {
+   "id": "rf_cccp",
+   "ten": "RF và anti-CCP",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 250000,
+   "phut": 180,
+   "mac_dinh": "RF âm tính · anti-CCP âm tính",
+   "tu_khoa": [
+    "rf",
+    "anti ccp",
+    "yeu to dang thap",
+    "viem khop dang thap",
+    "accp"
+   ]
+  },
+  {
+   "id": "sa_khop",
+   "ten": "Siêu âm khớp (cơ xương khớp)",
+   "nhom": "sieu_am",
+   "co_ban": false,
+   "gia": 200000,
+   "phut": 30,
+   "mac_dinh": "Không tràn dịch, không dày bao hoạt dịch",
+   "tu_khoa": [
+    "sieu am khop",
+    "sieu am co xuong khop",
+    "sieu am goi",
+    "sieu am co tay",
+    "double contour",
+    "duong doi"
+   ]
+  },
+  {
+   "id": "xq_khop",
+   "ten": "X-quang khớp (tay, cổ tay, gối, chân)",
+   "nhom": "xquang",
+   "co_ban": false,
+   "gia": 120000,
+   "phut": 30,
+   "mac_dinh": "Không thấy tổn thương xương, khe khớp bình thường",
+   "tu_khoa": [
+    "x quang khop",
+    "xquang khop",
+    "phim khop",
+    "phim goi",
+    "phim co tay",
+    "chup khop"
+   ]
   }
  ]
 }
