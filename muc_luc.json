@@ -32,9 +32,19 @@
 "r": 1
 },
 {
+"ma": "NH-0355",
+"ck": "Nhi ngoại trú",
+"r": 3
+},
+{
 "ma": "TH-0295",
 "ck": "Tiêu hóa - gan mật",
 "r": 1
+},
+{
+"ma": "TH-1105",
+"ck": "Tiêu hóa - gan mật",
+"r": 2
 }
 ]
 }
