@@ -138,6 +138,23 @@ h2,h3,h4{font-family:var(--f-display);margin:0;line-height:1.25}
 
 .overlay{position:fixed;inset:0;z-index:20;background:rgba(20,30,36,.45);display:grid;place-items:center;padding:16px;overflow:auto}
 .sheet{width:min(560px,100%);background:#fff;border-radius:16px;padding:22px 24px;box-shadow:0 10px 40px rgba(0,0,0,.25);display:grid;gap:14px}
+.lobby{width:min(900px,100%);max-height:calc(100vh - 32px);grid-template-rows:auto auto minmax(0,1fr) auto;overflow:hidden}
+.lobby>[id^=pn]{min-height:0;overflow:auto;padding:2px}
+.overlay.dau{background:linear-gradient(160deg,#20384a,#0f5e7a)}
+.lb-tabs{display:flex;gap:6px;border-bottom:1px solid var(--line)}
+.lb-tabs button{border:0;background:none;padding:9px 16px;font-size:15px;font-weight:600;color:var(--muted);border-bottom:3px solid transparent;margin-bottom:-1px}
+.lb-tabs button[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.lb-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chip{border:1px solid var(--line);background:var(--panel-2);border-radius:999px;padding:4px 10px;font-size:12.5px;color:var(--ink)}
+.chip span{color:var(--muted);font-size:11px;margin-left:3px}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}.chip[aria-pressed="true"] span{color:#d6ebf2}
+.lb-list{display:grid;gap:6px}
+.lb-item{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:12px;align-items:center;text-align:left;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 12px;font-size:14px;color:var(--ink)}
+.lb-item:hover{border-color:var(--accent-2);background:var(--accent-soft)}
+.lb-ma{font-family:var(--f-mono);font-size:14px;display:flex;flex-direction:column;gap:2px}.lb-ma i{font-style:normal;font-family:var(--f-body);font-size:11.5px;color:#2e7d4f}
+.lb-body{display:flex;flex-direction:column;gap:2px;min-width:0}
+.lb-ld{color:#3b5566;font-style:italic}.lb-cd{font-size:13px;color:var(--muted)}
+.lb-go{color:var(--accent);font-weight:600;font-size:13px;white-space:nowrap}
 .sheet .box{background:var(--panel-2);border-radius:10px;padding:12px 14px;line-height:1.55}
 .field{display:grid;gap:5px}
 .field label{font-weight:600;font-size:13.5px}
@@ -762,8 +779,8 @@ function renderTop(){
     <div class="title">${esc(CA.ly_do_kham || '')} · ${esc(S.done ? 'Kết thúc' : L().ten)}</div>
     <div class="hud"><div class="m"><span>Thời gian</span><b>${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}</b></div>
       <div class="m cost"><span>Chi phí CLS</span><b>${VND(cost)}</b></div>
-      <button class="tbtn" id="btnNext">🎲 Bệnh nhân khác</button><button class="tbtn" id="btnLobby">📋 Chọn ca</button><button class="tbtn" id="btnBug">⚠ Báo lỗi</button><button class="tbtn" id="btnSet">⚙ Cài đặt</button></div>`;
-  $('#btnSet').onclick = openSettings; $('#btnLobby').onclick = showLobby; $('#btnNext').onclick = () => rutCa(); $('#btnBug').onclick = baoLoi;
+      ${trongPhien() ? `<div class="m"><span>Lượt ngẫu nhiên</span><b>${PHIEN.i + 1}/${PHIEN.ds.length}</b></div><button class="tbtn" id="btnNext" title="Bỏ qua ca này, sang ca kế tiếp của lượt">⏭ Ca kế tiếp</button>` : '<button class="tbtn" id="btnNext">🎲 Bệnh nhân khác</button>'}<button class="tbtn" id="btnLobby">🏠 Màn hình đầu</button><button class="tbtn" id="btnBug">⚠ Báo lỗi</button><button class="tbtn" id="btnSet">⚙ Cài đặt</button></div>`;
+  $('#btnSet').onclick = openSettings; $('#btnLobby').onclick = () => showLobby(); $('#btnNext').onclick = () => trongPhien() ? phienKe() : rutCa(); $('#btnBug').onclick = baoLoi;
 }
 function renderRails(){
   const v = V();
@@ -889,33 +906,124 @@ function startCase(ca){ inCase = true; loadCase(ca); reset(); $('#result').hidde
 async function moCa(ma){
   const e = MUC.find(c => c.ma === ma); if(!e) throw new Error('Không có ca ' + ma);
   const b = $('#boot'); if(b){ b.hidden = false; b.textContent = 'Đang mời bệnh nhân vào…' }
-  try { const ca = await layJson(urlCa(e.r, ma)); startCase(ca) } finally { if(b) b.hidden = true }
+  try { const ca = await layJson(urlCa(e.r, ma)); startCase(ca); try { history.replaceState(null, '', '#ca=' + ma) } catch(_){} } finally { if(b) b.hidden = true }
 }
-/* Rút ngẫu nhiên, ưu tiên ca chưa khám; ck = lọc theo chuyên khoa (tùy chọn) */
+/* ===== Màn hình đầu: 2 chế độ – Chọn ca (tìm kiếm) và Ngẫu nhiên (lượt N ca) ===== */
+const TAG = {'nhieu-benh-nhan':'Nhiễu từ bệnh nhân', 'so-sinh':'Sơ sinh', 'nhu-nhi':'Nhũ nhi', 'mau-giao':'Mẫu giáo', 'hoc-sinh':'Học sinh', 'thanh-nien':'Thanh niên', 'trung-nien':'Trung niên', 'cao-tuoi':'Cao tuổi', 'rat-cao-tuoi':'Rất cao tuổi',
+  'ho-hap':'Hô hấp', 'tieu-hoa':'Tiêu hóa', 'nhi':'Nhi', 'man-tinh':'Mạn tính', 'co-xuong-khop':'Cơ xương khớp', 'da-lieu':'Da liễu', 'than-kinh':'Thần kinh', 'tiet-nieu':'Tiết niệu', 'tmh-mat':'TMH – Mắt', 'tam-than':'Tâm thần', 'phu-khoa':'Phụ khoa', 'noi-tiet':'Nội tiết', 'kham-tong-quat':'Khám tổng quát',
+  'co-do':'Cờ đỏ', 'khong-khang-sinh':'Không cần kháng sinh', 'chuyen-tuyen':'Chuyển tuyến', 'bo-sot':'Biến chứng do bỏ sót', 'cap-doi-tuong-phan':'Cặp đối tương phản', 'bay':'Ca bẫy',
+  'bay-co-do-nguy-trang':'Bẫy: cờ đỏ ngụy trang', 'bay-mo-lai':'Bẫy: mở lại chẩn đoán', 'bay-hai-chan-doan':'Bẫy: hai chẩn đoán', 'bay-chuyen-tuyen':'Bẫy: chuyển tuyến', 'bay-sai-lam-nguoi-truoc':'Bẫy: sai lầm người trước', 'bay-khong-lam-gi':'Bẫy: không làm gì'};
+const tenTag = t => TAG[t] || t.replace(/-/g, ' ');
+MUC.forEach(c => { c.hay = khongDau([c.ma, c.ma.replace('-', ''), c.ck, c.ten, c.tuoi && c.tuoi + ' tuoi', c.gioi, c.ld, c.cd, (c.lt || []).join(' '), c.dk, c.bay, (c.tag || []).map(t => t + ' ' + tenTag(t)).join(' '), c.x].filter(Boolean).join(' ')) });
+const luuDoc = (k, d) => { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v) } catch(e){ return d } };
+const luuGhi = (k, v) => { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, JSON.stringify(v)) } catch(e){} };
+let PHIEN = luuDoc('pkn-phien', null);                       // {ds:[mã], i, diem:{mã:điểm}}
+const savePhien = () => luuGhi('pkn-phien', PHIEN);
+const trongPhien = () => !!(PHIEN && PHIEN.i < PHIEN.ds.length && inCase && CA && CA.ma_ca === PHIEN.ds[PHIEN.i]);
+const xaoTron = a => { a = a.slice(); for(let i = a.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]] } return a };
+const loiMo = e => { $('#modal').innerHTML = `<div class="overlay"><div class="sheet"><h3>Không mở được ca</h3><p class="small">${esc(e.message)}</p><div class="row"><button class="btn ghost" id="lbErrHome">Về màn hình đầu</button><button class="btn" id="lbErr">Thử bệnh nhân khác</button></div></div></div>`; $('#lbErr').onclick = () => rutCa(); $('#lbErrHome').onclick = showLobby };
+/* Rút 1 ca ngẫu nhiên (ngoài lượt), ưu tiên ca chưa khám */
 function rutCa(ck){
   const nhom = MUC.filter(c => (!ck || c.ck === ck) && !(inCase && CA && c.ma === CA.ma_ca));
   const chua = nhom.filter(c => !DONE.has(c.ma)), ds = chua.length ? chua : nhom;
   if(!ds.length){ showLobby(); return }
-  return moCa(ds[Math.floor(Math.random() * ds.length)].ma).catch(e => { $('#modal').innerHTML = `<div class="overlay"><div class="sheet"><h3>Không mở được ca</h3><p class="small">${esc(e.message)}</p><div class="row"><button class="btn" id="lbErr">Thử bệnh nhân khác</button></div></div></div>`; $('#lbErr').onclick = () => rutCa() });
+  return moCa(ds[Math.floor(Math.random() * ds.length)].ma).catch(loiMo);
 }
-function showLobby(){
+function batDauPhien(ds){ PHIEN = {ds, i: 0, diem: {}}; savePhien(); moCa(ds[0]).catch(loiMo) }
+function phienKe(){
+  if(!PHIEN) return rutCa();
+  PHIEN.i++; savePhien();
+  if(PHIEN.i >= PHIEN.ds.length){ if(inCase) renderTop(); return showLobby('ngau') }
+  moCa(PHIEN.ds[PHIEN.i]).catch(loiMo);
+}
+function showLobby(tab){
+  tab = tab || luuDoc('pkn-che-do', 'chon');
+  const daKham = MUC.filter(c => DONE.has(c.ma)).length, sel = 'padding:8px;border-radius:8px;border:1px solid var(--line);background:#fff';
   const cks = [...new Set(MUC.map(c => c.ck))].sort((a, b) => a.localeCompare(b, 'vi'));
-  const dem = ck => { const n = MUC.filter(c => c.ck === ck); return `${n.filter(c => DONE.has(c.ma)).length}/${n.length}` };
-  $('#modal').innerHTML = `<div class="overlay"><div class="sheet" style="width:min(640px,100%)" role="dialog" aria-modal="true" aria-labelledby="lb">
-    <div class="eyebrow">Phòng khám ngoại trú</div><h3 id="lb">Chọn ca · ${MUC.length} ca trong kho · đã khám ${MUC.filter(c => DONE.has(c.ma)).length}</h3>
-    <p class="small" style="margin:0">Rút ngẫu nhiên ưu tiên ca bạn chưa khám trên máy này.</p>
-    <div class="row" style="justify-content:flex-start"><button class="btn" id="lbRandom">🎲 Rút ngẫu nhiên mọi chuyên khoa</button></div>
-    <label class="small" for="lbCk"><b>Rút theo chuyên khoa</b></label>
-    <div class="row" style="justify-content:flex-start"><select id="lbCk" style="flex:1;padding:8px;border-radius:8px;border:1px solid var(--line)">${cks.map(ck => `<option value="${esc(ck)}">${esc(ck)} (đã khám ${dem(ck)})</option>`).join('')}</select><button class="btn ghost" id="lbCkGo">Rút</button></div>
-    <label class="small" for="lbMa"><b>Mở theo mã ca</b></label>
-    <div class="row" style="justify-content:flex-start"><input id="lbMa" placeholder="Ví dụ HH-0930" style="flex:1;padding:8px;border-radius:8px;border:1px solid var(--line);text-transform:uppercase"><button class="btn ghost" id="lbMaGo">Mở</button></div>
-    <div class="small" id="lbMsg" aria-live="polite"></div>
+  const dks = [...new Set(MUC.map(c => c.dk).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'vi'));
+  const optCk = `<option value="">Mọi chuyên khoa</option>` + cks.map(ck => { const n = MUC.filter(c => c.ck === ck); return `<option value="${esc(ck)}">${esc(ck)} (${n.filter(c => DONE.has(c.ma)).length}/${n.length})</option>` }).join('');
+  const optDk = `<option value="">Mọi độ khó</option>` + dks.map(d => `<option>${esc(d)}</option>`).join('');
+  $('#modal').innerHTML = `<div class="overlay${inCase ? '' : ' dau'}"><div class="sheet lobby" role="dialog" aria-modal="true" aria-labelledby="lb">
+    <div><div class="eyebrow">Phòng khám ngoại trú</div><h3 id="lb" style="margin:2px 0 0">${MUC.length} ca trong kho · bạn đã khám ${daKham} ca trên máy này</h3></div>
+    <div class="lb-tabs" role="tablist"><button role="tab" id="tabChon" aria-selected="${tab === 'chon'}">🔎 Chọn ca</button><button role="tab" id="tabNgau" aria-selected="${tab === 'ngau'}">🎲 Ngẫu nhiên</button></div>
+    <div id="pnChon" ${tab === 'chon' ? '' : 'hidden'}>
+      <input id="lbQ" type="search" autocomplete="off" placeholder="Tìm theo mã ca, tên bệnh nhân, chẩn đoán, triệu chứng, tuổi, nghề, từ khóa… (gõ không dấu cũng được)" style="width:100%;${sel};padding:10px 12px;font-size:15px">
+      <div class="row" style="justify-content:flex-start;flex-wrap:wrap;margin-top:8px">
+        <select id="lbCk" style="${sel}">${optCk}</select><select id="lbDk" style="${sel}">${optDk}</select>
+        <select id="lbTt" style="${sel}"><option value="">Đã khám và chưa khám</option><option value="chua">Chưa khám</option><option value="da">Đã khám</option></select>
+        <label class="small" style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="lbCd"> Hiện chẩn đoán</label></div>
+      <div class="lb-chips" id="lbTags"></div>
+      <div class="small" id="lbDem" aria-live="polite" style="margin:6px 0"></div>
+      <div class="lb-list" id="lbList"></div></div>
+    <div id="pnNgau" ${tab === 'ngau' ? '' : 'hidden'}></div>
     ${inCase ? '<div class="row"><button class="btn ghost" id="lbClose">Quay lại ca đang khám</button></div>' : ''}</div></div>`;
-  $('#lbRandom').onclick = () => rutCa();
-  $('#lbCkGo').onclick = () => rutCa($('#lbCk').value);
-  const moMa = () => { const ma = $('#lbMa').value.trim().toUpperCase(); if(!MUC.some(c => c.ma === ma)){ $('#lbMsg').textContent = 'Chưa có ca ' + ma + ' trong kho.'; return } moCa(ma) };
-  $('#lbMaGo').onclick = moMa; $('#lbMa').addEventListener('keydown', e => { if(e.key === 'Enter') moMa() });
+  const doiTab = t => { luuGhi('pkn-che-do', t); $('#tabChon').setAttribute('aria-selected', t === 'chon'); $('#tabNgau').setAttribute('aria-selected', t === 'ngau'); $('#pnChon').hidden = t !== 'chon'; $('#pnNgau').hidden = t !== 'ngau'; (t === 'chon' ? $('#lbQ') : $('#rnN') || $('#rnGo') || $('#tabNgau')).focus() };
+  $('#tabChon').onclick = () => doiTab('chon'); $('#tabNgau').onclick = () => doiTab('ngau');
   $('#lbClose') && ($('#lbClose').onclick = () => { $('#modal').innerHTML = '' });
+  /* --- Chọn ca --- */
+  const chon = new Set; let gioiHan = 100;
+  const demTag = {}; MUC.forEach(c => (c.tag || []).forEach(t => demTag[t] = (demTag[t] || 0) + 1));
+  const tags = Object.keys(demTag).filter(t => t !== 'nhieu-benh-nhan').sort((a, b) => demTag[b] - demTag[a] || tenTag(a).localeCompare(tenTag(b), 'vi'));
+  $('#lbCd').checked = luuDoc('pkn-hien-cd', true);
+  const loc = () => {
+    const cau = khongDau($('#lbQ').value), q = cau.trim().split(' ').filter(Boolean), ck = $('#lbCk').value, dk = $('#lbDk').value, tt = $('#lbTt').value;
+    /* mỗi từ phải khớp ĐẦU một chữ (từ ≤ 2 ký tự phải khớp nguyên chữ); ca chứa nguyên cụm từ lên trước */
+    const khop = (h, w) => h.includes(' ' + w + (w.length <= 2 ? ' ' : ''));
+    const kq = MUC.filter(c => (!ck || c.ck === ck) && (!dk || c.dk === dk) && (!tt || (tt === 'da') === DONE.has(c.ma)) && [...chon].every(t => (c.tag || []).includes(t)) && q.every(w => khop(c.hay, w)));
+    return q.length > 1 ? kq.filter(c => c.hay.includes(cau.trimEnd())).concat(kq.filter(c => !c.hay.includes(cau.trimEnd()))) : kq;
+  };
+  const ve = () => {
+    $('#lbTags').innerHTML = tags.map(t => `<button class="chip" data-tag="${esc(t)}" aria-pressed="${chon.has(t)}">${esc(tenTag(t))} <span>${demTag[t]}</span></button>`).join('');
+    $('#lbTags').querySelectorAll('[data-tag]').forEach(b => b.onclick = () => { const t = b.dataset.tag; chon.has(t) ? chon.delete(t) : chon.add(t); gioiHan = 100; ve() });
+    const kq = loc(), hienCd = $('#lbCd').checked;
+    $('#lbDem').textContent = kq.length ? `${kq.length} ca phù hợp` + (kq.length > gioiHan ? ` · đang hiện ${gioiHan}` : '') : 'Không có ca nào phù hợp. Thử bớt từ khóa hoặc bỏ bộ lọc.';
+    $('#lbList').innerHTML = kq.slice(0, gioiHan).map(c => `<button class="lb-item" data-ma="${esc(c.ma)}">
+      <span class="lb-ma">${esc(c.ma)}${DONE.has(c.ma) ? '<i title="Đã khám">✓ đã khám</i>' : ''}</span>
+      <span class="lb-body"><span><b>${esc(c.ten || '—')}</b>${c.gioi ? ' · ' + esc(c.gioi) : ''}${c.tuoi !== undefined && c.tuoi !== '' ? ', ' + esc(c.tuoi) + ' tuổi' : ''} <span class="small">· ${esc(c.ck)}${c.luot > 1 ? ' · ' + c.luot + ' lượt khám' : ''}${c.dk ? ' · ' + esc(c.dk) : ''}</span></span>
+        ${c.ld ? `<span class="lb-ld">“${esc(c.ld)}”</span>` : ''}
+        ${hienCd && c.cd ? `<span class="lb-cd">Chẩn đoán: <b>${esc(c.cd)}</b>${c.lt && c.lt.length ? ' · loại trừ: ' + esc(c.lt.join(', ')) : ''}${c.bay ? ' · bẫy: ' + esc(c.bay) : ''}</span>` : ''}</span>
+      <span class="lb-go">Khám →</span></button>`).join('') + (kq.length > gioiHan ? `<button class="btn ghost" id="lbMore" style="width:100%">Hiện thêm</button>` : '');
+    $('#lbList').querySelectorAll('[data-ma]').forEach(b => b.onclick = () => moCa(b.dataset.ma).catch(loiMo));
+    $('#lbMore') && ($('#lbMore').onclick = () => { gioiHan += 200; ve() });
+  };
+  let tg; $('#lbQ').addEventListener('input', () => { clearTimeout(tg); tg = setTimeout(() => { gioiHan = 100; ve() }, 120) });
+  $('#lbQ').addEventListener('keydown', e => { if(e.key === 'Enter'){ const kq = loc(); if(kq.length === 1) moCa(kq[0].ma).catch(loiMo) } });
+  ['lbCk', 'lbDk', 'lbTt'].forEach(id => $('#' + id).onchange = () => { gioiHan = 100; ve() });
+  $('#lbCd').onchange = () => { luuGhi('pkn-hien-cd', $('#lbCd').checked); ve() };
+  ve();
+  /* --- Ngẫu nhiên --- */
+  const veNgau = () => {
+    const p = PHIEN, xong = p && p.i >= p.ds.length, dang = p && !xong;
+    const tk = xong ? (() => { const d = p.ds.map(m => p.diem[m]).filter(x => typeof x === 'number'); return `<div class="box"><b>Kết quả lượt ${p.ds.length} ca</b>${d.length ? ` · điểm trung bình <b>${Math.round(d.reduce((a, b) => a + b, 0) / d.length)}</b>/100` : ''}
+        <table class="xn" style="margin-top:8px;width:100%"><tr><th>#</th><th>Mã</th><th>Chuyên khoa</th><th>Chẩn đoán</th><th>Điểm</th></tr>${p.ds.map((m, k) => { const c = MUC.find(x => x.ma === m) || {}; return `<tr><td>${k + 1}</td><td><a href="#ca=${esc(m)}" data-ma="${esc(m)}">${esc(m)}</a></td><td>${esc(c.ck || '')}</td><td>${esc(c.cd || '')}</td><td>${typeof p.diem[m] === 'number' ? p.diem[m] : 'bỏ qua'}</td></tr>` }).join('')}</table></div>` })() : '';
+    $('#pnNgau').innerHTML = `${dang ? `<div class="box" style="margin-bottom:12px"><b>Bạn đang làm dở lượt ngẫu nhiên: ca ${p.i + 1}/${p.ds.length}</b><div class="row" style="justify-content:flex-start;margin-top:8px"><button class="btn" id="rnTiep">Tiếp tục ca ${p.i + 1}/${p.ds.length}</button><button class="btn ghost" id="rnBo">Bỏ lượt này</button></div></div>` : tk}
+      <p class="small" style="margin:0 0 8px">App rút ngẫu nhiên đủ số ca bạn nhập, ưu tiên ca chưa khám trên máy này, rồi cho khám lần lượt. Xong mỗi ca bấm "Ca kế tiếp"; hết lượt có bảng điểm.</p>
+      <div class="row" style="justify-content:flex-start;flex-wrap:wrap;align-items:flex-end">
+        <label class="small">Số ca<br><input id="rnN" type="number" min="1" step="1" value="${luuDoc('pkn-so-ca', 5)}" style="width:90px;${sel};font-size:16px"></label>
+        <label class="small">Chuyên khoa<br><select id="rnCk" style="${sel}">${optCk}</select></label>
+        <label class="small">Độ khó<br><select id="rnDk" style="${sel}">${optDk}</select></label>
+        <label class="small" style="display:flex;gap:6px;align-items:center;padding-bottom:9px"><input type="checkbox" id="rnChua"> Chỉ ca chưa khám</label></div>
+      <div class="small" id="rnMsg" aria-live="polite" style="margin:8px 0"></div>
+      <div class="row" style="justify-content:flex-start"><button class="btn" id="rnGo">${dang ? 'Bắt đầu lượt mới' : 'Bắt đầu'}</button></div>`;
+    const kho = () => MUC.filter(c => (!$('#rnCk').value || c.ck === $('#rnCk').value) && (!$('#rnDk').value || c.dk === $('#rnDk').value) && (!$('#rnChua').checked || !DONE.has(c.ma)));
+    const capNhat = () => { const k = kho(), chua = k.filter(c => !DONE.has(c.ma)).length, n = parseInt($('#rnN').value, 10);
+      $('#rnN').max = k.length || 1;
+      $('#rnMsg').textContent = !k.length ? 'Không có ca nào khớp bộ lọc.' : `Kho phù hợp: ${k.length} ca (${chua} chưa khám).` + (n > k.length ? ` Chỉ rút được tối đa ${k.length} ca.` : '');
+      $('#rnGo').disabled = !k.length || !(n >= 1) };
+    ['rnCk', 'rnDk', 'rnChua'].forEach(id => $('#' + id).onchange = capNhat); $('#rnN').oninput = capNhat; capNhat();
+    $('#rnGo').onclick = () => {
+      const k = kho(), n = Math.min(Math.max(1, parseInt($('#rnN').value, 10) || 1), k.length); if(!n) return;
+      luuGhi('pkn-so-ca', n);
+      const ds = [...xaoTron(k.filter(c => !DONE.has(c.ma))), ...xaoTron(k.filter(c => DONE.has(c.ma)))].slice(0, n).map(c => c.ma);
+      batDauPhien(xaoTron(ds));
+    };
+    $('#rnN').addEventListener('keydown', e => { if(e.key === 'Enter' && !$('#rnGo').disabled) $('#rnGo').click() });
+    $('#rnTiep') && ($('#rnTiep').onclick = () => { inCase && CA && CA.ma_ca === p.ds[p.i] ? ($('#modal').innerHTML = '') : moCa(p.ds[p.i]).catch(loiMo) });
+    $('#rnBo') && ($('#rnBo').onclick = () => { PHIEN = null; savePhien(); veNgau(); if(inCase) renderTop() });
+    $('#pnNgau').querySelectorAll('a[data-ma]').forEach(a => a.onclick = ev => { ev.preventDefault(); moCa(a.dataset.ma).catch(loiMo) });
+  };
+  veNgau();
+  setTimeout(() => (tab === 'chon' ? $('#lbQ') : ($('#rnTiep') || $('#rnN'))).focus(), 0);
 }
 /* Báo lỗi: mở phiếu GitHub điền sẵn mã ca, lượt, tab, mục khám/ảnh vừa xem */
 const tenTab = (side, k) => { const x = k && (TABS[side] || []).find(([id]) => id === k); return x ? x[1] : '—' };
@@ -1157,7 +1265,7 @@ function renderResult(){
       <svg class="ring" viewBox="0 0 150 150" role="img" aria-label="${total} trên 100 điểm"><circle cx="75" cy="75" r="60" fill="none" style="stroke:var(--panel-2)" stroke-width="12"/><circle cx="75" cy="75" r="60" fill="none" style="stroke:var(--${g[1]})" stroke-width="12" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - total / 100)}" transform="rotate(-90 75 75)"/><text x="75" y="83" text-anchor="middle" font-size="36" style="fill:var(--ink);font-family:var(--f-mono)">${total}</text><text x="75" y="102" text-anchor="middle" font-size="12" style="fill:var(--muted)">/ 100 điểm</text></svg>
       <div class="grade" style="color:var(--${g[1]})">${g[0]}</div>
       <div class="bars">${R.map((r, k) => `<div class="eyebrow" style="margin-top:6px">${esc(L(k).ten)}</div>` + r.p.map(([n, s, m]) => `<div class="bar-row"><span>${n}</span><b class="mono">${Math.round(s)}/${m}</b><div class="bar"><i style="width:${s / m * 100}%"></i></div></div>`).join('')).join('')}</div>
-      <div style="margin-top:16px;display:grid;gap:8px"><button class="btn" id="nextPt">Bệnh nhân kế tiếp</button><button class="btn ghost" id="again">Khám lại ca này</button></div></aside>
+      <div style="margin-top:16px;display:grid;gap:8px"><button class="btn" id="nextPt">${trongPhien() ? (PHIEN.i + 1 >= PHIEN.ds.length ? `Xem kết quả lượt ${PHIEN.ds.length} ca` : `Ca kế tiếp (${PHIEN.i + 2}/${PHIEN.ds.length})`) : 'Bệnh nhân kế tiếp (ngẫu nhiên)'}</button><button class="btn ghost" id="toHome">Về màn hình đầu</button><button class="btn ghost" id="again">Khám lại ca này</button></div></aside>
     <section class="card fb"><span class="eyebrow">${esc(P.ten)} · ${P.gioi}, ${P.tuoi} tuổi</span><h2>Nhận xét buổi khám</h2>
       ${S.visits.map((v, k) => fbv(v, R[k], k)).join('')}
       <div class="fb-v"><h3>Diễn tiến sau đó</h3><div class="outcome"><p style="margin:0">${esc(CA.ket_cuc)}</p></div></div>
@@ -1167,7 +1275,9 @@ function renderResult(){
       <div class="fb-v"><h3>Đặc tả ca trong sổ cái</h3><div class="spec">${Object.entries({'Mã ca':CA.ma_ca, 'Chẩn đoán đích':sc.chan_doan_dich, 'Phải loại trừ':sc.chan_doan_phai_loai_tru.join('; '), 'Độ khó':sc.do_kho, 'Bẫy':sc.loai_bay, 'Số lượt':sc.so_luot_kham, 'Diễn tiến':sc.dien_tien_tai_kham, 'Nhiễu':sc.nhieu_benh_nhan, 'Ràng buộc':sc.rang_buoc_nguon_luc, 'Nghề':sc.nghe_nghiep, 'Khởi phát':sc.yeu_to_khoi_phat, 'Thuốc đang dùng':sc.thuoc_dang_dung, 'Lý do thật':sc.ly_do_that_su_den_kham, 'Kết cục':sc.loai_ket_cuc}).map(([k, x]) => `<div><span>${k}:</span> ${esc(x)}</div>`).join('')}</div></div>
     </section></div></div>`;
   $('#again').onclick = () => startCase(CA);
-  $('#nextPt').onclick = () => rutCa();
+  $('#nextPt').onclick = () => trongPhien() ? phienKe() : rutCa();
+  $('#toHome').onclick = () => showLobby();
+  if(trongPhien()){ PHIEN.diem[CA.ma_ca] = total; savePhien() }
   document.querySelectorAll('[data-nx]').forEach(b => b.onclick = () => { S.nx = {}; S.nxDang = false; renderResult() });
   DONE.add(CA.ma_ca); saveDone();
   layNhanXet();
@@ -1186,7 +1296,7 @@ let rzRaf; addEventListener('resize', () => { cancelAnimationFrame(rzRaf); rzRaf
 $('#vBan').onclick = () => { S.view = 'ban'; drawScene(); ui() };
 $('#vGiuong').onclick = () => { S.view = 'giuong'; drawScene(); ui() };
 $('#boot').hidden = true;
-(() => { const m = location.hash.match(/^#ca=([A-Z]{2}-\d{4})$/i); if(m && MUC.some(c => c.ma === m[1].toUpperCase())) return moCa(m[1].toUpperCase()); return rutCa() })();
+(() => { const m = location.hash.match(/^#ca=([A-Z]{2}-\d{4})$/i); if(m && MUC.some(c => c.ma === m[1].toUpperCase())) return moCa(m[1].toUpperCase()).catch(e => { loiMo(e) }); showLobby() })();
 </script>
 </body>
 </html>
