@@ -1,0 +1,548 @@
+{
+ "_ghi_chu": "Danh mục cận lâm sàng dùng chung cho mọi ca. nhom dùng để khóa theo rang_buoc_nguon_luc; co_ban = thuộc 'xét nghiệm cơ bản'; gia (đồng) và phut (thời gian có kết quả) là giá tham khảo. mac_dinh = kết quả bình thường khi ca không ghi đè. tu_khoa = các tên gọi viết không dấu; khi bác sĩ chỉ định bằng chat, câu gõ phải chứa ít nhất một tên gọi thì mới được tính. Bổ sung 2026-10-09 (ca HH-0930 bản 2): sa_phoi, xpert, cay, pct, ddimer, ct_nguc; giá và thời gian là ước lượng tham khảo (Xpert ghi 0 đ vì thường do chương trình chống lao chi trả). Bổ sung 2026-10-10: noi_soi (nhóm noi_soi, khóa ở ca không có nội soi).",
+ "cls": [
+  {
+   "id": "ctm",
+   "ten": "Công thức máu",
+   "nhom": "xn",
+   "co_ban": true,
+   "gia": 50000,
+   "phut": 30,
+   "mac_dinh": "Hb 135 g/L · BC 7,0 G/L · TC 250 G/L",
+   "tu_khoa": [
+    "cong thuc mau",
+    "ctm",
+    "huyet do",
+    "te bao mau",
+    "bach cau",
+    "hong cau",
+    "tieu cau",
+    "hemoglobin"
+   ]
+  },
+  {
+   "id": "glu",
+   "ten": "Glucose máu đói",
+   "nhom": "xn",
+   "co_ban": true,
+   "gia": 25000,
+   "phut": 30,
+   "mac_dinh": "5,3 mmol/L",
+   "tu_khoa": [
+    "duong huyet",
+    "duong mau",
+    "glucose",
+    "glucoza",
+    "thu duong",
+    "dh doi",
+    "dhmm"
+   ]
+  },
+  {
+   "id": "hba1c",
+   "ten": "HbA1c",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 120000,
+   "phut": 60,
+   "mac_dinh": "5,4%",
+   "tu_khoa": [
+    "hba1c",
+    "a1c",
+    "duong huyet trung binh"
+   ]
+  },
+  {
+   "id": "lipid",
+   "ten": "Bộ mỡ máu",
+   "nhom": "xn",
+   "co_ban": true,
+   "gia": 120000,
+   "phut": 60,
+   "mac_dinh": "Cholesterol TP 4,6 · LDL-C 2,6 · HDL-C 1,3 · TG 1,4 mmol/L",
+   "tu_khoa": [
+    "mo mau",
+    "lipid",
+    "cholesterol",
+    "ldl",
+    "hdl",
+    "triglycerid",
+    "bilan mo"
+   ]
+  },
+  {
+   "id": "creat",
+   "ten": "Ure, creatinin, eGFR",
+   "nhom": "xn",
+   "co_ban": true,
+   "gia": 50000,
+   "phut": 45,
+   "mac_dinh": "Ure 4,8 mmol/L · Creatinin 75 µmol/L · eGFR > 90 mL/ph/1,73m²",
+   "tu_khoa": [
+    "creatinin",
+    "creatinine",
+    "creat",
+    "ure",
+    "chuc nang than",
+    "egfr",
+    "mlct",
+    "do loc cau than"
+   ]
+  },
+  {
+   "id": "lyte",
+   "ten": "Điện giải đồ (Na, K, Cl)",
+   "nhom": "xn",
+   "co_ban": true,
+   "gia": 60000,
+   "phut": 45,
+   "mac_dinh": "Na 139 · K 4,1 · Cl 102 mmol/L",
+   "tu_khoa": [
+    "dien giai",
+    "ion do",
+    "natri",
+    "kali",
+    "na k"
+   ]
+  },
+  {
+   "id": "liver",
+   "ten": "AST, ALT",
+   "nhom": "xn",
+   "co_ban": true,
+   "gia": 50000,
+   "phut": 45,
+   "mac_dinh": "AST 24 · ALT 20 U/L",
+   "tu_khoa": [
+    "men gan",
+    "ast",
+    "alt",
+    "sgot",
+    "sgpt",
+    "chuc nang gan",
+    "transaminase"
+   ]
+  },
+  {
+   "id": "acid_uric",
+   "ten": "Acid uric máu",
+   "nhom": "xn",
+   "co_ban": true,
+   "gia": 40000,
+   "phut": 45,
+   "mac_dinh": "310 µmol/L",
+   "tu_khoa": [
+    "acid uric",
+    "axit uric",
+    "uric"
+   ]
+  },
+  {
+   "id": "tsh",
+   "ten": "TSH, FT4",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 180000,
+   "phut": 90,
+   "mac_dinh": "TSH 1,8 mUI/L · FT4 14 pmol/L",
+   "tu_khoa": [
+    "tsh",
+    "ft4",
+    "tuyen giap",
+    "hormon giap",
+    "hormone giap"
+   ]
+  },
+  {
+   "id": "aldo",
+   "ten": "Aldosteron, renin huyết tương (tỷ ARR)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 900000,
+   "phut": 2880,
+   "mac_dinh": "Aldosteron 120 pmol/L · Renin hoạt tính 1,6 ng/mL/giờ · ARR không tăng",
+   "tu_khoa": [
+    "aldosteron",
+    "aldosterone",
+    "renin",
+    "arr"
+   ]
+  },
+  {
+   "id": "trop",
+   "ten": "Troponin T hs",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 150000,
+   "phut": 60,
+   "mac_dinh": "6 ng/L (ngưỡng < 14)",
+   "tu_khoa": [
+    "troponin",
+    "men tim",
+    "hs tnt",
+    "tnt",
+    "tni"
+   ]
+  },
+  {
+   "id": "crp",
+   "ten": "CRP",
+   "nhom": "xn",
+   "co_ban": true,
+   "gia": 80000,
+   "phut": 45,
+   "mac_dinh": "3 mg/L",
+   "tu_khoa": [
+    "crp",
+    "protein c phan ung"
+   ]
+  },
+  {
+   "id": "ns1",
+   "ten": "Dengue NS1, IgM/IgG",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 200000,
+   "phut": 30,
+   "mac_dinh": "NS1 âm tính · IgM âm tính · IgG âm tính",
+   "tu_khoa": [
+    "ns1",
+    "dengue",
+    "sot xuat huyet"
+   ]
+  },
+  {
+   "id": "flu",
+   "ten": "Test nhanh cúm A/B, SARS-CoV-2",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 200000,
+   "phut": 20,
+   "mac_dinh": "Âm tính",
+   "tu_khoa": [
+    "cum",
+    "covid",
+    "sars",
+    "influenza"
+   ]
+  },
+  {
+   "id": "test_lien_cau",
+   "ten": "Test nhanh liên cầu nhóm A (phết họng)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 150000,
+   "phut": 15,
+   "mac_dinh": "Âm tính",
+   "tu_khoa": [
+    "lien cau",
+    "strep",
+    "gas"
+   ]
+  },
+  {
+   "id": "phet_hong",
+   "ten": "Phết họng soi, cấy tìm vi khuẩn bạch hầu",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 250000,
+   "phut": 2880,
+   "mac_dinh": "Không tìm thấy vi khuẩn bạch hầu",
+   "tu_khoa": [
+    "bach hau",
+    "phet hong",
+    "cay hong",
+    "cay dich hong"
+   ]
+  },
+  {
+   "id": "ua",
+   "ten": "Tổng phân tích nước tiểu",
+   "nhom": "xn",
+   "co_ban": true,
+   "gia": 40000,
+   "phut": 30,
+   "mac_dinh": "Không protein · Không glucose · Không hồng cầu",
+   "tu_khoa": [
+    "nuoc tieu",
+    "tptnt",
+    "que nhung",
+    "ceton nieu",
+    "10 thong so"
+   ]
+  },
+  {
+   "id": "uacr",
+   "ten": "Tỷ số albumin/creatinin niệu (UACR)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 120000,
+   "phut": 60,
+   "mac_dinh": "12 mg/g",
+   "tu_khoa": [
+    "albumin nieu",
+    "albumin creatinin",
+    "uacr",
+    "acr",
+    "microalbumin",
+    "dam nieu vi luong",
+    "dam vi luong"
+   ]
+  },
+  {
+   "id": "abg",
+   "ten": "Khí máu động mạch",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 250000,
+   "phut": 20,
+   "mac_dinh": "pH 7,41 · PaCO₂ 39 · PaO₂ 88 mmHg · HCO₃⁻ 24",
+   "tu_khoa": [
+    "khi mau",
+    "abg"
+   ]
+  },
+  {
+   "id": "ecg",
+   "ten": "Điện tâm đồ 12 chuyển đạo",
+   "nhom": "tham_do",
+   "co_ban": true,
+   "gia": 50000,
+   "phut": 10,
+   "mac_dinh": "Nhịp xoang 76 l/p, trục trung gian, không biến đổi ST–T, không dày thất",
+   "tu_khoa": [
+    "dien tim",
+    "dien tam do",
+    "ecg",
+    "ekg"
+   ]
+  },
+  {
+   "id": "holter_ha",
+   "ten": "Đo HA lưu động 24 giờ",
+   "nhom": "tham_do",
+   "co_ban": false,
+   "gia": 400000,
+   "phut": 1440,
+   "mac_dinh": "HA trung bình 24 giờ 118/74 mmHg",
+   "tu_khoa": [
+    "holter",
+    "huyet ap 24",
+    "ha 24",
+    "luu dong",
+    "abpm"
+   ]
+  },
+  {
+   "id": "cxr",
+   "ten": "X-quang ngực thẳng",
+   "nhom": "xquang",
+   "co_ban": false,
+   "gia": 100000,
+   "phut": 30,
+   "mac_dinh": "Tim phổi bình thường",
+   "tu_khoa": [
+    "x quang",
+    "xquang",
+    "chup phoi",
+    "chup nguc",
+    "phim phoi",
+    "phim nguc"
+   ]
+  },
+  {
+   "id": "echo",
+   "ten": "Siêu âm tim",
+   "nhom": "sieu_am",
+   "co_ban": false,
+   "gia": 250000,
+   "phut": 30,
+   "mac_dinh": "EF 64%, không dày thất trái, van tim bình thường",
+   "tu_khoa": [
+    "sieu am tim",
+    "echo tim",
+    "echo"
+   ]
+  },
+  {
+   "id": "abdus",
+   "ten": "Siêu âm bụng (gan, thận, thượng thận)",
+   "nhom": "sieu_am",
+   "co_ban": false,
+   "gia": 150000,
+   "phut": 20,
+   "mac_dinh": "Gan, mật, tụy, lách, thận bình thường",
+   "tu_khoa": [
+    "sieu am bung",
+    "sieu am o bung",
+    "sieu am gan",
+    "sieu am than",
+    "sieu am tong quat",
+    "sieu am mat"
+   ]
+  },
+  {
+   "id": "doppler_than",
+   "ten": "Siêu âm Doppler động mạch thận",
+   "nhom": "sieu_am",
+   "co_ban": false,
+   "gia": 400000,
+   "phut": 40,
+   "mac_dinh": "Không hẹp động mạch thận",
+   "tu_khoa": [
+    "doppler"
+   ]
+  },
+  {
+   "id": "ct_bung",
+   "ten": "CT bụng có cản quang",
+   "nhom": "ct",
+   "co_ban": false,
+   "gia": 1800000,
+   "phut": 90,
+   "mac_dinh": "Không phát hiện bất thường",
+   "tu_khoa": [
+    "ct bung",
+    "cat lop bung",
+    "ct o bung",
+    "msct bung"
+   ]
+  },
+  {
+   "id": "ct_nao",
+   "ten": "CT sọ não không cản quang",
+   "nhom": "ct",
+   "co_ban": false,
+   "gia": 900000,
+   "phut": 45,
+   "mac_dinh": "Không phát hiện bất thường",
+   "tu_khoa": [
+    "ct so",
+    "ct nao",
+    "cat lop so",
+    "cat lop nao",
+    "ct dau"
+   ]
+  },
+  {
+   "id": "sa_phoi",
+   "ten": "Siêu âm phổi – màng phổi tại giường",
+   "nhom": "sieu_am",
+   "co_ban": false,
+   "gia": 150000,
+   "phut": 15,
+   "mac_dinh": "Không tràn dịch màng phổi hai bên. Trượt màng phổi tốt, đường A bình thường, không đông đặc.",
+   "tu_khoa": [
+    "sieu am phoi",
+    "sieu am mang phoi",
+    "sieu am long nguc",
+    "sieu am nguc",
+    "sieu am dich mang phoi",
+    "sieu am tai giuong"
+   ]
+  },
+  {
+   "id": "xpert",
+   "ten": "Xpert MTB/RIF và soi AFB đờm",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 0,
+   "phut": 120,
+   "mac_dinh": "Xpert MTB/RIF: không phát hiện MTB. Soi AFB: âm tính.",
+   "tu_khoa": [
+    "xpert",
+    "gene xpert",
+    "genexpert",
+    "afb",
+    "soi dom tim lao",
+    "xet nghiem lao",
+    "tim lao",
+    "vi khuan lao",
+    "mtb",
+    "khang con toan"
+   ]
+  },
+  {
+   "id": "cay",
+   "ten": "Nhuộm Gram, cấy đờm và cấy máu",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 350000,
+   "phut": 2880,
+   "mac_dinh": "Nhuộm Gram đờm: ít bạch cầu, hệ vi khuẩn hầu họng. Cấy: không mọc vi khuẩn gây bệnh.",
+   "tu_khoa": [
+    "cay dom",
+    "cay mau",
+    "nhuom gram",
+    "soi dom",
+    "nuoi cay",
+    "gram",
+    "khang sinh do"
+   ]
+  },
+  {
+   "id": "pct",
+   "ten": "Procalcitonin",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 350000,
+   "phut": 60,
+   "mac_dinh": "Procalcitonin 0,04 ng/mL",
+   "tu_khoa": [
+    "procalcitonin",
+    "pct"
+   ]
+  },
+  {
+   "id": "ddimer",
+   "ten": "D-dimer",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 250000,
+   "phut": 45,
+   "mac_dinh": "D-dimer 320 µg/L FEU (ngưỡng < 500; ≥ 50 tuổi: tuổi × 10)",
+   "tu_khoa": [
+    "d dimer",
+    "ddimer",
+    "dimer"
+   ]
+  },
+  {
+   "id": "ct_nguc",
+   "ten": "CT ngực (có hoặc không cản quang, gồm CT động mạch phổi)",
+   "nhom": "ct",
+   "co_ban": false,
+   "gia": 1500000,
+   "phut": 60,
+   "mac_dinh": "Không phát hiện bất thường",
+   "tu_khoa": [
+    "ct nguc",
+    "ct phoi",
+    "cat lop nguc",
+    "cat lop phoi",
+    "ct dong mach phoi",
+    "ctpa",
+    "msct nguc",
+    "chup mach phoi"
+   ]
+  },
+  {
+   "id": "noi_soi",
+   "ten": "Nội soi dạ dày – tá tràng",
+   "nhom": "noi_soi",
+   "co_ban": false,
+   "gia": 250000,
+   "phut": 30,
+   "mac_dinh": "Niêm mạc thực quản, dạ dày, tá tràng bình thường. Test urease nhanh âm tính.",
+   "tu_khoa": [
+    "noi soi da day",
+    "soi da day",
+    "noi soi tieu hoa",
+    "noi soi thuc quan",
+    "noi soi tren",
+    "noi soi dd",
+    "egd"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+"_ghi_chu": "Mục lục ca: ma = mã ca, ck = chuyên khoa, r = số repo pk-ngoai-tru-ca-r. Tác vụ viết ca tự cập nhật.",
+"ca": [
+{
+"ma": "HH-0930",
+"ck": "Hô hấp cấp tính",
+"r": 1
+},
+{
+"ma": "MT-0058",
+"ck": "Bệnh mạn tính người lớn",
+"r": 1
+},
+{
+"ma": "MT-0333",
+"ck": "Bệnh mạn tính người lớn",
+"r": 1
+},
+{
+"ma": "NH-0199",
+"ck": "Nhi ngoại trú",
+"r": 1
+},
+{
+"ma": "TH-0295",
+"ck": "Tiêu hóa - gan mật",
+"r": 1
+}
+]
+}

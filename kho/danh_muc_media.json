@@ -1,0 +1,65 @@
+{
+ "_ghi_chu": "Danh mục media dùng chung. Ca tham chiếu theo 'id'. 'tep' = đường dẫn trong repo pk-ngoai-tru-media-<kho>/; 'kho' = số repo media (null = CHƯA CÓ TỆP → app dùng chữ dự phòng 'chu' ghi trong ca). 'mo_ta' = điều media thể hiện (đáp án, chỉ hiện ở phiếu chấm). 'yeu_cau' = điều kiện khi tìm tệp thật. Chỉ dùng bản ghi/ảnh THẬT có giấy phép mở hoặc được phép; không YouTube, không AI tạo. Media là chuẩn: tìm được tệp thì sửa mô tả trong ca cho khớp. Âm thanh tim, phổi dùng chung người lớn và trẻ em (chốt 2026-10-10): tệp mô phỏng tính chất tiếng; tần số, tuổi ghi bằng chữ trong ca.",
+ "media": [
+  {
+   "id": "AT-PHOI-RAN-NO-01",
+   "loai": "am_thanh",
+   "nhom": "phoi",
+   "doi_tuong": "dung_chung",
+   "mo_ta": "Ran nổ nhỏ hạt (fine crackles) thì hít vào, nghe ở đáy phổi",
+   "yeu_cau": "Bản ghi ống nghe thật, người lớn, viêm phổi; ran nổ nghe rõ; 8–20 giây; mp3/ogg",
+   "tep": "am_thanh/AT-PHOI-RAN-NO-01.mp3",
+   "nguon": "MEDZCOOL – 'Fine Crackles (Rales) - Lung Sounds' (người dùng tự tải 09/10/2026; tệp gốc ở am_thanh/)",
+   "giay_phep": "CHƯA được phép. Chỉ dùng thử nội bộ trên máy; KHÔNG đưa lên GitHub/web cho tới khi có văn bản cho phép của MEDZCOOL hoặc thay bằng nguồn mở.",
+   "trang_thai": "tam_noi_bo",
+   "dung_trong": [
+    "HH-0930"
+   ],
+   "thoi_luong_giay": 69,
+   "khong_dua_len_web": true,
+   "kho": 1
+  },
+  {
+   "id": "AT-PHOI-BT-NL-01",
+   "loai": "am_thanh",
+   "nhom": "phoi",
+   "doi_tuong": "dung_chung",
+   "mo_ta": "Rì rào phế nang bình thường, không ran",
+   "yeu_cau": "Bản ghi ống nghe thật, người lớn, phổi bình thường; 8–20 giây",
+   "tep": "am_thanh/AT-PHOI-BT-NL-01.mp3",
+   "nguon": "Bản ghi của người dùng (chủ dự án), tệp gốc am_thanh/Phoi/Normal Vesicular.mp3, cung cấp 10/10/2026",
+   "giay_phep": "Thuộc người dùng; được dùng trong app và được đưa lên web.",
+   "trang_thai": "dung_duoc",
+   "dung_trong": [
+    "HH-0930",
+    "MT-0058",
+    "MT-0333",
+    "NH-0199",
+    "TH-0295"
+   ],
+   "thoi_luong_giay": 8,
+   "kho": 1
+  },
+  {
+   "id": "AT-TIM-BT-NL-01",
+   "loai": "am_thanh",
+   "nhom": "tim",
+   "doi_tuong": "dung_chung",
+   "mo_ta": "T1, T2 bình thường, không âm thổi, không T3/T4",
+   "yeu_cau": "Bản ghi ống nghe thật, người lớn, tim bình thường; ưu tiên tần số nhanh (gần 100 l/p) nếu có; 8–20 giây",
+   "tep": "am_thanh/AT-TIM-BT-NL-01.mp3",
+   "nguon": "Bản ghi của người dùng (chủ dự án), tệp gốc am_thanh/tim/Normal Heart Sounds.mp3, cung cấp 10/10/2026",
+   "giay_phep": "Thuộc người dùng; được dùng trong app và được đưa lên web.",
+   "trang_thai": "dung_duoc",
+   "dung_trong": [
+    "HH-0930",
+    "MT-0058",
+    "MT-0333",
+    "NH-0199",
+    "TH-0295"
+   ],
+   "thoi_luong_giay": 3,
+   "kho": 1
+  }
+ ]
+}

@@ -1,0 +1,257 @@
+{
+ "_ghi_chu": "Danh mục thăm khám dùng chung. AI chỉ nhận ra bác sĩ đang khám phần nào (id); kết quả luôn lấy từ ca, nếu ca không ghi thì dùng mac_dinh (bình thường). phut = thời gian khám. tu_khoa = tên gọi viết không dấu; khi khám bằng chat, câu gõ phải chứa ít nhất một tên gọi thì mới được tính.",
+ "kham": [
+  {
+   "id": "ha_hai_tay",
+   "ten": "Đo lại huyết áp hai tay",
+   "phut": 3,
+   "mac_dinh": "Huyết áp hai tay tương đương nhau, giống lúc tiếp đón.",
+   "tu_khoa": [
+    "huyet ap",
+    "do ha",
+    "do lai ha",
+    "ha hai tay",
+    "do ap",
+    "ha 2 tay"
+   ]
+  },
+  {
+   "id": "ha_tu_the",
+   "ten": "Đo huyết áp tư thế nằm – đứng",
+   "phut": 3,
+   "mac_dinh": "Không hạ huyết áp tư thế.",
+   "tu_khoa": [
+    "tu the",
+    "ha dung",
+    "dung len do",
+    "nam dung"
+   ]
+  },
+  {
+   "id": "toan_than",
+   "ten": "Tổng trạng, da niêm, vòng eo",
+   "phut": 2,
+   "mac_dinh": "Tỉnh, tiếp xúc tốt. Da niêm hồng. Không vàng da.",
+   "tu_khoa": [
+    "toan than",
+    "tong trang",
+    "the trang",
+    "da niem",
+    "niem mac",
+    "vong eo",
+    "tri giac",
+    "tinh tao",
+    "mat nuoc",
+    "dinh huong"
+   ]
+  },
+  {
+   "id": "dau_mat_co",
+   "ten": "Đầu mặt cổ, hạch, tuyến giáp",
+   "phut": 2,
+   "mac_dinh": "Không sờ thấy hạch. Tuyến giáp không to. Tĩnh mạch cổ không nổi.",
+   "tu_khoa": [
+    "kham co",
+    "so co",
+    "tuyen giap",
+    "hach",
+    "tinh mach co",
+    "dau mat co",
+    "co ban"
+   ]
+  },
+  {
+   "id": "hong_tai_mui",
+   "ten": "Họng, tai, mũi",
+   "phut": 2,
+   "mac_dinh": "Họng không đỏ, amidan không to. Màng nhĩ bình thường. Niêm mạc mũi hồng.",
+   "tu_khoa": [
+    "hong",
+    "amidan",
+    "soi tai",
+    "kham tai",
+    "mang nhi",
+    "mui",
+    "tai mui hong",
+    "gia mac"
+   ]
+  },
+  {
+   "id": "mat",
+   "ten": "Mắt (kết mạc, đồng tử, thị lực)",
+   "phut": 2,
+   "mac_dinh": "Kết mạc không đỏ, đồng tử đều, phản xạ ánh sáng tốt.",
+   "tu_khoa": [
+    "kham mat",
+    "dong tu",
+    "ket mac",
+    "thi luc"
+   ]
+  },
+  {
+   "id": "day_mat",
+   "ten": "Soi đáy mắt",
+   "phut": 3,
+   "mac_dinh": "Đáy mắt bình thường.",
+   "tu_khoa": [
+    "day mat",
+    "vong mac"
+   ]
+  },
+  {
+   "id": "tim",
+   "ten": "Tim",
+   "phut": 2,
+   "mac_dinh": "Tim đều, T1 T2 rõ, không âm thổi.",
+   "tu_khoa": [
+    "tim",
+    "mom tim",
+    "am thoi tim"
+   ]
+  },
+  {
+   "id": "phoi",
+   "ten": "Phổi",
+   "phut": 2,
+   "mac_dinh": "Rì rào phế nang êm dịu hai phế trường, không ran.",
+   "tu_khoa": [
+    "phoi",
+    "ran",
+    "ri rao",
+    "go duc",
+    "rung thanh",
+    "nhip tho"
+   ]
+  },
+  {
+   "id": "bung",
+   "ten": "Bụng",
+   "phut": 3,
+   "mac_dinh": "Bụng mềm, không chướng, không điểm đau, gan lách không sờ thấy.",
+   "tu_khoa": [
+    "bung",
+    "gan lach",
+    "murphy",
+    "thuong vi"
+   ]
+  },
+  {
+   "id": "mach_ngoai_bien",
+   "ten": "Mạch ngoại biên, âm thổi động mạch",
+   "phut": 2,
+   "mac_dinh": "Mạch ngoại biên đều, rõ hai bên. Không âm thổi động mạch.",
+   "tu_khoa": [
+    "mach ngoai bien",
+    "mach mu chan",
+    "mach ben",
+    "mach quay",
+    "am thoi dong mach",
+    "am thoi canh",
+    "bat mach",
+    "mach chi",
+    "mach chay"
+   ]
+  },
+  {
+   "id": "chi_duoi",
+   "ten": "Chi dưới (phù, giãn tĩnh mạch, bắp chân)",
+   "phut": 2,
+   "mac_dinh": "Không phù, bắp chân mềm.",
+   "tu_khoa": [
+    "chan",
+    "phu",
+    "bap chan",
+    "chi duoi",
+    "ban chan",
+    "monofilament",
+    "mat ca"
+   ]
+  },
+  {
+   "id": "than_kinh",
+   "ten": "Thần kinh",
+   "phut": 3,
+   "mac_dinh": "Tỉnh, không dấu thần kinh khu trú, không dấu màng não.",
+   "tu_khoa": [
+    "than kinh",
+    "phan xa",
+    "co luc",
+    "mang nao",
+    "cung co",
+    "khu tru",
+    "amt"
+   ]
+  },
+  {
+   "id": "co_xuong_khop",
+   "ten": "Cơ xương khớp, cột sống",
+   "phut": 3,
+   "mac_dinh": "Các khớp không sưng nóng đỏ, vận động trong giới hạn bình thường.",
+   "tu_khoa": [
+    "khop",
+    "cot song",
+    "lung",
+    "vai gay",
+    "co xuong",
+    "lasegue",
+    "co thang"
+   ]
+  },
+  {
+   "id": "da",
+   "ten": "Da, niêm mạc, ban",
+   "phut": 2,
+   "mac_dinh": "Không ban, không chấm xuất huyết.",
+   "tu_khoa": [
+    "kham da",
+    "phat ban",
+    "noi ban",
+    "ban do",
+    "cham xuat huyet",
+    "nam da",
+    "vung ben",
+    "nep ben"
+   ]
+  },
+  {
+   "id": "tiet_nieu",
+   "ten": "Hố thắt lưng, cầu bàng quang",
+   "phut": 2,
+   "mac_dinh": "Chạm thận âm tính, không cầu bàng quang.",
+   "tu_khoa": [
+    "ho that lung",
+    "cau bang quang",
+    "cham than",
+    "bap benh than"
+   ]
+  },
+  {
+   "id": "truc_trang",
+   "ten": "Thăm trực tràng",
+   "phut": 3,
+   "mac_dinh": "Cơ thắt bình thường, không khối, găng không dính máu.",
+   "tu_khoa": [
+    "truc trang",
+    "hau mon",
+    "tham phan",
+    "mau phan"
+   ]
+  },
+  {
+   "id": "di_bo_spo2",
+   "ten": "Nghiệm pháp đi bộ đo SpO₂",
+   "phut": 4,
+   "mac_dinh": "Đi bộ 40 m không phải dừng. SpO₂ không giảm quá 2%, hồi phục ngay.",
+   "tu_khoa": [
+    "nghiem phap di bo",
+    "test di bo",
+    "di bo",
+    "spo2 khi di",
+    "do spo2 khi gang suc",
+    "spo2 gang suc",
+    "gang suc",
+    "6 phut"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,374 @@
+{
+ "_ghi_chu": "Bảng trị số tham chiếu DÙNG CHUNG cho mọi ca (người lớn). Ca chỉ ghi giá trị trong cls[id].bang; app tra bảng này để hiện tên, đơn vị, khoảng tham chiếu và đánh dấu ↑↓. Khoảng theo giới: 'nam'/'nu'. Kiểu 'dinh_tinh' = âm tính/dương tính. Bản nháp do Claude lập theo khoảng thường dùng ở phòng xét nghiệm bệnh viện Việt Nam – CẦN BÁC SĨ DUYỆT. Trẻ em: chưa có, bổ sung khi làm ca nhi.",
+ "phien_ban": "0.1 (nháp, chờ duyệt)",
+ "phieu": {
+  "ctm": {
+   "ten": "PHIẾU KẾT QUẢ XÉT NGHIỆM HUYẾT HỌC – Tổng phân tích tế bào máu ngoại vi",
+   "chi_so": [
+    "wbc",
+    "neu_pct",
+    "neu",
+    "lym_pct",
+    "lym",
+    "mono_pct",
+    "mono",
+    "eos_pct",
+    "eos",
+    "baso_pct",
+    "baso",
+    "rbc",
+    "hgb",
+    "hct",
+    "mcv",
+    "mch",
+    "mchc",
+    "rdw",
+    "plt"
+   ]
+  },
+  "creat": {
+   "ten": "PHIẾU KẾT QUẢ XÉT NGHIỆM SINH HÓA MÁU",
+   "chi_so": [
+    "ure",
+    "creat",
+    "egfr"
+   ]
+  },
+  "lyte": {
+   "ten": "PHIẾU KẾT QUẢ XÉT NGHIỆM SINH HÓA MÁU",
+   "chi_so": [
+    "na",
+    "k",
+    "cl"
+   ]
+  },
+  "glu": {
+   "ten": "PHIẾU KẾT QUẢ XÉT NGHIỆM SINH HÓA MÁU",
+   "chi_so": [
+    "glu"
+   ]
+  },
+  "crp": {
+   "ten": "PHIẾU KẾT QUẢ XÉT NGHIỆM SINH HÓA MÁU",
+   "chi_so": [
+    "crp"
+   ]
+  },
+  "abg": {
+   "ten": "PHIẾU KẾT QUẢ KHÍ MÁU ĐỘNG MẠCH",
+   "chi_so": [
+    "fio2",
+    "ph",
+    "paco2",
+    "pao2",
+    "hco3",
+    "be",
+    "sao2"
+   ]
+  },
+  "ua": {
+   "ten": "PHIẾU KẾT QUẢ TỔNG PHÂN TÍCH NƯỚC TIỂU (10 thông số)",
+   "chi_so": [
+    "u_sg",
+    "u_ph",
+    "u_leu",
+    "u_nit",
+    "u_pro",
+    "u_glu",
+    "u_ket",
+    "u_bil",
+    "u_ubg",
+    "u_ery"
+   ]
+  }
+ },
+ "chi_so": {
+  "wbc": {
+   "ten": "Số lượng bạch cầu (WBC)",
+   "dv": "G/L",
+   "thap": 4.0,
+   "cao": 10.0
+  },
+  "neu_pct": {
+   "ten": "Tỷ lệ bạch cầu trung tính (NEU%)",
+   "dv": "%",
+   "thap": 45,
+   "cao": 75
+  },
+  "neu": {
+   "ten": "Số lượng bạch cầu trung tính (NEU#)",
+   "dv": "G/L",
+   "thap": 2.0,
+   "cao": 7.5
+  },
+  "lym_pct": {
+   "ten": "Tỷ lệ bạch cầu lympho (LYM%)",
+   "dv": "%",
+   "thap": 20,
+   "cao": 40
+  },
+  "lym": {
+   "ten": "Số lượng bạch cầu lympho (LYM#)",
+   "dv": "G/L",
+   "thap": 1.0,
+   "cao": 4.0
+  },
+  "mono_pct": {
+   "ten": "Tỷ lệ bạch cầu mono (MONO%)",
+   "dv": "%",
+   "thap": 2,
+   "cao": 10
+  },
+  "mono": {
+   "ten": "Số lượng bạch cầu mono (MONO#)",
+   "dv": "G/L",
+   "thap": 0.2,
+   "cao": 1.0
+  },
+  "eos_pct": {
+   "ten": "Tỷ lệ bạch cầu ưa acid (EOS%)",
+   "dv": "%",
+   "thap": 0,
+   "cao": 7
+  },
+  "eos": {
+   "ten": "Số lượng bạch cầu ưa acid (EOS#)",
+   "dv": "G/L",
+   "thap": 0,
+   "cao": 0.5
+  },
+  "baso_pct": {
+   "ten": "Tỷ lệ bạch cầu ưa base (BASO%)",
+   "dv": "%",
+   "thap": 0,
+   "cao": 1
+  },
+  "baso": {
+   "ten": "Số lượng bạch cầu ưa base (BASO#)",
+   "dv": "G/L",
+   "thap": 0,
+   "cao": 0.1
+  },
+  "rbc": {
+   "ten": "Số lượng hồng cầu (RBC)",
+   "dv": "T/L",
+   "nam": [
+    4.2,
+    5.4
+   ],
+   "nu": [
+    3.8,
+    4.8
+   ]
+  },
+  "hgb": {
+   "ten": "Lượng huyết sắc tố (HGB)",
+   "dv": "g/L",
+   "nam": [
+    130,
+    170
+   ],
+   "nu": [
+    120,
+    150
+   ]
+  },
+  "hct": {
+   "ten": "Thể tích khối hồng cầu (HCT)",
+   "dv": "L/L",
+   "nam": [
+    0.4,
+    0.5
+   ],
+   "nu": [
+    0.36,
+    0.46
+   ]
+  },
+  "mcv": {
+   "ten": "Thể tích trung bình hồng cầu (MCV)",
+   "dv": "fL",
+   "thap": 80,
+   "cao": 100
+  },
+  "mch": {
+   "ten": "Lượng HST trung bình hồng cầu (MCH)",
+   "dv": "pg",
+   "thap": 27,
+   "cao": 32
+  },
+  "mchc": {
+   "ten": "Nồng độ HST trung bình hồng cầu (MCHC)",
+   "dv": "g/L",
+   "thap": 320,
+   "cao": 360
+  },
+  "rdw": {
+   "ten": "Dải phân bố kích thước hồng cầu (RDW-CV)",
+   "dv": "%",
+   "thap": 11.5,
+   "cao": 14.5
+  },
+  "plt": {
+   "ten": "Số lượng tiểu cầu (PLT)",
+   "dv": "G/L",
+   "thap": 150,
+   "cao": 400
+  },
+  "ure": {
+   "ten": "Ure",
+   "dv": "mmol/L",
+   "thap": 2.5,
+   "cao": 7.5
+  },
+  "creat": {
+   "ten": "Creatinin",
+   "dv": "µmol/L",
+   "nam": [
+    62,
+    120
+   ],
+   "nu": [
+    53,
+    100
+   ]
+  },
+  "egfr": {
+   "ten": "eGFR (CKD-EPI 2021)",
+   "dv": "mL/ph/1,73m²",
+   "thap": 90,
+   "ghi_chu": "Tính từ creatinin, tuổi, giới"
+  },
+  "na": {
+   "ten": "Natri (Na⁺)",
+   "dv": "mmol/L",
+   "thap": 135,
+   "cao": 145
+  },
+  "k": {
+   "ten": "Kali (K⁺)",
+   "dv": "mmol/L",
+   "thap": 3.5,
+   "cao": 5.0
+  },
+  "cl": {
+   "ten": "Clo (Cl⁻)",
+   "dv": "mmol/L",
+   "thap": 98,
+   "cao": 106
+  },
+  "glu": {
+   "ten": "Glucose",
+   "dv": "mmol/L",
+   "thap": 3.9,
+   "cao": 6.4,
+   "ghi_chu": "Khoảng tham chiếu lúc đói"
+  },
+  "crp": {
+   "ten": "CRP",
+   "dv": "mg/L",
+   "cao": 5
+  },
+  "fio2": {
+   "ten": "FiO₂ lúc lấy mẫu",
+   "dv": "",
+   "khong_danh_dau": true
+  },
+  "ph": {
+   "ten": "pH",
+   "dv": "",
+   "thap": 7.35,
+   "cao": 7.45
+  },
+  "paco2": {
+   "ten": "PaCO₂",
+   "dv": "mmHg",
+   "thap": 35,
+   "cao": 45
+  },
+  "pao2": {
+   "ten": "PaO₂",
+   "dv": "mmHg",
+   "thap": 80,
+   "cao": 100
+  },
+  "hco3": {
+   "ten": "HCO₃⁻",
+   "dv": "mmol/L",
+   "thap": 22,
+   "cao": 26
+  },
+  "be": {
+   "ten": "BE (kiềm dư)",
+   "dv": "mmol/L",
+   "thap": -2,
+   "cao": 2
+  },
+  "sao2": {
+   "ten": "SaO₂",
+   "dv": "%",
+   "thap": 95,
+   "cao": 100
+  },
+  "u_sg": {
+   "ten": "Tỷ trọng (SG)",
+   "dv": "",
+   "thap": 1.005,
+   "cao": 1.03
+  },
+  "u_ph": {
+   "ten": "pH",
+   "dv": "",
+   "thap": 5.0,
+   "cao": 8.0
+  },
+  "u_leu": {
+   "ten": "Bạch cầu (LEU)",
+   "dv": "Leu/µL",
+   "kieu": "dinh_tinh",
+   "binh_thuong": "Âm tính"
+  },
+  "u_nit": {
+   "ten": "Nitrit (NIT)",
+   "dv": "",
+   "kieu": "dinh_tinh",
+   "binh_thuong": "Âm tính"
+  },
+  "u_pro": {
+   "ten": "Protein (PRO)",
+   "dv": "g/L",
+   "kieu": "dinh_tinh",
+   "binh_thuong": "Âm tính"
+  },
+  "u_glu": {
+   "ten": "Glucose (GLU)",
+   "dv": "mmol/L",
+   "kieu": "dinh_tinh",
+   "binh_thuong": "Âm tính"
+  },
+  "u_ket": {
+   "ten": "Thể ceton (KET)",
+   "dv": "mmol/L",
+   "kieu": "dinh_tinh",
+   "binh_thuong": "Âm tính"
+  },
+  "u_bil": {
+   "ten": "Bilirubin (BIL)",
+   "dv": "µmol/L",
+   "kieu": "dinh_tinh",
+   "binh_thuong": "Âm tính"
+  },
+  "u_ubg": {
+   "ten": "Urobilinogen (UBG)",
+   "dv": "µmol/L",
+   "kieu": "dinh_tinh",
+   "binh_thuong": "Bình thường"
+  },
+  "u_ery": {
+   "ten": "Hồng cầu (ERY)",
+   "dv": "Ery/µL",
+   "kieu": "dinh_tinh",
+   "binh_thuong": "Âm tính"
+  }
+ }
+}

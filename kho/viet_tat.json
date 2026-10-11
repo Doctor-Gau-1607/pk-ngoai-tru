@@ -1,0 +1,304 @@
+{
+ "_ghi_chu": "Bảng từ viết tắt dùng chung. 'mo_rong': app tự đổi viết tắt thành chữ đầy đủ (viết KHÔNG DẤU, chữ thường) TRƯỚC khi dò tên khám, cận lâm sàng, việc điều dưỡng, hướng xử trí. Chia theo nơi gõ vì có chữ hai nghĩa: TK là 'thần kinh' ở tab Khám nhưng là 'tái khám' ở tab Kết luận; ĐTĐ là 'điện tâm đồ' ở tab Cận lâm sàng nhưng là 'đái tháo đường' khi chẩn đoán. Bảng 'chung' áp cho mọi nơi; tab Khám dùng chung+kham, tab Cận lâm sàng dùng chung+cls, điều dưỡng dùng chung+cls+dieu_duong (vì điều dưỡng cũng cho đi xét nghiệm), tab Kết luận dùng chung+ket_luan. Có thể viết cụm nhiều chữ (vd 'sa bung'). 'cho_ai': danh sách đưa vào lời dặn cho AI (bệnh nhân, chấm chẩn đoán, chấm điều trị) để AI hiểu khi bác sĩ gõ tắt. Muốn thêm từ: thêm một cặp [viết tắt, đầy đủ] vào đúng nhóm rồi dựng lại trang.",
+ "mo_rong": {
+  "chung": [
+   [
+    "xn",
+    "xet nghiem"
+   ],
+   [
+    "cls",
+    "can lam sang"
+   ],
+   [
+    "dhst",
+    "dau hieu sinh ton"
+   ],
+   [
+    "dhsh",
+    "dau hieu sinh ton"
+   ],
+   [
+    "ha tt",
+    "ha tu the"
+   ],
+   [
+    "ha 2t",
+    "ha hai tay"
+   ],
+   [
+    "sp02",
+    "spo2"
+   ],
+   [
+    "sao2",
+    "spo2"
+   ]
+  ],
+  "cls": [
+   [
+    "xq",
+    "x quang"
+   ],
+   [
+    "xqn",
+    "x quang nguc"
+   ],
+   [
+    "xqp",
+    "x quang phoi"
+   ],
+   [
+    "x q",
+    "x quang"
+   ],
+   [
+    "kmdm",
+    "khi mau dong mach"
+   ],
+   [
+    "km",
+    "khi mau"
+   ],
+   [
+    "tptbm",
+    "cong thuc mau"
+   ],
+   [
+    "tpttbm",
+    "cong thuc mau"
+   ],
+   [
+    "tpttbmnv",
+    "cong thuc mau"
+   ],
+   [
+    "tpt nt",
+    "tong phan tich nuoc tieu"
+   ],
+   [
+    "tptnt",
+    "tong phan tich nuoc tieu"
+   ],
+   [
+    "dgd",
+    "dien giai do"
+   ],
+   [
+    "ion do mau",
+    "dien giai do"
+   ],
+   [
+    "cnt",
+    "chuc nang than"
+   ],
+   [
+    "cng",
+    "chuc nang gan"
+   ],
+   [
+    "dh",
+    "duong huyet"
+   ],
+   [
+    "dhd",
+    "duong huyet doi"
+   ],
+   [
+    "dhmm",
+    "duong huyet mao mach"
+   ],
+   [
+    "sa",
+    "sieu am"
+   ],
+   [
+    "sat",
+    "sieu am tim"
+   ],
+   [
+    "sab",
+    "sieu am bung"
+   ],
+   [
+    "sabtq",
+    "sieu am bung tong quat"
+   ],
+   [
+    "sa tq",
+    "sieu am tong quat"
+   ],
+   [
+    "ct scan",
+    "ct"
+   ],
+   [
+    "ctscan",
+    "ct"
+   ],
+   [
+    "msct",
+    "ct"
+   ],
+   [
+    "cllvt",
+    "cat lop vi tinh"
+   ],
+   [
+    "clvt",
+    "cat lop vi tinh"
+   ],
+   [
+    "cat lop vi tinh nguc",
+    "ct nguc"
+   ],
+   [
+    "cat lop vi tinh so nao",
+    "ct so"
+   ],
+   [
+    "cat lop vi tinh so",
+    "ct so"
+   ],
+   [
+    "cat lop vi tinh bung",
+    "ct bung"
+   ],
+   [
+    "hs trop",
+    "troponin"
+   ],
+   [
+    "trop",
+    "troponin"
+   ],
+   [
+    "pro calcitonin",
+    "procalcitonin"
+   ],
+   [
+    "dtd",
+    "dien tam do"
+   ],
+   [
+    "ecg 12 cd",
+    "dien tam do"
+   ],
+   [
+    "gene xpert mtb rif",
+    "xpert"
+   ]
+  ],
+  "kham": [
+   [
+    "tk",
+    "than kinh"
+   ],
+   [
+    "tm co",
+    "tinh mach co"
+   ],
+   [
+    "tmc",
+    "tinh mach co"
+   ],
+   [
+    "pxgtmc",
+    "phan hoi gan tinh mach co"
+   ],
+   [
+    "rrpn",
+    "ri rao phe nang"
+   ],
+   [
+    "cxk",
+    "co xuong khop"
+   ],
+   [
+    "tmh",
+    "tai mui hong"
+   ],
+   [
+    "test di bo",
+    "nghiem phap di bo"
+   ],
+   [
+    "6mwt",
+    "nghiem phap di bo"
+   ]
+  ],
+  "dieu_duong": [
+   [
+    "cn",
+    "can nang"
+   ],
+   [
+    "cc",
+    "chieu cao"
+   ],
+   [
+    "nt",
+    "nhip tho"
+   ],
+   [
+    "nd",
+    "nhiet do"
+   ]
+  ],
+  "ket_luan": [
+   [
+    "nv",
+    "nhap vien"
+   ],
+   [
+    "nhap noi tru",
+    "nhap vien"
+   ],
+   [
+    "dtnt",
+    "dieu tri ngoai tru"
+   ],
+   [
+    "dt ngoai tru",
+    "dieu tri ngoai tru"
+   ],
+   [
+    "cv",
+    "chuyen vien"
+   ],
+   [
+    "ct",
+    "chuyen tuyen"
+   ],
+   [
+    "chuyen tren",
+    "chuyen tuyen"
+   ],
+   [
+    "tk",
+    "tai kham"
+   ],
+   [
+    "hen tk",
+    "hen tai kham"
+   ],
+   [
+    "cc",
+    "cap cuu"
+   ],
+   [
+    "chuyen cc",
+    "chuyen cap cuu"
+   ],
+   [
+    "td tai pk",
+    "theo doi tai phong kham"
+   ],
+   [
+    "td",
+    "theo doi"
+   ]
+  ]
+ },
+ "cho_ai": "THA: tăng huyết áp · ĐTĐ: đái tháo đường (khi nói về xét nghiệm, thăm dò thì có thể là điện tâm đồ) · RLLM: rối loạn lipid máu · BTTMCB: bệnh tim thiếu máu cục bộ · NMCT: nhồi máu cơ tim · HCVC: hội chứng vành cấp · ĐTN: đau thắt ngực · ST, STM: suy tim, suy tim mạn · RN: rung nhĩ · TBMMN, ĐQ: tai biến mạch máu não, đột quỵ · COPD, BPTNMT: bệnh phổi tắc nghẽn mạn tính · HPQ: hen phế quản · VP: viêm phổi · VPCĐ, VPMPCĐ: viêm phổi mắc phải cộng đồng · VPQ: viêm phế quản · NKHH: nhiễm khuẩn hô hấp · TDMP: tràn dịch màng phổi · TKMP: tràn khí màng phổi · TTP, TTMP: thuyên tắc phổi · HKTMS: huyết khối tĩnh mạch sâu · BTM, BTMT: bệnh thận mạn · STC: suy thận cấp · NTT, NKTN: nhiễm trùng tiểu, nhiễm khuẩn tiết niệu · XHTH: xuất huyết tiêu hóa · LDD-TT: loét dạ dày tá tràng · GERD, TNDDTQ: trào ngược dạ dày thực quản · HCRKT: hội chứng ruột kích thích · VGB, VGC: viêm gan B, C · XG: xơ gan · SXH: sốt xuất huyết · TCM: tay chân miệng · VMN: viêm màng não · NKH: nhiễm khuẩn huyết · KS: kháng sinh · KVKS, NSAID: kháng viêm không steroid · PPI, UCBP: thuốc ức chế bơm proton · UCMC: ức chế men chuyển · UCTT: ức chế thụ thể angiotensin · CKCa: chẹn kênh canxi · LT: lợi tiểu · BN: bệnh nhân · BS: bác sĩ · ĐD: điều dưỡng · TS: tiền sử · BS (trong câu hỏi bệnh) có thể là bệnh sử · HA: huyết áp · M: mạch · NT: nhịp thở · CN: cân nặng · ĐH: đường huyết · KMĐM: khí máu động mạch · XQ: X quang · SA: siêu âm · CT, CLVT: cắt lớp vi tính · CTM: công thức máu · TPTNT: tổng phân tích nước tiểu · CLS: cận lâm sàng · XN: xét nghiệm · CĐ: chẩn đoán · CĐXĐ: chẩn đoán xác định · CĐPB: chẩn đoán phân biệt · TD: theo dõi · NV: nhập viện · CV: chuyển viện · TK: tái khám · ĐT: điều trị · ko, k, hok: không · dc, đc: được · ntn: như thế nào · bnhieu, bn (khi hỏi số lượng): bao nhiêu · j: gì · ng: người · mn: mọi người"
+}
