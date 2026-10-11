@@ -1,5 +1,5 @@
 {
- "_ghi_chu": "Danh mục thăm khám dùng chung. AI chỉ nhận ra bác sĩ đang khám phần nào (id); kết quả luôn lấy từ ca, nếu ca không ghi thì dùng mac_dinh (bình thường). phut = thời gian khám. tu_khoa = tên gọi viết không dấu; khi khám bằng chat, câu gõ phải chứa ít nhất một tên gọi thì mới được tính. | 11/10/2026: thêm da_dau_mong, cao_vay_brocq (DL-0541), sang_loc_sang (HH-1287).",
+ "_ghi_chu": "Danh mục thăm khám dùng chung. AI chỉ nhận ra bác sĩ đang khám phần nào (id); kết quả luôn lấy từ ca, nếu ca không ghi thì dùng mac_dinh (bình thường). phut = thời gian khám. tu_khoa = tên gọi viết không dấu; khi khám bằng chat, câu gõ phải chứa ít nhất một tên gọi thì mới được tính. | 11/10/2026: thêm da_dau_mong, cao_vay_brocq (DL-0541), sang_loc_sang (HH-1287). | 11/10/2026: thêm mat_giong_chu_viet, run_nghi, dong_tac_cham, tang_truong_luc, dang_di_thang_bang, nhan_thuc_moca (TK-0479).",
  "kham": [
   {
    "id": "ha_hai_tay",
@@ -291,6 +291,94 @@
     "sang loc sang",
     "lu lan cap",
     "danh gia sang"
+   ]
+  },
+  {
+   "id": "mat_giong_chu_viet",
+   "ten": "Nét mặt, giọng nói, chữ viết",
+   "phut": 3,
+   "mac_dinh": "Nét mặt linh hoạt, giọng rõ và đủ to, chữ viết kích thước đều.",
+   "tu_khoa": [
+    "nhin mat",
+    "net mat",
+    "bieu cam",
+    "giong noi",
+    "giong",
+    "chu viet",
+    "viet chu",
+    "chu viet nho",
+    "viet cau"
+   ]
+  },
+  {
+   "id": "run_nghi",
+   "ten": "Khám run (lúc nghỉ, giữ tư thế, khi làm động tác)",
+   "phut": 3,
+   "mac_dinh": "Không run.",
+   "tu_khoa": [
+    "run",
+    "run tay",
+    "run nghi",
+    "tay run",
+    "run van dong"
+   ]
+  },
+  {
+   "id": "dong_tac_cham",
+   "ten": "Vận động chậm: gõ ngón tay, mở nắm bàn tay, sấp ngửa",
+   "phut": 3,
+   "mac_dinh": "Gõ ngón tay, mở nắm và sấp ngửa nhanh, biên độ đều hai bên.",
+   "tu_khoa": [
+    "van dong cham",
+    "go ngon tay",
+    "go ngon",
+    "mo nam ban tay",
+    "sap ngua",
+    "cham van dong",
+    "finger tapping"
+   ]
+  },
+  {
+   "id": "tang_truong_luc",
+   "ten": "Trương lực cơ (độ cứng) các chi và cổ",
+   "phut": 3,
+   "mac_dinh": "Trương lực cơ bình thường, không cứng.",
+   "tu_khoa": [
+    "truong luc",
+    "do cung",
+    "cung chi",
+    "tang truong luc",
+    "cogwheel",
+    "banh xe rang cua"
+   ]
+  },
+  {
+   "id": "dang_di_thang_bang",
+   "ten": "Dáng đi, quay người, nghiệm pháp kéo",
+   "phut": 4,
+   "mac_dinh": "Đi bình thường, tay đung đưa đều, quay người nhanh; nghiệm pháp kéo bình thường.",
+   "tu_khoa": [
+    "dang di",
+    "cho di",
+    "quay nguoi",
+    "thang bang",
+    "nghiem phap keo",
+    "pull test"
+   ]
+  },
+  {
+   "id": "nhan_thuc_moca",
+   "ten": "Sàng lọc nhận thức (MoCA)",
+   "phut": 10,
+   "mac_dinh": "MoCA không phát hiện suy giảm nhận thức.",
+   "tu_khoa": [
+    "moca",
+    "nhan thuc",
+    "tri nho",
+    "sang loc nhan thuc",
+    "sa sut tri tue",
+    "mmse",
+    "tinh nho"
    ]
   }
  ]
