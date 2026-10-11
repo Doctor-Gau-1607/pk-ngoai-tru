@@ -1,50 +1,12 @@
-{
-"_ghi_chu": "Mục lục ca: ma = mã ca, ck = chuyên khoa, r = số repo pk-ngoai-tru-ca-r. Tác vụ viết ca tự cập nhật.",
-"ca": [
-{
-"ma": "DL-0541",
-"ck": "Da liễu",
-"r": 3
-},
-{
-"ma": "HH-0930",
-"ck": "Hô hấp cấp tính",
-"r": 1
-},
-{
-"ma": "HH-1287",
-"ck": "Hô hấp cấp tính",
-"r": 1
-},
-{
-"ma": "MT-0058",
-"ck": "Bệnh mạn tính người lớn",
-"r": 1
-},
-{
-"ma": "MT-0333",
-"ck": "Bệnh mạn tính người lớn",
-"r": 1
-},
-{
-"ma": "NH-0199",
-"ck": "Nhi ngoại trú",
-"r": 1
-},
-{
-"ma": "NH-0355",
-"ck": "Nhi ngoại trú",
-"r": 3
-},
-{
-"ma": "TH-0295",
-"ck": "Tiêu hóa - gan mật",
-"r": 1
-},
-{
-"ma": "TH-1105",
-"ck": "Tiêu hóa - gan mật",
-"r": 2
-}
-]
-}
+{"_ghi_chu":"Mục lục ca (tools/muc_luc.py trong repo soạn ca tạo): ma, ck chuyên khoa, r repo ca, ten/tuoi/gioi bệnh nhân, ld lý do khám, cd chẩn đoán đích, lt phải loại trừ, dk độ khó, bay loại bẫy, luot số lượt, tag từ khóa, x chữ phụ để tìm.",
+"ca":[
+{"ma":"DL-0541","ck":"Da liễu","r":3,"ten":"Lê Minh Khoa","tuoi":28,"gioi":"Nam","ld":"Mảng đỏ bong vảy ở khuỷu tay, cẳng chân; tự tra mạng là vảy nến","cd":"Vảy nến","lt":["Viêm da tiết bã","Nấm da","Lupus"],"dk":"Điển hình","bay":"","luot":1,"tag":["da-lieu","thanh-nien","cap-doi-tuong-phan","nhieu-benh-nhan"],"x":"Thanh niên (16–39 tuổi) · Mang chẩn đoán tự tra trên mạng · Nguồn lực đầy đủ · Lập trình viên · Sau dùng thuốc chống viêm không steroid (NSAID) · Thuốc bắc không rõ thành phần · Tái khám theo hẹn · Tái phát"},
+{"ma":"HH-0930","ck":"Hô hấp cấp tính","r":1,"ten":"Võ Văn Tám","tuoi":79,"gioi":"Nam","ld":"Mệt, ăn kém sau khi ăn hải sản","cd":"Viêm phổi cộng đồng","lt":["Lao phổi","Thuyên tắc phổi"],"dk":"Không điển hình","bay":"","luot":1,"tag":["ho-hap","rat-cao-tuoi","nhieu-benh-nhan"],"x":"Rất cao tuổi (≥75 tuổi) · Phủ nhận triệu chứng nặng · Nguồn lực đầy đủ · Buôn bán nhỏ · Sau ăn hải sản · Giấu triệu chứng thật vì ngại ngùng · Xử trí đúng nhưng diễn tiến xấu"},
+{"ma":"HH-1287","ck":"Hô hấp cấp tính","r":1,"ten":"Trần Thị Mận","tuoi":82,"gioi":"Nữ","ld":"Sốt, ho, mệt dù đã tự uống kháng sinh 3 ngày","cd":"COVID-19","lt":["Cúm mùa","Viêm phổi vi khuẩn"],"dk":"Ca bẫy","bay":"Mở lại chẩn đoán","luot":2,"tag":["ho-hap","rat-cao-tuoi","bay","bay-mo-lai","chuyen-tuyen","cap-doi-tuong-phan","nhieu-benh-nhan"],"x":"Rất cao tuổi (≥75 tuổi) · Đòi kháng sinh · Không có xét nghiệm nào · Buôn bán nhỏ · Sau tự uống kháng sinh · Thuốc bôi ngoài da không rõ · Tái khám theo hẹn · Không đỡ · Chuyển tuyến kịp thời"},
+{"ma":"MT-0058","ck":"Bệnh mạn tính người lớn","r":1,"ten":"Lê Thị Ngọc Bích","tuoi":52,"gioi":"Nữ","ld":"Hồi hộp, nặng ngực","cd":"Tăng huyết áp nguyên phát (theo dõi)","lt":["THA thứ phát","Cơn THA cấp cứu"],"dk":"Không điển hình","bay":"","luot":2,"tag":["man-tinh","trung-nien","nhieu-benh-nhan"],"x":"Trung niên (40–59 tuổi) · Phủ nhận triệu chứng nặng · Không có siêu âm · Chủ quán ăn · Sau đi du lịch vùng dịch · Thuốc ho long đờm · Sợ nhồi máu cơ tim · Không đỡ · Xử trí đúng nhưng diễn tiến xấu"},
+{"ma":"MT-0333","ck":"Bệnh mạn tính người lớn","r":1,"ten":"Trần Quốc Dũng","tuoi":46,"gioi":"Nam","ld":"Đau lưng, xin thêm thuốc tiểu đường","cd":"Đái tháo đường type 2 (theo dõi)","lt":["ĐTĐ type 1/LADA","ĐTĐ thứ phát"],"dk":"Điển hình","bay":"","luot":2,"tag":["man-tinh","trung-nien","nhieu-benh-nhan"],"x":"Trung niên (40–59 tuổi) · Tự uống thuốc trước 5 ngày · Nguồn lực đầy đủ · Tài xế xe công nghệ · Sau dùng NSAID · Thuốc bắc không rõ · Muốn kiểm tra tổng quát · Nặng hơn · Ổn định, khỏi"},
+{"ma":"NH-0199","ck":"Nhi ngoại trú","r":1,"ten":"Nguyễn Gia Bảo","tuoi":4,"gioi":"Nam","ld":"Bé sốt, nghẹt mũi, thở miệng","cd":"Viêm họng / VA cấp","lt":["Viêm họng liên cầu","Bạch hầu"],"dk":"Không điển hình","bay":"","luot":2,"tag":["nhi","mau-giao","chuyen-tuyen","cap-doi-tuong-phan","nhieu-benh-nhan"],"x":"Mẫu giáo (1–5 tuổi) · Giấu tiền sử · Không có X-quang · Trẻ mẫu giáo · Sau stress công việc (của mẹ) · Thuốc dị ứng tự mua · Muốn được truyền dịch · Đỡ một phần · Chuyển tuyến kịp thời"},
+{"ma":"NH-0355","ck":"Nhi ngoại trú","r":3,"ten":"Lê Ngọc Mai","tuoi":10,"gioi":"Nữ","ld":"Nhức hàm và nửa đầu bên trái, sốt nhẹ","cd":"Viêm tai giữa cấp","lt":["Viêm xương chũm","Viêm màng não"],"dk":"Không điển hình","bay":"","luot":2,"tag":["nhi","hoc-sinh","nhieu-benh-nhan"],"x":"Học sinh (6–15 tuổi) · Phủ nhận triệu chứng nặng · Không có siêu âm · Học sinh · Sau đi du lịch vùng dịch · Thuốc ho long đờm · Sợ nhồi máu cơ tim · Không đỡ · Ổn định, khỏi bệnh"},
+{"ma":"TH-0295","ck":"Tiêu hóa - gan mật","r":1,"ten":"Nguyễn Hữu Phước","tuoi":68,"gioi":"Nam","ld":"Đau rát thượng vị, sợ bệnh tim","cd":"Bệnh dạ dày do NSAID / viêm dạ dày cấp","lt":["Loét dạ dày-tá tràng","Xuất huyết tiêu hóa","NMCT thành dưới"],"dk":"Điển hình","bay":"","luot":2,"tag":["tieu-hoa","cao-tuoi","chuyen-tuyen","nhieu-benh-nhan"],"x":"Cao tuổi (60–74 tuổi) · Ở xa, khó tái khám · Không có X-quang · Hưu trí · Sau ngồi máy tính lâu · Insulin đang dùng · Sợ nhồi máu cơ tim · Không đỡ · Chuyển tuyến kịp thời"},
+{"ma":"TH-1105","ck":"Tiêu hóa - gan mật","r":2,"ten":"Phạm Thị Sen","tuoi":77,"gioi":"Nữ","ld":"Tức nặng bên sườn phải hai tuần, mệt, ăn kém, ho khan","cd":"Gan nhiễm mỡ không do rượu (NAFLD)","lt":["Viêm gan virus","Viêm gan do rượu"],"dk":"Điển hình","bay":"","luot":2,"tag":["tieu-hoa","rat-cao-tuoi","nhieu-benh-nhan"],"x":"Rất cao tuổi (≥75 tuổi) · Giấu tiền sử · Không có CT · Buôn bán nhỏ · Sau gắng sức nặng · Thuốc ho thảo dược · Sợ mắc lao · Đỡ hoàn toàn khi tái khám · Khỏi chậm hơn dự kiến"}
+]}
