@@ -1,5 +1,5 @@
 {
- "_ghi_chu": "Danh mục cận lâm sàng dùng chung cho mọi ca. nhom dùng để khóa theo rang_buoc_nguon_luc; co_ban = thuộc 'xét nghiệm cơ bản'; gia (đồng) và phut (thời gian có kết quả) là giá tham khảo. mac_dinh = kết quả bình thường khi ca không ghi đè. tu_khoa = các tên gọi viết không dấu; khi bác sĩ chỉ định bằng chat, câu gõ phải chứa ít nhất một tên gọi thì mới được tính. Bổ sung 2026-10-09 (ca HH-0930 bản 2): sa_phoi, xpert, cay, pct, ddimer, ct_nguc; giá và thời gian là ước lượng tham khảo (Xpert ghi 0 đ vì thường do chương trình chống lao chi trả). Bổ sung 2026-10-10: noi_soi (nhóm noi_soi, khóa ở ca không có nội soi). | 11/10/2026: thêm soi_nam, sinh_thiet_da, soi_da, ana, virus_mau, igra, aslo (đề xuất từ DL-0541), pcr_ho_hap (từ HH-1287); giá, thời gian là ước lượng.",
+ "_ghi_chu": "Danh mục cận lâm sàng dùng chung cho mọi ca. nhom dùng để khóa theo rang_buoc_nguon_luc; co_ban = thuộc 'xét nghiệm cơ bản'; gia (đồng) và phut (thời gian có kết quả) là giá tham khảo. mac_dinh = kết quả bình thường khi ca không ghi đè. tu_khoa = các tên gọi viết không dấu; khi bác sĩ chỉ định bằng chat, câu gõ phải chứa ít nhất một tên gọi thì mới được tính. Bổ sung 2026-10-09 (ca HH-0930 bản 2): sa_phoi, xpert, cay, pct, ddimer, ct_nguc; giá và thời gian là ước lượng tham khảo (Xpert ghi 0 đ vì thường do chương trình chống lao chi trả). Bổ sung 2026-10-10: noi_soi (nhóm noi_soi, khóa ở ca không có nội soi). | 11/10/2026: thêm soi_nam, sinh_thiet_da, soi_da, ana, virus_mau, igra, aslo (đề xuất từ DL-0541), pcr_ho_hap (từ HH-1287); giá, thời gian là ước lượng. Bổ sung 2026-10-11 (ca TH-0630, NH-0435): soi_phan, cay_phan.",
  "cls": [
   {
    "id": "ctm",
@@ -714,6 +714,40 @@
     "cat lop xoang",
     "ct mui xoang",
     "chup ct xoang"
+   ]
+  },
+  {
+   "id": "soi_phan",
+   "ten": "Soi phân (hồng cầu, bạch cầu, ký sinh trùng)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 40000,
+   "phut": 30,
+   "mac_dinh": "Phân thành khuôn, không hồng cầu, không bạch cầu, không thấy ký sinh trùng.",
+   "tu_khoa": [
+    "soi phan",
+    "xet nghiem phan",
+    "soi tuoi phan",
+    "phan soi tuoi",
+    "ky sinh trung phan",
+    "hong cau trong phan",
+    "bach cau trong phan"
+   ]
+  },
+  {
+   "id": "cay_phan",
+   "ten": "Cấy phân",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 150000,
+   "phut": 2880,
+   "mac_dinh": "Không mọc vi khuẩn gây bệnh.",
+   "tu_khoa": [
+    "cay phan",
+    "phan cay",
+    "cay vi khuan phan",
+    "cay phan tim vi khuan",
+    "coproculture"
    ]
   }
  ]
