@@ -142,21 +142,23 @@
     "MT-0333",
     "NH-0199",
     "TH-0295"
-   ]
+   ],
+   "ghi_chu": "Đo tự tương quan: khoảng 60 chu chuyển/phút. Dùng khi mạch < 100 l/p; tần số thật ghi bằng chữ."
   },
   {
    "id": "AT-TIM-NHANH-01",
    "loai": "am_thanh",
    "nhom": "tim",
    "doi_tuong": "dung_chung",
-   "mo_ta": "Nhịp tim nhanh, T1 T2 rõ, không âm thổi",
+   "mo_ta": "Nhịp tim nhanh (khoảng 115 l/p), T1 T2 rõ, không âm thổi",
    "tep": "am_thanh/AT-TIM-NHANH-01.mp3",
    "kho": 1,
    "nguon": "Bản ghi do người dùng (chủ dự án) cung cấp, tệp gốc am_thanh/tim/Fast Heart Rate.mp3 (11/10/2026)",
    "giay_phep": "Người dùng cung cấp và cho phép dùng trong app, đưa lên web.",
    "trang_thai": "dung_duoc",
    "thoi_luong_giay": 3.2,
-   "md5": "4ba385178e0f3391ed2ba4b4f84a8bd0"
+   "md5": "4ba385178e0f3391ed2ba4b4f84a8bd0",
+   "ghi_chu": "Đo tự tương quan: khoảng 115 chu chuyển/phút. Dùng khi mạch ≥ 100 l/p và tim không có tiếng bệnh lý."
   },
   {
    "id": "AT-TIM-T2-TACH-01",
@@ -453,16 +455,16 @@
    "md5": "0af96353094757e0f05272c6becf8ac4"
   },
   {
-   "id": "AT-TIM-CHUA-RO-01",
+   "id": "AT-TIM-HO-C-NHE-01",
    "loai": "am_thanh",
    "nhom": "tim",
    "doi_tuong": "dung_chung",
-   "mo_ta": "CHƯA RÕ: tên tệp gốc 'Mild Aortic' không nói hẹp hay hở – chưa dùng cho tới khi người dùng xác nhận",
-   "tep": "am_thanh/AT-TIM-CHUA-RO-01.mp3",
+   "mo_ta": "Hở van động mạch chủ nhẹ",
+   "tep": "am_thanh/AT-TIM-HO-C-NHE-01.mp3",
    "kho": 1,
-   "nguon": "Bản ghi do người dùng (chủ dự án) cung cấp, tệp gốc am_thanh/tim/Mild Aortic.mp3 (11/10/2026)",
+   "nguon": "Bản ghi do người dùng (chủ dự án) cung cấp, tệp gốc am_thanh/tim/Mild Aortic Regurgitation.mp3 (11/10/2026; người dùng xác nhận là hở van ĐMC nhẹ)",
    "giay_phep": "Người dùng cung cấp và cho phép dùng trong app, đưa lên web.",
-   "trang_thai": "chua_xac_nhan",
+   "trang_thai": "dung_duoc",
    "thoi_luong_giay": 3.1,
    "md5": "d9966c9fad9c588ea8bc9920e84aa81a"
   }

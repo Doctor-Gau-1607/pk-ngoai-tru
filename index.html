@@ -316,7 +316,7 @@ function testInfo(id, Lx = L()){ const b = CLS.find(t => t.id === id); if(!b) re
   return {...b, r:o.r || b.mac_dinh, v:o.v || 'n', ab:!!o.ab, note:o.n || '', locked:LOCKS.includes(b.nhom), thay_the:o.thay_the, bang:o.bang, ghi_chu_mau:o.ghi_chu_mau} }
 /* Ca không ghi riêng tim/phổi: dùng âm thanh bình thường, tần số lấy từ sinh hiệu của lượt (âm thanh dùng chung người lớn và trẻ em) */
 function khamMacDinh(id, Lx){ const sh = Lx.sinh_hieu || {};
-  if(id === 'tim') return {a:`Tim đều ${sh.mach} l/p, T1 T2 rõ, không âm thổi.`, hien:`Tim đều, tần số ${sh.mach} l/p.`, media:[{vi_tri:'Mỏm tim', id:'AT-TIM-BT-NL-01', chu:'T1, T2 rõ, không âm thổi, không T3.'}]};
+  if(id === 'tim') return {a:`Tim đều ${sh.mach} l/p, T1 T2 rõ, không âm thổi.`, hien:`Tim đều, tần số ${sh.mach} l/p.`, media:[sh.mach >= 100 ? {vi_tri:'Mỏm tim', id:'AT-TIM-NHANH-01', chu:'Tim nhanh đều, T1, T2 rõ, không âm thổi.'} : {vi_tri:'Mỏm tim', id:'AT-TIM-BT-NL-01', chu:'T1, T2 rõ, không âm thổi, không T3.'}]};
   if(id === 'phoi') return {a:`Nhịp thở ${sh.nhip_tho} l/p. Rì rào phế nang êm dịu hai phế trường, không ran.`, hien:`Nhịp thở ${sh.nhip_tho} l/p. Lồng ngực cân đối, rung thanh đều, gõ trong hai bên.`,
     media:[{vi_tri:'Đáy phổi phải (phía sau)', id:'AT-PHOI-BT-NL-01', chu:'Rì rào phế nang êm dịu, không ran.'}, {vi_tri:'Đáy phổi trái (phía sau)', id:'AT-PHOI-BT-NL-01', chu:'Rì rào phế nang êm dịu, không ran.'}]};
   return {} }
