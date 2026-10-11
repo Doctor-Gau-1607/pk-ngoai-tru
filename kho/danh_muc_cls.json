@@ -667,6 +667,54 @@
     "pcr virus"
    ],
    "co_ban": false
+  },
+  {
+   "id": "ck",
+   "ten": "CK (creatine kinase)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 60000,
+   "phut": 60,
+   "mac_dinh": "CK 120 U/L",
+   "tu_khoa": [
+    "ck",
+    "cpk",
+    "creatine kinase",
+    "creatin kinase",
+    "men co"
+   ]
+  },
+  {
+   "id": "xq_xoang",
+   "ten": "X-quang xoang (tư thế Blondeau, Hirtz)",
+   "nhom": "xquang",
+   "co_ban": false,
+   "gia": 120000,
+   "phut": 30,
+   "mac_dinh": "Các xoang sáng, thông thoáng",
+   "tu_khoa": [
+    "x quang xoang",
+    "xquang xoang",
+    "phim xoang",
+    "blondeau",
+    "hirtz",
+    "chup xoang"
+   ]
+  },
+  {
+   "id": "ct_xoang",
+   "ten": "CT mũi xoang",
+   "nhom": "ct",
+   "co_ban": false,
+   "gia": 1200000,
+   "phut": 45,
+   "mac_dinh": "Các xoang thông thoáng, không dày niêm mạc",
+   "tu_khoa": [
+    "ct xoang",
+    "cat lop xoang",
+    "ct mui xoang",
+    "chup ct xoang"
+   ]
   }
  ]
 }
