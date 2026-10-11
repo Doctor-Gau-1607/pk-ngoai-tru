@@ -1,5 +1,5 @@
 {
- "_ghi_chu": "Danh mục cận lâm sàng dùng chung cho mọi ca. nhom dùng để khóa theo rang_buoc_nguon_luc; co_ban = thuộc 'xét nghiệm cơ bản'; gia (đồng) và phut (thời gian có kết quả) là giá tham khảo. mac_dinh = kết quả bình thường khi ca không ghi đè. tu_khoa = các tên gọi viết không dấu; khi bác sĩ chỉ định bằng chat, câu gõ phải chứa ít nhất một tên gọi thì mới được tính. Bổ sung 2026-10-09 (ca HH-0930 bản 2): sa_phoi, xpert, cay, pct, ddimer, ct_nguc; giá và thời gian là ước lượng tham khảo (Xpert ghi 0 đ vì thường do chương trình chống lao chi trả). Bổ sung 2026-10-10: noi_soi (nhóm noi_soi, khóa ở ca không có nội soi).",
+ "_ghi_chu": "Danh mục cận lâm sàng dùng chung cho mọi ca. nhom dùng để khóa theo rang_buoc_nguon_luc; co_ban = thuộc 'xét nghiệm cơ bản'; gia (đồng) và phut (thời gian có kết quả) là giá tham khảo. mac_dinh = kết quả bình thường khi ca không ghi đè. tu_khoa = các tên gọi viết không dấu; khi bác sĩ chỉ định bằng chat, câu gõ phải chứa ít nhất một tên gọi thì mới được tính. Bổ sung 2026-10-09 (ca HH-0930 bản 2): sa_phoi, xpert, cay, pct, ddimer, ct_nguc; giá và thời gian là ước lượng tham khảo (Xpert ghi 0 đ vì thường do chương trình chống lao chi trả). Bổ sung 2026-10-10: noi_soi (nhóm noi_soi, khóa ở ca không có nội soi). | 11/10/2026: thêm soi_nam, sinh_thiet_da, soi_da, ana, virus_mau, igra, aslo (đề xuất từ DL-0541), pcr_ho_hap (từ HH-1287); giá, thời gian là ước lượng.",
  "cls": [
   {
    "id": "ctm",
@@ -543,6 +543,130 @@
     "noi soi dd",
     "egd"
    ]
+  },
+  {
+   "id": "soi_nam",
+   "ten": "Soi tươi tìm nấm (KOH) bệnh phẩm da, móng, tóc",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 60000,
+   "phut": 30,
+   "mac_dinh": "Không thấy sợi nấm, không thấy bào tử nấm.",
+   "tu_khoa": [
+    "soi nam",
+    "koh",
+    "soi tuoi",
+    "si nam",
+    "nam soi"
+   ]
+  },
+  {
+   "id": "sinh_thiet_da",
+   "ten": "Sinh thiết da, mô bệnh học",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 600000,
+   "phut": 4320,
+   "mac_dinh": "Mô da trong giới hạn bình thường.",
+   "tu_khoa": [
+    "sinh thiet",
+    "sinh thiet da",
+    "mo benh hoc",
+    "giai phau benh",
+    "biopsy"
+   ]
+  },
+  {
+   "id": "soi_da",
+   "ten": "Soi da (dermoscopy)",
+   "nhom": "tham_do",
+   "co_ban": false,
+   "gia": 100000,
+   "phut": 10,
+   "mac_dinh": "Không thấy cấu trúc bất thường.",
+   "tu_khoa": [
+    "dermoscopy",
+    "soi da",
+    "kinh soi da",
+    "dermatoscope"
+   ]
+  },
+  {
+   "id": "ana",
+   "ten": "Kháng thể kháng nhân (ANA), kháng dsDNA",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 250000,
+   "phut": 1440,
+   "mac_dinh": "ANA âm tính (< 1:80). Kháng dsDNA âm tính.",
+   "tu_khoa": [
+    "ana",
+    "khang the khang nhan",
+    "dsdna"
+   ]
+  },
+  {
+   "id": "virus_mau",
+   "ten": "HBsAg, anti-HCV, HIV",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 250000,
+   "phut": 60,
+   "mac_dinh": "HBsAg âm tính · Anti-HCV âm tính · HIV âm tính",
+   "tu_khoa": [
+    "hbsag",
+    "viem gan b",
+    "viem gan c",
+    "hcv",
+    "test nhanh viem gan"
+   ]
+  },
+  {
+   "id": "igra",
+   "ten": "Quantiferon (IGRA) hoặc test Mantoux",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 900000,
+   "phut": 2880,
+   "mac_dinh": "Âm tính",
+   "tu_khoa": [
+    "quantiferon",
+    "igra",
+    "mantoux",
+    "lao tiem an",
+    "tuberculin"
+   ]
+  },
+  {
+   "id": "aslo",
+   "ten": "ASLO",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 80000,
+   "phut": 60,
+   "mac_dinh": "ASLO trong giới hạn bình thường",
+   "tu_khoa": [
+    "aslo",
+    "khang the lien cau",
+    "antistreptolysin"
+   ]
+  },
+  {
+   "id": "pcr_ho_hap",
+   "ten": "RT-PCR / multiplex PCR virus hô hấp (SARS-CoV-2, cúm A/B, RSV)",
+   "nhom": "xn",
+   "gia": 750000,
+   "phut": 240,
+   "mac_dinh": "Âm tính.",
+   "tu_khoa": [
+    "pcr",
+    "rt pcr",
+    "multiplex",
+    "pcr covid",
+    "pcr cum",
+    "pcr virus"
+   ],
+   "co_ban": false
   }
  ]
 }

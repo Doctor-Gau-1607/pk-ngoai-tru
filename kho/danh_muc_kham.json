@@ -1,5 +1,5 @@
 {
- "_ghi_chu": "Danh mục thăm khám dùng chung. AI chỉ nhận ra bác sĩ đang khám phần nào (id); kết quả luôn lấy từ ca, nếu ca không ghi thì dùng mac_dinh (bình thường). phut = thời gian khám. tu_khoa = tên gọi viết không dấu; khi khám bằng chat, câu gõ phải chứa ít nhất một tên gọi thì mới được tính.",
+ "_ghi_chu": "Danh mục thăm khám dùng chung. AI chỉ nhận ra bác sĩ đang khám phần nào (id); kết quả luôn lấy từ ca, nếu ca không ghi thì dùng mac_dinh (bình thường). phut = thời gian khám. tu_khoa = tên gọi viết không dấu; khi khám bằng chat, câu gõ phải chứa ít nhất một tên gọi thì mới được tính. | 11/10/2026: thêm da_dau_mong, cao_vay_brocq (DL-0541), sang_loc_sang (HH-1287).",
  "kham": [
   {
    "id": "ha_hai_tay",
@@ -251,6 +251,46 @@
     "spo2 gang suc",
     "gang suc",
     "6 phut"
+   ]
+  },
+  {
+   "id": "da_dau_mong",
+   "ten": "Da đầu, móng tay chân",
+   "phut": 2,
+   "mac_dinh": "Da đầu không đỏ, không vảy, tóc không rụng. Móng trơn bóng, không rỗ, không tách móng, không dày sừng dưới móng.",
+   "tu_khoa": [
+    "da dau",
+    "mong tay",
+    "mong chan",
+    "ro mong",
+    "gau",
+    "tach mong"
+   ]
+  },
+  {
+   "id": "cao_vay_brocq",
+   "ten": "Cạo vảy theo phương pháp Brocq",
+   "phut": 2,
+   "mac_dinh": "Không có tổn thương vảy để cạo.",
+   "tu_khoa": [
+    "brocq",
+    "cao vay",
+    "auspitz",
+    "hat suong mau",
+    "mang bong",
+    "vet nen"
+   ]
+  },
+  {
+   "id": "sang_loc_sang",
+   "ten": "Sàng lọc sảng (4AT)",
+   "phut": 2,
+   "mac_dinh": "Tỉnh táo, 4AT 0 điểm.",
+   "tu_khoa": [
+    "4at",
+    "sang loc sang",
+    "lu lan cap",
+    "danh gia sang"
    ]
   }
  ]

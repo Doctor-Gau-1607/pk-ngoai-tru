@@ -2,7 +2,17 @@
 "_ghi_chu": "Mục lục ca: ma = mã ca, ck = chuyên khoa, r = số repo pk-ngoai-tru-ca-r. Tác vụ viết ca tự cập nhật.",
 "ca": [
 {
+"ma": "DL-0541",
+"ck": "Da liễu",
+"r": 3
+},
+{
 "ma": "HH-0930",
+"ck": "Hô hấp cấp tính",
+"r": 1
+},
+{
+"ma": "HH-1287",
 "ck": "Hô hấp cấp tính",
 "r": 1
 },

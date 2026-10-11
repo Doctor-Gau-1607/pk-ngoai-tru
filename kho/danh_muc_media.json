@@ -467,6 +467,28 @@
    "trang_thai": "dung_duoc",
    "thoi_luong_giay": 3.1,
    "md5": "d9966c9fad9c588ea8bc9920e84aa81a"
+  },
+  {
+   "id": "HA-DA-0003",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Vảy nến thể mảng ở mặt duỗi khuỷu tay: mảng đỏ hồng ranh giới rõ, phủ vảy trắng mịn, khô.",
+   "tep": "hinh/HA-DA-0003.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 5752777419426160078, https://storage.googleapis.com/dx-scin-public-data/dataset/images/3567983899605382882.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0004",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Vảy nến thể mảng ở cẳng chân: nhiều mảng tròn 1–3 cm, nền đỏ, phủ vảy trắng đục dày nhiều lớp, viền đỏ ngoại vi; vài sẩn nhỏ cùng tính chất.",
+   "tep": "hinh/HA-DA-0004.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -8257739059543715530, https://storage.googleapis.com/dx-scin-public-data/dataset/images/-8604333316388588792.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
