@@ -987,6 +987,93 @@
     "cay ghen mat",
     "nhuom gram ghen mat"
    ]
+  },
+  {
+   "id": "sa_bui",
+   "ten": "Siêu âm Doppler bìu (tinh hoàn, mào tinh)",
+   "nhom": "sieu_am",
+   "co_ban": false,
+   "gia": 200000,
+   "phut": 20,
+   "mac_dinh": "Hai tinh hoàn kích thước, độ hồi âm bình thường, dòng máu Doppler hai bên đối xứng. Mào tinh và thừng tinh bình thường. Không tràn dịch màng tinh hoàn, không khối.",
+   "tu_khoa": [
+    "sieu am bui",
+    "sieu am tinh hoan",
+    "sieu am doppler bui",
+    "doppler tinh hoan",
+    "sieu am mao tinh",
+    "sa bui"
+   ]
+  },
+  {
+   "id": "naat_sti",
+   "ten": "NAAT nước tiểu đầu dòng hoặc phết niệu đạo (Chlamydia trachomatis, Neisseria gonorrhoeae)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 600000,
+   "phut": 240,
+   "mac_dinh": "C. trachomatis âm tính · N. gonorrhoeae âm tính.",
+   "tu_khoa": [
+    "naat",
+    "pcr chlamydia",
+    "pcr lau",
+    "pcr nieu dao",
+    "chlamydia",
+    "lau cau",
+    "gonorrhoeae",
+    "trachomatis",
+    "nuoc tieu dau dong",
+    "benh lay qua duong tinh duc",
+    "sti"
+   ]
+  },
+  {
+   "id": "cay_nuoc_tieu",
+   "ten": "Cấy nước tiểu giữa dòng, kháng sinh đồ",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 200000,
+   "phut": 2880,
+   "mac_dinh": "Không mọc vi khuẩn sau 48 giờ.",
+   "tu_khoa": [
+    "cay nuoc tieu",
+    "nuoc tieu giua dong",
+    "khang sinh do nuoc tieu",
+    "cay vi khuan nuoc tieu"
+   ]
+  },
+  {
+   "id": "gram_nieu_dao",
+   "ten": "Nhuộm Gram dịch niệu đạo",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 80000,
+   "phut": 30,
+   "mac_dinh": "Ít bạch cầu (dưới 2 bạch cầu/vi trường dầu), không thấy song cầu Gram âm.",
+   "tu_khoa": [
+    "gram nieu dao",
+    "soi dich nieu dao",
+    "phet nieu dao",
+    "dich nieu dao",
+    "xet nghiem dich nieu dao"
+   ]
+  },
+  {
+   "id": "giang_mai",
+   "ten": "Huyết thanh giang mai (RPR/TPHA)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 100000,
+   "phut": 120,
+   "mac_dinh": "RPR không phản ứng.",
+   "tu_khoa": [
+    "giang mai",
+    "rpr",
+    "tpha",
+    "vdrl",
+    "syphilis",
+    "huyet thanh giang mai"
+   ]
   }
  ]
 }

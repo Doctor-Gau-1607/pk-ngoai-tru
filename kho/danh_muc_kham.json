@@ -425,6 +425,44 @@
     "tonometer",
     "nhan ap ke"
    ]
+  },
+  {
+   "id": "bui_tinh_hoan",
+   "ten": "Khám bìu, tinh hoàn, mào tinh, thừng tinh (phản xạ da bìu, nghiệm pháp nâng bìu), vùng bẹn",
+   "phut": 5,
+   "mac_dinh": "Hai bìu cân đối, da bìu bình thường. Hai tinh hoàn nằm trong bìu, trục dọc, mật độ chắc đều, không khối. Mào tinh và thừng tinh hai bên không to, không đau. Phản xạ da bìu hai bên còn. Vùng bẹn không khối thoát vị, không hạch.",
+   "tu_khoa": [
+    "bui",
+    "tinh hoan",
+    "mao tinh",
+    "kham bui",
+    "kham tinh hoan",
+    "thung tinh",
+    "phan xa da bui",
+    "phan xa cremaster",
+    "cremaster",
+    "prehn",
+    "nang bui",
+    "soi sang bui",
+    "ben",
+    "thoat vi ben"
+   ]
+  },
+  {
+   "id": "duong_vat_nieu_dao",
+   "ten": "Khám dương vật, miệng sáo, dịch niệu đạo (vắt niệu đạo)",
+   "phut": 3,
+   "mac_dinh": "Dương vật không loét, không sẩn, bao quy đầu lộn được. Miệng sáo không đỏ, vắt dọc niệu đạo không ra dịch.",
+   "tu_khoa": [
+    "duong vat",
+    "mieng sao",
+    "dich nieu dao",
+    "vat nieu dao",
+    "nieu dao",
+    "bao quy dau",
+    "kham sinh duc",
+    "kham bo phan sinh duc"
+   ]
   }
  ]
 }
