@@ -1332,6 +1332,101 @@
     "nhiem doc chi",
     "kim loai nang"
    ]
+  },
+  {
+   "id": "nhom_mau",
+   "ten": "Nhóm máu ABO, Rh (con và mẹ)",
+   "nhom": "xn",
+   "gia": 60000,
+   "phut": 45,
+   "mac_dinh": "Nhóm O, Rh dương",
+   "tu_khoa": [
+    "nhom mau",
+    "nhom mau me con"
+   ],
+   "co_ban": false
+  },
+  {
+   "id": "phet_mau",
+   "ten": "Phết máu ngoại vi (soi hình thái hồng cầu)",
+   "nhom": "xn",
+   "gia": 50000,
+   "phut": 60,
+   "mac_dinh": "Hồng cầu hình thái bình thường",
+   "tu_khoa": [
+    "phet mau",
+    "hinh thai hong cau",
+    "tieu ban mau"
+   ],
+   "co_ban": false
+  },
+  {
+   "id": "ferritin_sat",
+   "ten": "Ferritin, sắt huyết thanh, độ bão hòa transferrin",
+   "nhom": "xn",
+   "gia": 250000,
+   "phut": 240,
+   "mac_dinh": "Ferritin 60 ng/mL · sắt huyết thanh 14 µmol/L · bão hòa transferrin 25%",
+   "tu_khoa": [
+    "ferritin",
+    "sat huyet thanh",
+    "transferrin",
+    "bilan sat"
+   ],
+   "co_ban": false
+  },
+  {
+   "id": "hong_cau_luoi",
+   "ten": "Hồng cầu lưới",
+   "nhom": "xn",
+   "gia": 60000,
+   "phut": 60,
+   "mac_dinh": "Hồng cầu lưới 1,0%",
+   "tu_khoa": [
+    "hong cau luoi",
+    "reticulocyte"
+   ],
+   "co_ban": false
+  },
+  {
+   "id": "coombs",
+   "ten": "Nghiệm pháp Coombs trực tiếp",
+   "nhom": "xn",
+   "gia": 120000,
+   "phut": 90,
+   "mac_dinh": "Coombs trực tiếp âm tính",
+   "tu_khoa": [
+    "coombs",
+    "nghiem phap coombs"
+   ],
+   "co_ban": false
+  },
+  {
+   "id": "g6pd",
+   "ten": "Định lượng men G6PD",
+   "nhom": "xn",
+   "gia": 150000,
+   "phut": 240,
+   "mac_dinh": "G6PD trong giới hạn bình thường",
+   "tu_khoa": [
+    "g6pd",
+    "thieu men g6pd"
+   ],
+   "co_ban": false
+  },
+  {
+   "id": "dien_di_hb",
+   "ten": "Điện di huyết sắc tố (hoặc HPLC)",
+   "nhom": "xn",
+   "gia": 350000,
+   "phut": 1440,
+   "mac_dinh": "HbA 97% · HbA2 2,5% · HbF < 1%",
+   "tu_khoa": [
+    "dien di huyet sac to",
+    "hplc",
+    "hb bart"
+   ],
+   "co_ban": false
   }
  ]
 }
