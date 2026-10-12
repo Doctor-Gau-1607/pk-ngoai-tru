@@ -606,6 +606,22 @@
     "hach nach",
     "quang vu"
    ]
+  },
+  {
+   "id": "soi_thanh_quan",
+   "ten": "Soi thanh quản (gương hoặc nội soi ống mềm: niêm mạc, dây thanh, khe thanh môn)",
+   "phut": 5,
+   "mac_dinh": "Niêm mạc thanh quản hồng, hai dây thanh trắng hồng, khép kín khi phát âm, di động đối xứng, không u, không giả mạc, không dị vật.",
+   "tu_khoa": [
+    "soi thanh quan",
+    "noi soi thanh quan",
+    "soi day thanh",
+    "soi hong thanh quan",
+    "guong soi thanh quan",
+    "kham thanh quan",
+    "noi soi tmh",
+    "day thanh"
+   ]
   }
  ]
 }
