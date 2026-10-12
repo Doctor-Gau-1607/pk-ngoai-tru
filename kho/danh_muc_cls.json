@@ -1074,6 +1074,20 @@
     "syphilis",
     "huyet thanh giang mai"
    ]
+  },
+  {
+   "id": "test_ap",
+   "ten": "Test áp (patch test) tìm dị nguyên gây viêm da tiếp xúc dị ứng",
+   "nhom": "tham_do",
+   "co_ban": false,
+   "gia": 1200000,
+   "phut": 4320,
+   "mac_dinh": "Âm tính với các dị nguyên trong bộ chuẩn (đọc ở ngày 3–4 và khoảng ngày 7).",
+   "tu_khoa": [
+    "test ap",
+    "patch test",
+    "thu nghiem ap da"
+   ]
   }
  ]
 }
