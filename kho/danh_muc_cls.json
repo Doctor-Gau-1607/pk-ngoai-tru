@@ -1299,6 +1299,23 @@
     "mri ong tai trong",
     "mri goc cau tieu nao"
    ]
+  },
+  {
+   "id": "cortisol_sang",
+   "ten": "Cortisol huyết thanh 8 giờ sáng (kèm ACTH)",
+   "nhom": "xn",
+   "gia": 150000,
+   "phut": 120,
+   "mac_dinh": "Cortisol 8 giờ: 350 nmol/L (12,7 µg/dL)",
+   "tu_khoa": [
+    "cortisol",
+    "cortisol sang",
+    "cortisol mau",
+    "cortisol 8 gio",
+    "acth",
+    "cortisol huyet thanh"
+   ],
+   "co_ban": false
   }
  ]
 }
