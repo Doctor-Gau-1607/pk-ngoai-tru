@@ -1427,6 +1427,25 @@
     "hb bart"
    ],
    "co_ban": false
+  },
+  {
+   "id": "huyet_thanh_hav_hev",
+   "ten": "Huyết thanh viêm gan cấp: IgM anti-HAV, IgM anti-HEV, IgM anti-HBc",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 450000,
+   "phut": 60,
+   "mac_dinh": "IgM anti-HAV âm tính · IgM anti-HEV âm tính · IgM anti-HBc âm tính",
+   "tu_khoa": [
+    "anti hev",
+    "igm hev",
+    "viem gan e",
+    "viem gan a",
+    "igm hav",
+    "anti hav",
+    "igm anti hbc",
+    "huyet thanh viem gan"
+   ]
   }
  ]
 }

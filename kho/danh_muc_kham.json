@@ -536,6 +536,40 @@
     "anoscope",
     "soi tri"
    ]
+  },
+  {
+   "id": "hints_van_nhan",
+   "ten": "Khám vận nhãn: rung giật nhãn cầu, nghiệm pháp đẩy đầu, che mắt luân phiên (HINTS)",
+   "phut": 5,
+   "mac_dinh": "Không rung giật nhãn cầu tự phát. Đẩy đầu nhanh hai bên: mắt giữ được mục tiêu. Che mắt luân phiên: không lệch dọc.",
+   "tu_khoa": [
+    "hints",
+    "rung giat nhan cau",
+    "nystagmus",
+    "day dau nhanh",
+    "head impulse",
+    "test of skew",
+    "che mat luan phien",
+    "van nhan",
+    "tien dinh",
+    "chong mat"
+   ]
+  },
+  {
+   "id": "dix_hallpike",
+   "ten": "Nghiệm pháp Dix–Hallpike (và nghiệm pháp lăn ngang)",
+   "phut": 4,
+   "mac_dinh": "Không chóng mặt, không rung giật nhãn cầu khi nằm ngửa đầu nghiêng 45° hai bên.",
+   "tu_khoa": [
+    "dix hallpike",
+    "dix-hallpike",
+    "bppv",
+    "nghiem phap tu the",
+    "epley",
+    "roll test",
+    "lan ngang",
+    "chong mat tu the"
+   ]
   }
  ]
 }
