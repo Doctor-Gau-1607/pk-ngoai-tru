@@ -500,6 +500,28 @@
    "nguon": "SCIN (Google Research & Stanford), case 4004541750295193825, https://storage.googleapis.com/dx-scin-public-data/dataset/images/-2214538966673627919.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0006",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Chốc kèm viêm mô tế bào nhẹ ở cẳng chân: tổn thương trợt nông phủ vảy tiết vàng lốm đốm, nền đỏ ướt, quầng đỏ xung quanh.",
+   "tep": "hinh/HA-DA-0006.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 4526601686447943043, https://storage.googleapis.com/dx-scin-public-data/dataset/images/-3220187335048171835.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0007",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Chốc kèm viêm mô tế bào nhẹ ở cẳng chân (nhìn rộng): tổn thương phủ vảy tiết vàng, quầng đỏ khoảng 5 cm, vài sẩn đỏ nhỏ cạnh bên và một đốm nâu phẳng.",
+   "tep": "hinh/HA-DA-0007.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 4526601686447943043, https://storage.googleapis.com/dx-scin-public-data/dataset/images/3492237304032114736.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }

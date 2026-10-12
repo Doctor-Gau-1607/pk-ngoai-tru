@@ -1195,6 +1195,25 @@
     "may thu duong",
     "chich dau ngon tay"
    ]
+  },
+  {
+   "id": "cay_dich_da",
+   "ten": "Nhuộm Gram và cấy dịch, mủ tổn thương da (kháng sinh đồ)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 250000,
+   "phut": 2880,
+   "mac_dinh": "Nhuộm Gram: ít bạch cầu, vi khuẩn hệ da. Cấy: không mọc vi khuẩn gây bệnh.",
+   "tu_khoa": [
+    "cay dich vet thuong",
+    "cay mu",
+    "cay dich ton thuong",
+    "gram dich ton thuong",
+    "swab da",
+    "cay dich da",
+    "nhuom gram mu",
+    "khang sinh do da"
+   ]
   }
  ]
 }
