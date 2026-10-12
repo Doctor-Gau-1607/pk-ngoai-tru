@@ -1166,6 +1166,35 @@
     "pertussis",
     "cay ho ga"
    ]
+  },
+  {
+   "id": "test_thai",
+   "ten": "Que thử thai nước tiểu (hCG, làm tại giường)",
+   "nhom": "tham_do",
+   "co_ban": true,
+   "gia": 20000,
+   "phut": 5,
+   "mac_dinh": "Âm tính",
+   "tu_khoa": [
+    "que thu thai",
+    "test thai",
+    "thu thai",
+    "hcg nuoc tieu"
+   ]
+  },
+  {
+   "id": "glu_mm",
+   "ten": "Đường huyết mao mạch (máy thử tại giường)",
+   "nhom": "tham_do",
+   "co_ban": true,
+   "gia": 20000,
+   "phut": 3,
+   "mac_dinh": "5,6 mmol/L",
+   "tu_khoa": [
+    "duong huyet mao mach",
+    "may thu duong",
+    "chich dau ngon tay"
+   ]
   }
  ]
 }
