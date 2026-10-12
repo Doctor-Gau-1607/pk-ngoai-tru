@@ -1136,6 +1136,36 @@
     "cay lien cau",
     "strep culture"
    ]
+  },
+  {
+   "id": "lipase",
+   "ten": "Lipase huyết thanh",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 80000,
+   "phut": 45,
+   "mac_dinh": "Lipase 38 U/L",
+   "tu_khoa": [
+    "lipase",
+    "amylase",
+    "men tuy"
+   ]
+  },
+  {
+   "id": "pcr_ho_ga",
+   "ten": "PCR hoặc cấy Bordetella pertussis (dịch tỵ hầu)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 900000,
+   "phut": 2880,
+   "mac_dinh": "Âm tính",
+   "tu_khoa": [
+    "pcr ho ga",
+    "ho ga",
+    "bordetella",
+    "pertussis",
+    "cay ho ga"
+   ]
   }
  ]
 }
