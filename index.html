@@ -183,6 +183,8 @@ h2,h3,h4{font-family:var(--f-display);margin:0;line-height:1.25}
 .chip{display:inline-flex;font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;white-space:nowrap;background:var(--panel-2);color:var(--muted)}
 .chip.ok{background:var(--ok-soft);color:var(--ok)}.chip.warn{background:var(--warn-soft);color:var(--warn)}
 .chip.bad{background:var(--bad-soft);color:var(--bad)}.chip.acc{background:var(--accent-soft);color:var(--accent)}
+.hauqua{margin-top:10px;padding:12px 16px;border-radius:10px;background:var(--bad-soft);border-left:3px solid var(--bad)}.hauqua p{margin:4px 0 0}
+.tiepdien{padding:14px 18px;border-radius:10px;background:var(--accent-soft);border-left:3px solid var(--accent)}
 .outcome{margin-top:16px;padding:14px 18px;border-radius:10px;background:var(--panel-2);border-left:3px solid var(--warn)}
 .learn{margin:10px 0 0;padding-left:18px;display:grid;gap:8px;max-width:78ch}
 .spec{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:6px 18px;font-size:13px;margin-top:10px}
@@ -325,7 +327,9 @@ let S;
 function newVisit(i){ return {i, facts:new Set, exams:new Set, tests:new Set, dx:null, dxText:'', diff:new Set, diffText:[], mx:new Set, mxText:[], dispo:null, dispoText:'', min:0, history:[],
   th:Object.fromEntries(TAB_KEYS.map(k => [k, []])), seen:Object.fromEntries(TAB_KEYS.map(k => [k, 0])), lastPt:'', lastWho:'benh_nhan', lastQ:'', bubAt:0, lastNurse:'', lastExam:null} }
 function firstSpeaker(){ return P.nguoi_nha && P.tuoi < 12 ? 'nguoi_nha' : 'benh_nhan' }
-function reset(){ S = {v:0, visits:[newVisit(0)], done:false, busy:'', error:{}, view:'ban', open:{left:null, right:null}}; openVisit(V()) }
+function reset(){ S = {v:0, visits:[newVisit(0)], done:false, giua:null, busy:'', error:{}, view:'ban', open:{left:null, right:null}}; openVisit(V()) }
+/* Đang xem phiếu chấm (cuối ca, hoặc giữa hai lượt) */
+const xemPhieu = () => !!(S && (S.done || S.giua != null));
 function openVisit(v){ const w = firstSpeaker(); v.th.benhnhan.push({from:'pt', text:L(v.i).loi_mo, nguoi:w}); v.lastPt = L(v.i).loi_mo; v.lastWho = w }
 const V = () => S.visits[S.v];
 const L = (i = S.v) => CA.luot[i];
@@ -433,7 +437,7 @@ ${hoSoLinh()}
 }
 /* Hồ sơ điều dưỡng được biết: phiếu tiếp đón, hành chính, sinh hiệu, việc đã làm. Không đưa sự thật giấu, chẩn đoán, đáp án, kết cục. */
 function hoSoLinh(){
-  if(!inCase || S.done || !CA) return '# Hồ sơ Linh nắm\nHiện chưa có bệnh nhân nào trong phòng.';
+  if(!inCase || xemPhieu() || !CA) return '# Hồ sơ Linh nắm\nHiện chưa có bệnh nhân nào trong phòng.';
   const v = V(), Lx = L(), sh = Lx.sinh_hieu;
   const xn = [...v.tests].map(id => { const t = testInfo(id, Lx); return `- ${t.ten}: ${t.r}` }).join('\n') || '- Chưa làm xét nghiệm nào.';
   const kham = [...v.exams].filter(id => DD_KHAM.includes(id)).map(id => `- ${examInfo(id, Lx).ten}: ${examInfo(id, Lx).a}`).join('\n');
@@ -642,10 +646,27 @@ function endVisit(){
   if(!v.mxText.length) miss.push('điều trị (tab Điều trị)');
   if(!v.dispo) miss.push('hướng xử trí (tab Kết luận)');
   if(miss.length){ S.error.ketluan = 'Còn thiếu: ' + miss.join('; ') + '.'; ui(); return }
-  if(S.v < CA.luot.length - 1){
-    S.v++; const n = newVisit(S.v); S.visits.push(n); openVisit(n);
-    S.error = {}; S.view = 'ban'; S.open = {left:null, right:null}; drawScene(); ui(); showTriage();
-  } else { S.done = true; ui() }
+  S.error = {}; S.open = {left:null, right:null};
+  if(S.v < CA.luot.length - 1){ S.giua = S.visits.length - 1; ui(); $('#result').scrollTop = 0 }   // chấm, phân tích lượt này trước khi sang lượt sau
+  else { S.done = true; ui() }
+}
+/* Sau phiếu chấm giữa lượt: ca tiếp diễn theo hướng xử trí chuẩn */
+function sangLuot(){
+  S.giua = null; $('#result').hidden = true;
+  S.v++; const n = newVisit(S.v); S.visits.push(n); openVisit(n);
+  S.error = {}; S.view = 'ban'; S.open = {left:null, right:null}; drawScene(); ui(); showTriage();
+}
+/* Hậu quả khi chọn sai hướng xử trí: lấy từ ca (luot.neu_sai[<lựa chọn>]); chưa có thì dùng câu chung theo chiều sai */
+const BAC_XT = {ve_hen:0, theo_doi:1, chuyen_tuyen:2, nhap_vien:2, cap_cuu:3};
+function hauQua(v, Lx){
+  if(!v.dispo || !Lx.ket_luan || v.dispo === Lx.ket_luan) return '';
+  const rieng = Lx.neu_sai && Lx.neu_sai[v.dispo];
+  const chung = BAC_XT[v.dispo] < BAC_XT[Lx.ket_luan]
+    ? 'Người bệnh lẽ ra cần ' + KET_LUAN[Lx.ket_luan].toLowerCase() + '. Với lựa chọn của bạn, người bệnh không được theo dõi, điều trị đúng mức và có nguy cơ diễn tiến nặng mà không ai phát hiện kịp.'
+    : BAC_XT[v.dispo] > BAC_XT[Lx.ket_luan]
+    ? 'Ca này chưa cần mức xử trí đó. Với lựa chọn của bạn, người bệnh tốn thêm chi phí, đi lại, nằm viện không cần thiết và tuyến trên thêm quá tải.'
+    : 'Lựa chọn của bạn khác hướng xử trí chuẩn (' + KET_LUAN[Lx.ket_luan].toLowerCase() + '); xem phần Xử trí chuẩn để biết vì sao.';
+  return `<div class="hauqua"><span class="eyebrow">Nếu theo quyết định của bạn</span><p>${esc(rieng || chung)}</p>${rieng ? '' : '<p class="small">(Mô tả chung; ca này chưa có đoạn hậu quả riêng cho lựa chọn này.)</p>'}</div>`;
 }
 
 /* ================= Vẽ người và phòng (SVG tham số) ================= */
@@ -761,7 +782,7 @@ const TABS = {left:[['benhnhan', 'Hỏi bệnh'], ['kham', 'Khám'], ['chandoan'
 function moTab(side, tab){
   S.open[side] = S.open[side] === tab ? null : tab;
   if(S.open[side] && innerWidth < 980) S.open[side === 'left' ? 'right' : 'left'] = null; /* màn hẹp: chỉ mở một khung */
-  ui(); setTimeout(() => { focusTab(S.open[side]); if(inCase && !S.done) placeBubbles() }, 280);
+  ui(); setTimeout(() => { focusTab(S.open[side]); if(inCase && !xemPhieu()) placeBubbles() }, 280);
 }
 const TAB_INFO = {
   benhnhan:{title:'Lịch sử hỏi bệnh', ph:''},
@@ -776,7 +797,7 @@ function renderTop(){
   const cost = S.visits.reduce((s, v) => s + [...v.tests].reduce((a, id) => a + testInfo(id, L(v.i)).gia, 0), 0);
   const m = V().min;
   $('#topbar').innerHTML = `<div class="case-no">Ca<b>${esc(CA.ma_ca)}</b></div>
-    <div class="title">${esc(CA.ly_do_kham || '')} · ${esc(S.done ? 'Kết thúc' : L().ten)}</div>
+    <div class="title">${esc(CA.ly_do_kham || '')} · ${esc(S.done ? 'Kết thúc' : S.giua != null ? 'Phiếu chấm ' + L().ten : L().ten)}</div>
     <div class="hud"><div class="m"><span>Thời gian</span><b>${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}</b></div>
       <div class="m cost"><span>Chi phí CLS</span><b>${VND(cost)}</b></div>
       ${trongPhien() ? `<div class="m"><span>Lượt ngẫu nhiên</span><b>${PHIEN.i + 1}/${PHIEN.ds.length}</b></div><button class="tbtn" id="btnNext" title="Bỏ qua ca này, sang ca kế tiếp của lượt">⏭ Ca kế tiếp</button>` : '<button class="tbtn" id="btnNext">🎲 Bệnh nhân khác</button>'}<button class="tbtn" id="btnLobby">🏠 Màn hình đầu</button><button class="tbtn" id="btnBug">⚠ Báo lỗi</button><button class="tbtn" id="btnSet">⚙ Cài đặt</button></div>`;
@@ -818,7 +839,7 @@ function renderOverlays(){
 /* Ô hỏi bệnh: nằm đúng trên màn hình Hồ sơ bệnh án trong cảnh bàn khám; ở cảnh giường khám (không có màn hình) thì là thanh dưới đáy */
 function placeEmr(){
   const emr = $('#emr');
-  if(!inCase || S.done){ emr.hidden = true; return }
+  if(!inCase || xemPhieu()){ emr.hidden = true; return }
   emr.hidden = false;
   const scr = S.view === 'ban' && document.getElementById('emr-screen');
   if(scr){ const st = $('#stage').getBoundingClientRect(), r = scr.getBoundingClientRect();
@@ -1028,11 +1049,11 @@ function showLobby(tab){
 /* Báo lỗi: mở phiếu GitHub điền sẵn mã ca, lượt, tab, mục khám/ảnh vừa xem */
 const tenTab = (side, k) => { const x = k && (TABS[side] || []).find(([id]) => id === k); return x ? x[1] : '—' };
 function baoLoi(){
-  const v = inCase && !S.done ? V() : null;
+  const v = inCase && !xemPhieu() ? V() : null;
   const media = v ? (v.th.kham.filter(x => x.from === 'res' && x.media && x.media.length).slice(-1)[0] || null) : null;
   const dong = [
     '**Mã ca:** ' + (CA ? CA.ma_ca : '(chưa vào ca)'),
-    v ? '**Lượt:** ' + L().ten : '**Màn hình:** ' + (S && S.done ? 'Phiếu nhận xét cuối ca' : 'Khác'),
+    v ? '**Lượt:** ' + L().ten : '**Màn hình:** ' + (S && S.done ? 'Phiếu nhận xét cuối ca' : S && S.giua != null ? 'Phiếu chấm giữa lượt' : 'Khác'),
     v ? '**Tab đang mở:** trái ' + tenTab('left', S.open.left) + ' · phải ' + tenTab('right', S.open.right) : '',
     v && v.lastExam ? '**Mục khám vừa xem:** ' + v.lastExam.title : '',
     media ? '**Media vừa hiện:** ' + media.media.map(x => (x.id || '') + ' (' + x.vi_tri + ')').join(', ') : '',
@@ -1177,7 +1198,7 @@ async function layNhanXet(){
   if(!hasKey() || !s.nx || s.nxDang) return;
   const k = s.visits.findIndex((v, i) => !(s.nx[i] && (s.nx[i].st === 'xong' || s.nx[i].st === 'loi')));
   if(k < 0) return;
-  s.nxDang = true; s.nx[k] = {st:'dang'}; if(s === S && s.done) renderResult();
+  s.nxDang = true; s.nx[k] = {st:'dang'}; if(s === S && (s.done || s.giua != null)) renderResult();
   let kq;
   try { const data = await goiAI(heThongNhanXet(k), [{role:'user', content:'Viết nhận xét chi tiết cho lượt khám này.'}], SCHEMA_NX);
     data.chan_doan = Object.assign({danh_gia:'chua_ghi', thanh_phan:[], thua_sai:[], nhan_xet:''}, data.chan_doan || {});
@@ -1186,11 +1207,12 @@ async function layNhanXet(){
     kq = {st:'xong', data} }
   catch(e){ kq = {st:'loi', err:e.message || String(e)} }
   s.nx[k] = kq; s.nxDang = false;
-  if(s === S && s.done){ renderResult(); layNhanXet() }
+  if(s === S && (s.done || s.giua != null)){ renderResult(); layNhanXet() }
 }
 function renderResult(){
   if(!S.nx) S.nx = {};
-  const R = S.visits.map(scoreVisit), total = Math.round(R.reduce((s, r) => s + r.total, 0) / R.length);
+  const giua = !S.done && S.giua != null, DS = giua ? S.visits.slice(0, S.giua + 1) : S.visits;
+  const R = DS.map(scoreVisit), total = giua ? Math.round(R[R.length - 1].total) : Math.round(R.reduce((s, r) => s + r.total, 0) / R.length);
   const g = total >= 85 ? ['Xuất sắc', 'ok'] : total >= 70 ? ['Đạt tốt', 'ok'] : total >= 50 ? ['Đạt', 'warn'] : ['Cần ôn lại', 'bad'];
   const C = 2 * Math.PI * 60, VL = {c:['ok', 'Đúng'], a:['acc', 'Chấp nhận'], w:['warn', 'Không phù hợp'], h:['bad', 'Có hại']};
   const VC = {e:['ok', 'Cần làm'], u:['ok', 'Hữu ích'], a:['acc', 'Chấp nhận'], n:['bad', 'Không cần']};
@@ -1245,7 +1267,7 @@ function renderResult(){
     const mucChon = Lx.xu_tri.map((m, i) => [m, i]).filter(([m, i]) => v.mx.has(i)), boSot = Lx.xu_tri.filter((m, i) => m.v === 'c' && !v.mx.has(i));
     const thuocBan = d ? d.thuoc : [];
     const s5 = `<div class="fb-s"><h4>5. Xử trí <span class="diem">${pt('Xử trí')}/20</span></h4>
-      <div class="kq"><span class="chip ${r.dispoOk ? 'ok' : 'bad'}">${r.dispoOk ? 'Hướng xử trí đúng' : 'Hướng xử trí chưa đúng'}</span> <b>Bạn chọn:</b> ${esc(v.dispoText || '(không ghi)')}${r.dispoOk ? '' : ` · <b>Đáp án:</b> ${esc(KET_LUAN[Lx.ket_luan])} (−5 điểm)`}</div>
+      <div class="kq"><span class="chip ${r.dispoOk ? 'ok' : 'bad'}">${r.dispoOk ? 'Hướng xử trí đúng' : 'Hướng xử trí chưa đúng'}</span> <b>Bạn chọn:</b> ${esc(v.dispoText || '(không ghi)')}${r.dispoOk ? '' : ` · <b>Đáp án:</b> ${esc(KET_LUAN[Lx.ket_luan])} (−5 điểm)`}</div>${hauQua(v, Lx)}
       <div class="kq"><b>Y lệnh, tư vấn bạn ghi:</b>${v.mxText.length ? `<ul>${v.mxText.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : ' (không ghi)'}</div>
       ${d ? `<div class="kq"><span class="chip ${dx[0]}">${dx[1]}</span></div>
         ${d.xu_tri.dung.length ? `<div class="tp"><b>Làm đúng:</b><ul>${d.xu_tri.dung.map(x => `<li class="co">✓ ${esc(x)}</li>`).join('')}</ul></div>` : ''}
@@ -1260,6 +1282,25 @@ function renderResult(){
     return `<div class="fb-v"><h3>${esc(Lx.ten)} · ${Math.round(r.total)}/100</h3>${s1}${s2}${s3}${s4}${s5}</div>`;
   };
   const sc = CA.so_cai;
+  if(giua){
+    const k = S.giua, v = S.visits[k], Lk = L(v.i), Ln = L(v.i + 1), r = R[k];
+    $('#result').innerHTML = `<div class="result-wrap"><div class="result">
+    <aside class="card score"><span class="eyebrow">Phiếu chấm ${esc(Lk.ten)} · ${esc(CA.ma_ca)}</span>
+      <svg class="ring" viewBox="0 0 150 150" role="img" aria-label="${total} trên 100 điểm"><circle cx="75" cy="75" r="60" fill="none" style="stroke:var(--panel-2)" stroke-width="12"/><circle cx="75" cy="75" r="60" fill="none" style="stroke:var(--${g[1]})" stroke-width="12" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - total / 100)}" transform="rotate(-90 75 75)"/><text x="75" y="83" text-anchor="middle" font-size="36" style="fill:var(--ink);font-family:var(--f-mono)">${total}</text><text x="75" y="102" text-anchor="middle" font-size="12" style="fill:var(--muted)">/ 100 điểm</text></svg>
+      <div class="grade" style="color:var(--${g[1]})">${g[0]}</div>
+      <div class="bars">${r.p.map(([n, s, m]) => `<div class="bar-row"><span>${n}</span><b class="mono">${Math.round(s)}/${m}</b><div class="bar"><i style="width:${s / m * 100}%"></i></div></div>`).join('')}</div>
+      <div class="small" style="margin-top:12px">Ca còn ${CA.luot.length - k - 1} lượt nữa. Điểm cả ca là trung bình các lượt.</div>
+      <div style="margin-top:12px;display:grid;gap:8px"><button class="btn" id="nextLuot">Sang ${esc(Ln.ten)} →</button><button class="btn ghost" id="toHome">Về màn hình đầu</button></div></aside>
+    <section class="card fb"><span class="eyebrow">${esc(P.ten)} · ${P.gioi}, ${P.tuoi} tuổi</span><h2>Nhận xét ${esc(Lk.ten)}</h2>
+      ${fbv(v, r, k)}
+      <div class="fb-v"><div class="tiepdien"><b>Từ đây ca tiếp diễn theo hướng xử trí chuẩn</b> (${esc(KET_LUAN[Lk.ket_luan] || '')}, đơn thuốc và lời dặn như phần Xử trí chuẩn ở trên), dù lựa chọn của bạn là gì. ${esc(Ln.ten)} bắt đầu từ diễn tiến đó.</div>
+      <div class="row" style="justify-content:flex-start;margin-top:12px"><button class="btn" id="nextLuot2">Sang ${esc(Ln.ten)} →</button></div></div>
+    </section></div></div>`;
+    $('#nextLuot').onclick = sangLuot; $('#nextLuot2').onclick = sangLuot; $('#toHome').onclick = () => showLobby();
+    document.querySelectorAll('[data-nx]').forEach(b => b.onclick = () => { S.nx = {}; S.nxDang = false; renderResult() });
+    layNhanXet();
+    return;
+  }
   $('#result').innerHTML = `<div class="result-wrap"><div class="result">
     <aside class="card score"><span class="eyebrow">Phiếu chấm · ${esc(CA.ma_ca)}</span>
       <svg class="ring" viewBox="0 0 150 150" role="img" aria-label="${total} trên 100 điểm"><circle cx="75" cy="75" r="60" fill="none" style="stroke:var(--panel-2)" stroke-width="12"/><circle cx="75" cy="75" r="60" fill="none" style="stroke:var(--${g[1]})" stroke-width="12" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - total / 100)}" transform="rotate(-90 75 75)"/><text x="75" y="83" text-anchor="middle" font-size="36" style="fill:var(--ink);font-family:var(--f-mono)">${total}</text><text x="75" y="102" text-anchor="middle" font-size="12" style="fill:var(--muted)">/ 100 điểm</text></svg>
@@ -1285,14 +1326,14 @@ function renderResult(){
 
 function ui(){
   renderTop();
-  if(S.done){ $('#result').hidden = false; placeEmr(); renderResult(); return }
+  if(xemPhieu()){ $('#result').hidden = false; placeEmr(); renderResult(); return }
   TAB_KEYS.forEach(renderPanel); renderOverlays(); renderRails();
   $('#stage').scrollLeft = 0; $('#stage').scrollTop = 0;
 }
 $('#emrSend').onclick = () => { const ta = $('#in-benhnhan'), t = ta.value; ta.value = ''; gui('benhnhan', t) };
 $('#in-benhnhan').addEventListener('keydown', e => { if(e.key === 'Enter' && !e.shiftKey){ e.preventDefault(); $('#emrSend').click() } });
 $('#emrLog').onclick = () => moTab('left', 'benhnhan');
-let rzRaf; addEventListener('resize', () => { cancelAnimationFrame(rzRaf); rzRaf = requestAnimationFrame(() => { if(inCase && !S.done){ placeEmr(); placeBubbles() } }) });
+let rzRaf; addEventListener('resize', () => { cancelAnimationFrame(rzRaf); rzRaf = requestAnimationFrame(() => { if(inCase && !xemPhieu()){ placeEmr(); placeBubbles() } }) });
 $('#vBan').onclick = () => { S.view = 'ban'; drawScene(); ui() };
 $('#vGiuong').onclick = () => { S.view = 'giuong'; drawScene(); ui() };
 $('#boot').hidden = true;
