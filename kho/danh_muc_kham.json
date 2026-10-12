@@ -590,6 +590,22 @@
     "gap co tay",
     "phan biet hai diem"
    ]
+  },
+  {
+   "id": "vu",
+   "ten": "Khám vú, ngực (tuyến vú, núm vú, hạch nách)",
+   "phut": 5,
+   "mac_dinh": "Hai bên không thấy mô tuyến to, không khối, không co kéo da hoặc núm vú, núm vú không tiết dịch, hạch nách không sờ thấy.",
+   "tu_khoa": [
+    "vu",
+    "kham vu",
+    "tuyen vu",
+    "nu hoa tuyen vu",
+    "nguc to",
+    "nuom vu",
+    "hach nach",
+    "quang vu"
+   ]
   }
  ]
 }

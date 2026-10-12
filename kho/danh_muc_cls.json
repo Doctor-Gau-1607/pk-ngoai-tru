@@ -1476,6 +1476,115 @@
     "thu nghiem lay da",
     "di nguyen"
    ]
+  },
+  {
+   "id": "que_nt",
+   "ten": "Que thử nước tiểu 10 thông số (tại giường)",
+   "nhom": "tham_do",
+   "co_ban": true,
+   "gia": 15000,
+   "phut": 5,
+   "mac_dinh": "Bilirubin, urobilinogen, protein, glucose, ceton, hồng cầu, bạch cầu, nitrit đều âm tính; tỷ trọng 1.015, pH 6.",
+   "tu_khoa": [
+    "que thu nuoc tieu",
+    "que nuoc tieu",
+    "que thu 10 thong so",
+    "bilirubin nieu",
+    "que thu bilirubin",
+    "thu nuoc tieu tai giuong"
+   ]
+  },
+  {
+   "id": "test_nhanh_virus",
+   "ten": "Test nhanh HBsAg, anti-HCV, anti-HIV (tại giường)",
+   "nhom": "tham_do",
+   "co_ban": false,
+   "gia": 100000,
+   "phut": 20,
+   "mac_dinh": "HBsAg âm tính. Anti-HCV âm tính. Anti-HIV âm tính.",
+   "tu_khoa": [
+    "test nhanh hbsag",
+    "test nhanh viem gan b",
+    "test nhanh hcv",
+    "test nhanh hiv",
+    "test nhanh 3 benh",
+    "test nhanh virus",
+    "test nhanh benh lay qua mau",
+    "que thu hbsag"
+   ]
+  },
+  {
+   "id": "hbv_huyet_thanh",
+   "ten": "Huyết thanh học HBV: HBeAg, anti-HBe, anti-HBc IgM và toàn phần, HBsAg định lượng, anti-HDV",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 600000,
+   "phut": 1440,
+   "mac_dinh": "HBsAg âm tính. HBeAg âm, anti-HBe âm, anti-HBc IgM âm, anti-HBc toàn phần âm, anti-HDV âm.",
+   "tu_khoa": [
+    "hbeag",
+    "anti hbe",
+    "anti hbc",
+    "hbc igm",
+    "hbsag dinh luong",
+    "qhbsag",
+    "anti hdv",
+    "hdv",
+    "huyet thanh viem gan b",
+    "dau an viem gan b"
+   ]
+  },
+  {
+   "id": "hbv_dna",
+   "ten": "HBV DNA định lượng (PCR)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 500000,
+   "phut": 4320,
+   "mac_dinh": "HBV DNA không phát hiện (dưới 20 IU/mL).",
+   "tu_khoa": [
+    "hbv dna",
+    "tai luong hbv",
+    "pcr hbv",
+    "tai luong virus viem gan b",
+    "dna viem gan b",
+    "hbv-dna"
+   ]
+  },
+  {
+   "id": "afp",
+   "ten": "AFP huyết thanh (alpha-fetoprotein)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 120000,
+   "phut": 240,
+   "mac_dinh": "AFP 3 ng/mL (bình thường dưới 10).",
+   "tu_khoa": [
+    "afp",
+    "alpha fetoprotein",
+    "alpha-fetoprotein",
+    "chi diem ung thu gan",
+    "dau an ung thu gan",
+    "marker ung thu gan"
+   ]
+  },
+  {
+   "id": "fibroscan",
+   "ten": "Đo độ đàn hồi gan (FibroScan)",
+   "nhom": "sieu_am",
+   "co_ban": false,
+   "gia": 400000,
+   "phut": 30,
+   "mac_dinh": "Độ đàn hồi gan 5,0 kPa (F0–F1), CAP 220 dB/m.",
+   "tu_khoa": [
+    "fibroscan",
+    "dan hoi gan",
+    "do dan hoi gan",
+    "do xo hoa gan",
+    "sieu am dan hoi",
+    "elastography",
+    "do do cung gan"
+   ]
   }
  ]
 }
