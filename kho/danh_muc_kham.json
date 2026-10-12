@@ -398,6 +398,33 @@
     "kham tam than",
     "tinh than"
    ]
+  },
+  {
+   "id": "giac_mac_fluorescein",
+   "ten": "Giác mạc: nhỏ fluorescein, soi đèn (đèn khe hoặc đèn xanh)",
+   "phut": 5,
+   "mac_dinh": "Giác mạc trong, không bắt màu fluorescein.",
+   "tu_khoa": [
+    "fluorescein",
+    "nhuom fluorescein",
+    "giac mac",
+    "den khe",
+    "soi giac mac",
+    "nhuom giac mac"
+   ]
+  },
+  {
+   "id": "nhan_ap",
+   "ten": "Đo nhãn áp (nhãn áp kế hoặc ước lượng bằng ngón tay)",
+   "phut": 5,
+   "mac_dinh": "Nhãn áp bình thường, hai mắt đều nhau.",
+   "tu_khoa": [
+    "nhan ap",
+    "do nhan ap",
+    "ap luc nhan cau",
+    "tonometer",
+    "nhan ap ke"
+   ]
   }
  ]
 }

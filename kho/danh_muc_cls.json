@@ -954,6 +954,39 @@
     "egfr creatinin cystatin",
     "mlct cystatin"
    ]
+  },
+  {
+   "id": "test_adeno",
+   "ten": "Test nhanh kháng nguyên adenovirus (dịch kết mạc)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 250000,
+   "phut": 15,
+   "mac_dinh": "Test nhanh adenovirus: âm tính.",
+   "tu_khoa": [
+    "test adenovirus",
+    "adenovirus",
+    "test nhanh adenovirus",
+    "test nhanh mat do",
+    "khang nguyen adenovirus"
+   ]
+  },
+  {
+   "id": "phet_ket_mac",
+   "ten": "Phết dịch kết mạc: nhuộm Gram và cấy",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 200000,
+   "phut": 2880,
+   "mac_dinh": "Nhuộm Gram: ít bạch cầu, không thấy vi khuẩn. Cấy: không mọc vi khuẩn gây bệnh.",
+   "tu_khoa": [
+    "phet ket mac",
+    "cay ket mac",
+    "gram ket mac",
+    "cay dich mat",
+    "cay ghen mat",
+    "nhuom gram ghen mat"
+   ]
   }
  ]
 }
