@@ -1446,6 +1446,36 @@
     "igm anti hbc",
     "huyet thanh viem gan"
    ]
+  },
+  {
+   "id": "ige_tong",
+   "ten": "IgE toàn phần huyết thanh",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 150000,
+   "phut": 1440,
+   "mac_dinh": "IgE toàn phần trong giới hạn bình thường",
+   "tu_khoa": [
+    "ige",
+    "ige toan phan",
+    "immunoglobulin e",
+    "khang the ige"
+   ]
+  },
+  {
+   "id": "test_lay_da",
+   "ten": "Test lẩy da (prick test) với dị nguyên",
+   "nhom": "tham_do",
+   "co_ban": false,
+   "gia": 400000,
+   "phut": 60,
+   "mac_dinh": "Âm tính với các dị nguyên thử; chứng dương tính, chứng âm tính đúng",
+   "tu_khoa": [
+    "test lay da",
+    "prick test",
+    "thu nghiem lay da",
+    "di nguyen"
+   ]
   }
  ]
 }

@@ -544,6 +544,39 @@
    "nguon": "SCIN (Google Research & Stanford), case -412127215807292326, dataset/images/3991523546538917234.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0012",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay cấp ở vùng hông – sườn: nhiều đám sẩn phù đỏ hồng nổi gồ, ranh giới rõ, nối thành mảng; vài vệt đỏ do gãi.",
+   "tep": "hinh/HA-DA-0012.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -8352699628138095738, dataset/images/8977765022181205065.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0014",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay cấp ở cánh tay – cẳng tay: các vệt sẩn phù đỏ nổi gờ dài theo hướng gãi, kèm vài mảng đỏ hồng.",
+   "tep": "hinh/HA-DA-0014.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -4961646511590674396, dataset/images/-1611841910156196691.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0015",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay cấp ở đùi: nhiều mảng sẩn phù hồng, ranh giới rõ, một số nối thành đám, rải trên da có lông.",
+   "tep": "hinh/HA-DA-0015.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 1610643527361135382, dataset/images/-7782995076528179992.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
