@@ -1623,6 +1623,24 @@
     "do chuc nang ho hap",
     "do hen"
    ]
+  },
+  {
+   "id": "choc_dich_co_truong",
+   "ten": "Chọc dịch cổ trướng chẩn đoán (đếm bạch cầu đa nhân, protein, albumin, cấy)",
+   "nhom": "xn",
+   "gia": 300000,
+   "phut": 240,
+   "mac_dinh": "Dịch vàng trong, bạch cầu đa nhân trung tính dưới 250/mm³, cấy âm tính.",
+   "tu_khoa": [
+    "choc dich co truong",
+    "choc dich bung",
+    "choc o bung",
+    "dich co truong",
+    "dem bach cau dich bung",
+    "vpmnknp",
+    "viem phuc mac nhiem khuan nguyen phat",
+    "saag"
+   ]
   }
  ]
 }
