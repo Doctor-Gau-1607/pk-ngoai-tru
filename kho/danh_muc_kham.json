@@ -380,6 +380,24 @@
     "mmse",
     "tinh nho"
    ]
+  },
+  {
+   "id": "tam_than",
+   "ten": "Khám tâm thần (dáng vẻ, khí sắc, tư duy, nhận thức, ý tưởng tự hại)",
+   "phut": 10,
+   "mac_dinh": "Tỉnh, hợp tác, khí sắc bình thường, tư duy mạch lạc, không hoang tưởng, không ảo giác, không ý tưởng tự sát.",
+   "tu_khoa": [
+    "tam than",
+    "trang thai tam than",
+    "khi sac",
+    "tu duy",
+    "y tuong tu sat",
+    "tu sat",
+    "tu hai",
+    "khai thac tam ly",
+    "kham tam than",
+    "tinh than"
+   ]
   }
  ]
 }

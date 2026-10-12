@@ -938,6 +938,22 @@
     "noi soi ruot gia",
     "noi soi duong tieu hoa duoi"
    ]
+  },
+  {
+   "id": "cystatin_c",
+   "ten": "Cystatin C huyết thanh (ước tính eGFR creatinin–cystatin C)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 250000,
+   "phut": 120,
+   "mac_dinh": "Cystatin C 0,85 mg/L · eGFR creatinin–cystatin C > 90 mL/ph/1,73m²",
+   "tu_khoa": [
+    "cystatin c",
+    "cystatin",
+    "egfr cr-cys",
+    "egfr creatinin cystatin",
+    "mlct cystatin"
+   ]
   }
  ]
 }
