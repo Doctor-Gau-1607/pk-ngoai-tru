@@ -1214,6 +1214,39 @@
     "nhuom gram mu",
     "khang sinh do da"
    ]
+  },
+  {
+   "id": "cho_dich_nao_tuy",
+   "ten": "Chọc dò tủy sống, xét nghiệm dịch não tủy",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 300000,
+   "phut": 90,
+   "mac_dinh": "Dịch trong, áp lực bình thường, protein và đường bình thường, không bạch cầu",
+   "tu_khoa": [
+    "choc do tuy song",
+    "choc dich nao tuy",
+    "dich nao tuy",
+    "dnt",
+    "choc do that lung",
+    "lumbar puncture"
+   ]
+  },
+  {
+   "id": "dien_nao",
+   "ten": "Điện não đồ",
+   "nhom": "tham_do",
+   "co_ban": false,
+   "gia": 250000,
+   "phut": 60,
+   "mac_dinh": "Nhịp nền bình thường theo tuổi, không sóng kịch phát",
+   "tu_khoa": [
+    "dien nao",
+    "dien nao do",
+    "eeg",
+    "song nao",
+    "ghi dien nao"
+   ]
   }
  ]
 }
