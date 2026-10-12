@@ -622,6 +622,55 @@
     "noi soi tmh",
     "day thanh"
    ]
+  },
+  {
+   "id": "noi_soi_mui",
+   "ten": "Nội soi mũi xoang (ống mềm hoặc ống cứng: khe giữa, khe trên, vách ngăn, cuốn, polyp, mủ, khối, vòm họng)",
+   "phut": 10,
+   "mac_dinh": "Niêm mạc hốc mũi hồng, khe giữa thông thoáng, không mủ, không polyp, không khối; vòm họng không khối.",
+   "tu_khoa": [
+    "noi soi mui",
+    "noi soi mui xoang",
+    "soi mui",
+    "soi khe giua",
+    "noi soi vom",
+    "noi soi xoang"
+   ],
+   "gia": 150000
+  },
+  {
+   "id": "thu_khuu_giac",
+   "ten": "Thử khứu giác (từng bên mũi, bằng mùi quen thuộc hoặc bộ thử chuẩn)",
+   "phut": 5,
+   "mac_dinh": "Nhận ra đúng các mùi thử ở cả hai bên mũi.",
+   "tu_khoa": [
+    "thu khuu giac",
+    "kiem tra khuu giac",
+    "test khuu giac",
+    "thu mui",
+    "ngui mui",
+    "sniffin",
+    "upsit",
+    "do khuu giac"
+   ]
+  },
+  {
+   "id": "phu_khoa",
+   "ten": "Khám phụ khoa: âm hộ, mỏ vịt (âm đạo, cổ tử cung, dịch), khám hai tay (lắc cổ tử cung, tử cung, phần phụ)",
+   "phut": 10,
+   "mac_dinh": "Âm hộ, âm đạo, cổ tử cung bình thường, không dịch bất thường. Khám hai tay: lắc cổ tử cung không đau, tử cung và hai phần phụ không đau, không khối.",
+   "tu_khoa": [
+    "kham phu khoa",
+    "phu khoa",
+    "mo vit",
+    "kham hai tay",
+    "lac co tu cung",
+    "co tu cung",
+    "am dao",
+    "am ho",
+    "kham vung chau",
+    "kham tu cung phan phu"
+   ]
   }
  ]
 }

@@ -1641,6 +1641,58 @@
     "viem phuc mac nhiem khuan nguyen phat",
     "saag"
    ]
+  },
+  {
+   "id": "soi_huyet_trang",
+   "ten": "Soi tươi dịch âm đạo - cổ tử cung (bạch cầu, Trichomonas, tế bào đầu mối, KOH)",
+   "nhom": "xn",
+   "gia": 60000,
+   "phut": 20,
+   "mac_dinh": "Ít bạch cầu, không thấy Trichomonas, không thấy tế bào đầu mối, KOH không có sợi nấm.",
+   "tu_khoa": [
+    "soi huyet trang",
+    "soi khi hu",
+    "soi dich am dao",
+    "soi tuoi am dao",
+    "ph am dao",
+    "clue cell",
+    "trichomonas"
+   ]
+  },
+  {
+   "id": "sa_chau",
+   "ten": "Siêu âm tử cung - phần phụ (qua bụng hoặc đầu dò âm đạo)",
+   "nhom": "sieu_am",
+   "gia": 200000,
+   "phut": 20,
+   "mac_dinh": "Tử cung kích thước bình thường, nội mạc mỏng, hai buồng trứng bình thường, không khối phần phụ, không dịch túi cùng.",
+   "tu_khoa": [
+    "sieu am tu cung",
+    "sieu am phu khoa",
+    "sieu am phan phu",
+    "sieu am chau",
+    "sieu am vung chau",
+    "sieu am dau do am dao",
+    "sieu am buong trung",
+    "sieu am tu cung phan phu"
+   ]
+  },
+  {
+   "id": "cay_lau_cau",
+   "ten": "Nuôi cấy dịch cổ tử cung hoặc niệu đạo tìm lậu cầu, kháng sinh đồ",
+   "nhom": "xn",
+   "gia": 250000,
+   "phut": 2880,
+   "mac_dinh": "Không mọc lậu cầu.",
+   "tu_khoa": [
+    "cay lau cau",
+    "cay co tu cung",
+    "cay dich co tu cung",
+    "cay dich nieu dao",
+    "khang sinh do lau",
+    "thayer martin",
+    "cay neisseria"
+   ]
   }
  ]
 }
