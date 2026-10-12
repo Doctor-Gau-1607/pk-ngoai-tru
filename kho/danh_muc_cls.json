@@ -1316,6 +1316,22 @@
     "cortisol huyet thanh"
    ],
    "co_ban": false
+  },
+  {
+   "id": "chi_mau",
+   "ten": "Chì máu toàn phần",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 300000,
+   "phut": 180,
+   "mac_dinh": "Chì máu toàn phần 3 µg/dL (bình thường < 10 µg/dL).",
+   "tu_khoa": [
+    "chi mau",
+    "nong do chi",
+    "ngo doc chi",
+    "nhiem doc chi",
+    "kim loai nang"
+   ]
   }
  ]
 }
