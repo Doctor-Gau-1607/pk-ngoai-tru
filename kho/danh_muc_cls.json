@@ -1693,6 +1693,23 @@
     "thayer martin",
     "cay neisseria"
    ]
+  },
+  {
+   "id": "abi",
+   "ten": "Chỉ số cổ chân–cánh tay (ABI) bằng máy đo huyết áp và Doppler cầm tay",
+   "nhom": "tham_do",
+   "co_ban": false,
+   "gia": 60000,
+   "phut": 15,
+   "mac_dinh": "ABI hai bên 1,05–1,15 (bình thường 1,00–1,40)",
+   "tu_khoa": [
+    "abi",
+    "chi so co chan canh tay",
+    "ankle brachial index",
+    "huyet ap chan",
+    "do huyet ap co chan",
+    "doppler cam tay"
+   ]
   }
  ]
 }
