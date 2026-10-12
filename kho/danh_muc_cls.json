@@ -1585,6 +1585,44 @@
     "elastography",
     "do do cung gan"
    ]
+  },
+  {
+   "id": "gad_cpep",
+   "ten": "Kháng thể anti-GAD65 và C-peptid (kèm glucose cùng lúc)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 800000,
+   "phut": 10080,
+   "mac_dinh": "Anti-GAD65 âm tính; C-peptid trong giới hạn bình thường",
+   "tu_khoa": [
+    "anti gad",
+    "gad65",
+    "khang the dao tuy",
+    "c peptid",
+    "c-peptid",
+    "cpeptid",
+    "phan loai tieu duong",
+    "lada",
+    "tip 1",
+    "type 1"
+   ]
+  },
+  {
+   "id": "pef",
+   "ten": "Đo lưu lượng đỉnh (PEF) bằng lưu lượng kế",
+   "nhom": "tham_do",
+   "gia": 30000,
+   "phut": 5,
+   "mac_dinh": "PEF 420 L/phút (≥ 80% giá trị tốt nhất hoặc dự đoán)",
+   "tu_khoa": [
+    "luu luong dinh",
+    "pef",
+    "peak flow",
+    "luu luong ke",
+    "do luu luong",
+    "do chuc nang ho hap",
+    "do hen"
+   ]
   }
  ]
 }
