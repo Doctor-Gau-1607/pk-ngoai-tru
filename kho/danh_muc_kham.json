@@ -523,6 +523,19 @@
     "nghe thi tham",
     "do nghe"
    ]
+  },
+  {
+   "id": "soi_hau_mon",
+   "ten": "Soi hậu môn bằng ống soi (nhìn ống hậu môn, búi trĩ, đường lược)",
+   "phut": 5,
+   "mac_dinh": "Ống hậu môn không búi trĩ, không vết nứt, không khối. Niêm mạc trực tràng thấp hồng.",
+   "tu_khoa": [
+    "soi hau mon",
+    "ong soi hau mon",
+    "anoscopy",
+    "anoscope",
+    "soi tri"
+   ]
   }
  ]
 }

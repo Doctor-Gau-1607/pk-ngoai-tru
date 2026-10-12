@@ -522,6 +522,28 @@
    "nguon": "SCIN (Google Research & Stanford), case 4526601686447943043, https://storage.googleapis.com/dx-scin-public-data/dataset/images/3492237304032114736.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0008",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Ban đỏ do ánh nắng (viêm da do ánh nắng/bỏng nắng) ở mặt ngoài cánh tay và đoạn gần cẳng tay: mảng đỏ hồng đến đỏ sẫm, bề mặt hơi sần mịn, mờ dần về phía da lành.",
+   "tep": "hinh/HA-DA-0008.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -6413100458548426751, dataset/images/-683419639884321070.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0011",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Cẳng tay nền đỏ, vài sẩn nhỏ rải rác, da khô nứt, vảy mịn (minh họa nền da viêm do ánh nắng đang bong vảy).",
+   "tep": "hinh/HA-DA-0011.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -412127215807292326, dataset/images/3991523546538917234.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
