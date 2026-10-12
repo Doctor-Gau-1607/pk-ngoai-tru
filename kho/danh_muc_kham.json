@@ -570,6 +570,26 @@
     "lan ngang",
     "chong mat tu the"
    ]
+  },
+  {
+   "id": "co_tay_ban_tay",
+   "ten": "Cổ tay – bàn tay: mô cái, lực dạng ngón cái, Tinel, Phalen, cảm giác từng ngón",
+   "phut": 5,
+   "mac_dinh": "Mô cái hai bên đầy, không teo; dạng ngón cái chống lực 5/5; Tinel, Phalen âm tính; cảm giác các ngón bình thường; cổ tay không sưng nóng đỏ.",
+   "tu_khoa": [
+    "co tay",
+    "ban tay",
+    "ong co tay",
+    "tinel",
+    "phalen",
+    "mo cai",
+    "teo co",
+    "dang ngon cai",
+    "ngon tay",
+    "cam giac ngon",
+    "gap co tay",
+    "phan biet hai diem"
+   ]
   }
  ]
 }
