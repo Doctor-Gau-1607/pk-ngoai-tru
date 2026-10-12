@@ -1247,6 +1247,58 @@
     "song nao",
     "ghi dien nao"
    ]
+  },
+  {
+   "id": "thinh_luc_do",
+   "ten": "Thính lực đồ (đơn âm, nhận biết lời)",
+   "nhom": "tham_do",
+   "co_ban": false,
+   "gia": 200000,
+   "phut": 30,
+   "mac_dinh": "Ngưỡng nghe bình thường hai tai.",
+   "tu_khoa": [
+    "thinh luc",
+    "thinh luc do",
+    "do thinh luc",
+    "do nguong nghe",
+    "audiogram",
+    "audiometry",
+    "do suc nghe"
+   ]
+  },
+  {
+   "id": "nhi_luong",
+   "ten": "Nhĩ lượng đồ, phản xạ cơ bàn đạp",
+   "nhom": "tham_do",
+   "co_ban": false,
+   "gia": 120000,
+   "phut": 20,
+   "mac_dinh": "Nhĩ lượng đồ bình thường hai tai.",
+   "tu_khoa": [
+    "nhi luong",
+    "nhi luong do",
+    "tympanometry",
+    "phan xa co ban dap"
+   ]
+  },
+  {
+   "id": "mri_so_nao",
+   "ten": "MRI sọ não (kèm ống tai trong, góc cầu tiểu não khi cần), có thuốc đối quang từ",
+   "nhom": "ct",
+   "co_ban": false,
+   "gia": 2500000,
+   "phut": 60,
+   "mac_dinh": "Không thấy tổn thương bất thường ở não, ống tai trong và góc cầu tiểu não.",
+   "tu_khoa": [
+    "mri",
+    "cong huong tu",
+    "mri so nao",
+    "mri nao",
+    "mri dau",
+    "mri tai",
+    "mri ong tai trong",
+    "mri goc cau tieu nao"
+   ]
   }
  ]
 }

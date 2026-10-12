@@ -493,6 +493,36 @@
     "nuoc tieu nhu tra",
     "nuoc tieu do"
    ]
+  },
+  {
+   "id": "am_thoa",
+   "ten": "Âm thoa (Weber, Rinne)",
+   "phut": 3,
+   "mac_dinh": "Weber ở giữa. Rinne dương tính hai tai (khí dẫn hơn cốt dẫn).",
+   "tu_khoa": [
+    "am thoa",
+    "weber",
+    "rinne",
+    "nghiem phap weber",
+    "nghiem phap rinne",
+    "stimmgabel",
+    "tuning fork"
+   ]
+  },
+  {
+   "id": "nghe_thi_tham",
+   "ten": "Nghiệm pháp thì thầm / cọ ngón tay (đánh giá thô khả năng nghe từng tai)",
+   "phut": 3,
+   "mac_dinh": "Lặp lại đúng lời thì thầm ở cả hai tai.",
+   "tu_khoa": [
+    "thi tham",
+    "nghiem phap thi tham",
+    "whisper",
+    "coc ngon tay",
+    "finger rub",
+    "nghe thi tham",
+    "do nghe"
+   ]
   }
  ]
 }
