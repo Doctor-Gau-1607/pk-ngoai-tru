@@ -1088,6 +1088,26 @@
     "patch test",
     "thu nghiem ap da"
    ]
+  },
+  {
+   "id": "chuc_nang_gan",
+   "ten": "Bilirubin, ALP, GGT, albumin, PT/INR (bộ chức năng gan mở rộng)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 200000,
+   "phut": 90,
+   "mac_dinh": "Bilirubin toàn phần 14 · trực tiếp 4 µmol/L · ALP 85 U/L · GGT 22 U/L · Albumin 42 g/L · INR 1,0",
+   "tu_khoa": [
+    "bilirubin",
+    "alp",
+    "phosphatase kiem",
+    "ggt",
+    "albumin",
+    "inr",
+    "prothrombin",
+    "ty prothrombin",
+    "dong mau gan"
+   ]
   }
  ]
 }

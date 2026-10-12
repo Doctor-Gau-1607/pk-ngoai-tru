@@ -463,6 +463,36 @@
     "kham sinh duc",
     "kham bo phan sinh duc"
    ]
+  },
+  {
+   "id": "suc_co",
+   "ten": "Sức cơ: gốc chi, ngọn chi, gập cổ, ngồi xổm – đứng dậy",
+   "phut": 5,
+   "mac_dinh": "Sức cơ các nhóm gốc chi và ngọn chi hai bên bình thường, gập cổ chống lực tốt, ngồi xổm đứng lên không cần vịn.",
+   "tu_khoa": [
+    "suc co",
+    "yeu co",
+    "luc co",
+    "ngoi xo dung len",
+    "ghe dau",
+    "gap co",
+    "do suc co"
+   ]
+  },
+  {
+   "id": "nuoc_tieu_mau",
+   "ten": "Quan sát màu, độ trong nước tiểu mẫu mới (bằng mắt)",
+   "phut": 3,
+   "mac_dinh": "Nước tiểu vàng nhạt, trong, không đục, không đỏ nâu.",
+   "tu_khoa": [
+    "mau nuoc tieu",
+    "nuoc tieu mau",
+    "quan sat nuoc tieu",
+    "nuoc tieu sam",
+    "nuoc tieu nau",
+    "nuoc tieu nhu tra",
+    "nuoc tieu do"
+   ]
   }
  ]
 }
