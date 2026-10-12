@@ -1108,6 +1108,34 @@
     "ty prothrombin",
     "dong mau gan"
    ]
+  },
+  {
+   "id": "lpa",
+   "ten": "Lipoprotein(a) [Lp(a)]",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 150000,
+   "phut": 120,
+   "mac_dinh": "Lp(a) 18 mg/dL",
+   "tu_khoa": [
+    "lipoprotein a",
+    "lp(a)",
+    "lpa"
+   ]
+  },
+  {
+   "id": "cay_hong_gas",
+   "ten": "Cấy họng tìm liên cầu nhóm A",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 120000,
+   "phut": 2880,
+   "mac_dinh": "Không mọc liên cầu tan huyết beta nhóm A",
+   "tu_khoa": [
+    "cay hong lien cau",
+    "cay lien cau",
+    "strep culture"
+   ]
   }
  ]
 }
