@@ -1779,6 +1779,39 @@
     "xq thuc quan",
     "chup thuc quan co thuoc can quang"
    ]
+  },
+  {
+   "id": "xq_cot_song",
+   "ten": "X-quang cột sống thắt lưng thẳng nghiêng",
+   "nhom": "xquang",
+   "co_ban": false,
+   "gia": 150000,
+   "phut": 30,
+   "mac_dinh": "Cột sống thắt lưng không thấy tổn thương xương, khe đĩa bình thường",
+   "tu_khoa": [
+    "x quang cot song",
+    "xquang cot song",
+    "phim cot song",
+    "chup cot song",
+    "phim lung",
+    "x quang that lung"
+   ]
+  },
+  {
+   "id": "mri_cot_song",
+   "ten": "MRI cột sống (thắt lưng hoặc toàn bộ)",
+   "nhom": "ct",
+   "co_ban": false,
+   "gia": 2500000,
+   "phut": 120,
+   "mac_dinh": "Không thấy tổn thương đốt sống, đĩa đệm và ống sống",
+   "tu_khoa": [
+    "mri cot song",
+    "cong huong tu cot song",
+    "mri that lung",
+    "chup mri lung",
+    "cong huong tu"
+   ]
   }
  ]
 }
