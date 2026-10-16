@@ -1762,6 +1762,23 @@
     "dinh luong hcg",
     "beta-hcg"
    ]
+  },
+  {
+   "id": "xq_thuc_quan",
+   "ten": "Chụp thực quản có cản quang (barium)",
+   "nhom": "xquang",
+   "co_ban": false,
+   "gia": 300000,
+   "phut": 45,
+   "mac_dinh": "Thực quản đều, thuốc cản quang xuống dạ dày bình thường, không hẹp, không giãn.",
+   "tu_khoa": [
+    "chup thuc quan",
+    "barium",
+    "thuc quan can quang",
+    "nuot barium",
+    "xq thuc quan",
+    "chup thuc quan co thuoc can quang"
+   ]
   }
  ]
 }

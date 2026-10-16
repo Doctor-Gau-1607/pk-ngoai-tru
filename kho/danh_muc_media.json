@@ -588,6 +588,28 @@
    "nguon": "SCIN (Google Research & Stanford), case -5350220404862050225, dataset/images/-2288434622033194477.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0021",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Vảy nến thể mảng ở đầu gối: mảng đỏ hồng, bờ khá rõ, phủ vảy trắng mịn khô, da quanh khô",
+   "tep": "hinh/HA-DA-0021.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -568386322973258434, dataset/images/1289677945134827265.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0019",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Vảy nến thể mảng (vùng sang chấn) ở hông – mạn sườn, ngay trên vết hằn cạp quần: mảng đỏ hồng ranh giới rõ phủ vảy mịn, kèm mảng nhỏ bên cạnh",
+   "tep": "hinh/HA-DA-0019.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 6592267744694757863, dataset/images/-1264230661338860030.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
