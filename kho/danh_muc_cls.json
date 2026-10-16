@@ -1710,6 +1710,41 @@
     "do huyet ap co chan",
     "doppler cam tay"
    ]
+  },
+  {
+   "id": "ecg_gang_suc",
+   "ten": "Điện tâm đồ gắng sức (thảm chạy hoặc xe đạp lực kế)",
+   "nhom": "tham_do",
+   "co_ban": false,
+   "gia": 400000,
+   "phut": 60,
+   "mac_dinh": "Không đau ngực, không biến đổi ST–T, dung nạp gắng sức tốt",
+   "tu_khoa": [
+    "dien tim gang suc",
+    "ecg gang suc",
+    "nghiem phap gang suc",
+    "treadmill",
+    "chay tham",
+    "dien tam do gang suc"
+   ]
+  },
+  {
+   "id": "ct_mach_vanh",
+   "ten": "CT động mạch vành (điểm vôi hóa và chụp mạch vành có cản quang)",
+   "nhom": "ct",
+   "co_ban": false,
+   "gia": 3500000,
+   "phut": 90,
+   "mac_dinh": "Không hẹp động mạch vành đáng kể",
+   "tu_khoa": [
+    "ct mach vanh",
+    "ctmv",
+    "cat lop vi tinh dong mach vanh",
+    "chup mach vanh ct",
+    "diem voi hoa mach vanh",
+    "cac score",
+    "ccta"
+   ]
   }
  ]
 }
