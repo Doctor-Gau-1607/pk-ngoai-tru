@@ -1812,6 +1812,37 @@
     "chup mri lung",
     "cong huong tu"
    ]
+  },
+  {
+   "id": "nt_probnp",
+   "ten": "NT-proBNP",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 450000,
+   "phut": 90,
+   "mac_dinh": "NT-proBNP 85 pg/mL (bình thường)",
+   "tu_khoa": [
+    "nt probnp",
+    "ntprobnp",
+    "bnp",
+    "peptide bai nieu",
+    "pro bnp"
+   ]
+  },
+  {
+   "id": "holter_ecg",
+   "ten": "Holter điện tim 24 giờ",
+   "nhom": "tham_do",
+   "co_ban": false,
+   "gia": 400000,
+   "phut": 1440,
+   "mac_dinh": "Nhịp xoang, tần số trung bình 72 l/p, không rối loạn nhịp đáng kể",
+   "tu_khoa": [
+    "holter dien tim",
+    "dien tim 24 gio",
+    "ecg luu dong",
+    "holter nhip tim"
+   ]
   }
  ]
 }
