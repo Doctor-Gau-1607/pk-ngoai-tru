@@ -671,6 +671,23 @@
     "kham vung chau",
     "kham tu cung phan phu"
    ]
+  },
+  {
+   "id": "nhan_tram_tre",
+   "ten": "Nhân trắc trẻ em (cân nặng, chiều dài/chiều cao, MUAC, vòng đầu)",
+   "phut": 5,
+   "mac_dinh": "Cân nặng, chiều dài và MUAC phù hợp tuổi.",
+   "tu_khoa": [
+    "nhan tram",
+    "can nang",
+    "chieu dai",
+    "chieu cao",
+    "muac",
+    "vong canh tay",
+    "vong dau",
+    "tang truong",
+    "bieu do tang truong"
+   ]
   }
  ]
 }

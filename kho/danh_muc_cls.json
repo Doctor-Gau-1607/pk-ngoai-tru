@@ -1894,6 +1894,23 @@
     "xet nghiem giun luon",
     "elisa ky sinh trung"
    ]
+  },
+  {
+   "id": "xpert_tre",
+   "ten": "Xpert MTB/RIF Ultra trên dịch dạ dày, dịch hút tỵ hầu hoặc phân (trẻ nhỏ chưa khạc đờm)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 0,
+   "phut": 240,
+   "mac_dinh": "Xpert Ultra: không phát hiện MTB.",
+   "tu_khoa": [
+    "xpert tre em",
+    "dich da day",
+    "hut ty hau",
+    "phan tim lao",
+    "xet nghiem lao tre em",
+    "shpt"
+   ]
   }
  ]
 }
