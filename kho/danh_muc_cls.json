@@ -1745,6 +1745,23 @@
     "cac score",
     "ccta"
    ]
+  },
+  {
+   "id": "bhcg",
+   "ten": "β-hCG huyết thanh định lượng",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 150000,
+   "phut": 120,
+   "mac_dinh": "β-hCG dưới 5 mIU/mL",
+   "tu_khoa": [
+    "bhcg",
+    "beta hcg",
+    "hcg mau",
+    "hcg dinh luong",
+    "dinh luong hcg",
+    "beta-hcg"
+   ]
   }
  ]
 }
