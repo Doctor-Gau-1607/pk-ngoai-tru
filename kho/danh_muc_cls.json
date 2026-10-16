@@ -1876,6 +1876,24 @@
     "ct amidan",
     "cat lop vi tinh co"
    ]
+  },
+  {
+   "id": "elisa_giun_luon",
+   "ten": "ELISA kháng thể kháng giun lươn (Strongyloides stercoralis)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 300000,
+   "phut": 1440,
+   "mac_dinh": "ELISA kháng thể kháng Strongyloides stercoralis: âm tính.",
+   "tu_khoa": [
+    "elisa giun luon",
+    "elisa strongyloides",
+    "huyet thanh giun luon",
+    "khang the giun luon",
+    "strongyloides",
+    "xet nghiem giun luon",
+    "elisa ky sinh trung"
+   ]
   }
  ]
 }
