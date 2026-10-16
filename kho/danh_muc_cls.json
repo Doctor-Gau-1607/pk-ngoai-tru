@@ -1843,6 +1843,39 @@
     "ecg luu dong",
     "holter nhip tim"
    ]
+  },
+  {
+   "id": "sa_co",
+   "ten": "Siêu âm vùng cổ, họng (qua da)",
+   "nhom": "sieu_am",
+   "co_ban": false,
+   "gia": 150000,
+   "phut": 20,
+   "mac_dinh": "Không thấy ổ dịch hay khối bất thường vùng cổ",
+   "tu_khoa": [
+    "sieu am co",
+    "sieu am vung co",
+    "sieu am hong",
+    "sieu am amidan",
+    "sieu am phan mem co"
+   ]
+  },
+  {
+   "id": "ct_co",
+   "ten": "CT vùng cổ có cản quang (họng, khoang cổ sâu)",
+   "nhom": "ct",
+   "co_ban": false,
+   "gia": 1500000,
+   "phut": 60,
+   "mac_dinh": "Không thấy ổ áp xe hay khối bất thường vùng cổ",
+   "tu_khoa": [
+    "ct co",
+    "ct vung co",
+    "chup ct co",
+    "ct hong",
+    "ct amidan",
+    "cat lop vi tinh co"
+   ]
   }
  ]
 }
