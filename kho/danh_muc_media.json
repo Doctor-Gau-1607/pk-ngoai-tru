@@ -643,6 +643,17 @@
    "nguon": "SCIN (Google Research & Stanford), case 9094416934450217084, dataset/images/-4639546377033199002.png (nhãn SCIN: Chicken pox exanthem, trọng số 1,0)",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0028",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Viêm da tiếp xúc ở cẳng chân đoạn dưới: vệt đỏ dài có vảy tiết kèm cụm mụn nước – sẩn nhỏ trên nền đỏ phù nhẹ; vài sẩn đỏ rải rác xung quanh.",
+   "tep": "hinh/HA-DA-0028.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -5863256407851897110, https://storage.googleapis.com/dx-scin-public-data/dataset/images/-6760849338709173764.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
