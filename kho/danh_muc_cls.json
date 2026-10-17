@@ -1911,6 +1911,43 @@
     "xet nghiem lao tre em",
     "shpt"
    ]
+  },
+  {
+   "id": "sa_giap",
+   "ten": "Siêu âm tuyến giáp và hạch cổ",
+   "nhom": "sieu_am",
+   "co_ban": false,
+   "gia": 150000,
+   "phut": 20,
+   "mac_dinh": "Tuyến giáp kích thước bình thường, nhu mô đồng nhất, không nhân. Không thấy hạch cổ bất thường.",
+   "tu_khoa": [
+    "sieu am giap",
+    "sieu am tuyen giap",
+    "sa giap",
+    "sieu am nhan giap",
+    "doppler giap",
+    "tirads",
+    "ti rads"
+   ]
+  },
+  {
+   "id": "fna_giap",
+   "ten": "Chọc hút kim nhỏ nhân giáp dưới siêu âm và tế bào học (FNA)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 600000,
+   "phut": 4320,
+   "mac_dinh": "Tế bào học: lành tính (Bethesda II).",
+   "tu_khoa": [
+    "fna",
+    "choc hut kim nho",
+    "choc hut nhan giap",
+    "choc hut tuyen giap",
+    "te bao hoc giap",
+    "sinh thiet giap",
+    "bethesda",
+    "choc do nhan giap"
+   ]
   }
  ]
 }
