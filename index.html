@@ -306,12 +306,17 @@ function doTen(text, danhMuc, boTruoc = [], noi = ''){
   boTruoc.forEach(k => { t = t.split(' ' + k + ' ').join(' ') });
   const tu = danhMuc.flatMap(x => (x.tu_khoa || []).map(k => [k, x.id])).sort((a, b) => b[0].length - a[0].length);
   const goc = t, vt = {};
-  tu.forEach(([k, id]) => { const i = t.indexOf(' ' + k + ' '); if(i >= 0){ const p = goc.indexOf(' ' + k + ' '); vt[id] = Math.min(vt[id] ?? Infinity, p >= 0 ? p : i); t = t.split(' ' + k + ' ').join(' '.repeat(k.length + 2)) } });
+  const kw = {};
+  tu.forEach(([k, id]) => { const i = t.indexOf(' ' + k + ' '); if(i >= 0){ const p = goc.indexOf(' ' + k + ' '); vt[id] = Math.min(vt[id] ?? Infinity, p >= 0 ? p : i); (kw[id] = kw[id] || []).push(k); t = t.split(' ' + k + ' ').join(' '.repeat(k.length + 2)) } });
+  /* "xem vết ở cổ tay": vùng cơ thể sau "ở/tại/trên" chỉ là vị trí của tổn thương da, không phải yêu cầu khám vùng đó */
+  if('da' in vt) Object.keys(vt).forEach(id => { if(id !== 'da' && kw[id].every(k => / (o|tai|tren|quanh|duoi|sau|truoc) $/.test(goc.slice(0, goc.indexOf(' ' + k + ' ') + 1)))) delete vt[id] });
   /* "huyết áp tư thế" chỉ là đo HA tư thế, trừ khi bác sĩ nói rõ đo hai tay */
   if('ha_tu_the' in vt && 'ha_hai_tay' in vt && !/ (hai|2) tay /.test(goc)) delete vt.ha_hai_tay;
   return Object.keys(vt).sort((a, b) => vt[a] - vt[b]);
 }
-const CUM_CLS = CLS.flatMap(t => t.tu_khoa || []).filter(k => k.includes(' ')).sort((a, b) => b.length - a.length);
+/* Cụm tên xét nghiệm bỏ trước khi dò khám (tránh "siêu âm tim" thành khám tim); cụm cũng là tên khám thì giữ lại */
+const TU_KHAM = new Set(KHAM.flatMap(k => k.tu_khoa || []));
+const CUM_CLS = CLS.flatMap(t => t.tu_khoa || []).filter(k => k.includes(' ') && !TU_KHAM.has(k)).sort((a, b) => b.length - a.length);
 
 /* ================= Cài đặt AI (khóa chỉ lưu trong trình duyệt này) ================= */
 const STORE_KEY = 'pkn-cai-dat';
@@ -371,14 +376,27 @@ document.addEventListener('click', e => { const b = e.target.closest('[data-zoom
 document.addEventListener('keydown', e => { if(e.key === 'Escape') document.querySelectorAll('.zoom').forEach(z => z.remove()) });
 
 /* ================= Tab Khám: dò tên phần khám, trả kết quả từ kho ================= */
-function guiKham(text){
-  const v = V(), ids = doTen(text, KHAM, CUM_CLS, 'kham');
-  v.th.kham.push({from:'dr', text}); v.min += 1;
-  if(!ids.length){ v.th.kham.push({from:'nurse', text:'Chưa rõ bác sĩ muốn khám phần nào. Bác sĩ ghi cụ thể giúp ạ.'}); return }
+/* Làm các phần khám đã hiểu, ghi kết quả vào tab Khám */
+function lamKham(ids, ghi = ''){
+  const v = V();
   ids.forEach(id => { const e = examInfo(id), again = v.exams.has(id);
     if(!again){ v.exams.add(id); v.min += e.phut }
-    v.th.kham.push({from:'res', id, mk:++MK, title:e.ten + (again ? ' (khám lại)' : ''), text:e.hien, media:e.media}); v.lastExam = {title:e.ten, text:e.hien + (e.media.some(x => x.tep) ? (e.media.some(x => x.tep && x.loai === 'hinh') ? ' (xem ảnh ở tab Khám)' : ' (nghe ở tab Khám)') : '')} });
-  S.view = 'giuong'; drawScene();
+    v.th.kham.push({from:'res', id, mk:++MK, title:e.ten + (again ? ' (khám lại)' : '') + ghi, text:e.hien, media:e.media}); v.lastExam = {title:e.ten, text:e.hien + (e.media.some(x => x.tep) ? (e.media.some(x => x.tep && x.loai === 'hinh') ? ' (xem ảnh ở tab Khám)' : ' (nghe ở tab Khám)') : '')} });
+  if(ids.length){ S.view = 'giuong'; drawScene() }
+}
+const KHONG_HIEU_KHAM = 'Em chưa rõ bác sĩ muốn khám phần nào ạ. Bác sĩ ghi theo vùng hoặc cơ quan cần khám giúp em nha.';
+async function guiKham(text){
+  const v = V(); let ids = doTen(text, KHAM, CUM_CLS, 'kham'), cls = [];
+  v.th.kham.push({from:'dr', text}); v.min += 1;
+  if(!ids.length){
+    let out = null;
+    try { out = await hieuY(text, 'kham') } catch(e){ v.th.kham.pop(); v.min -= 1; throw e }
+    if(!out){ v.th.kham.push({from:'nurse', text:KHONG_HIEU_KHAM + ' (Có khóa AI trong ⚙ Cài đặt thì em hiểu được cách nói tự nhiên, viết tắt, gõ sai dấu.)'}); return }
+    ids = out.kham; cls = out.cls;
+    if(!ids.length && !cls.length){ v.th.kham.push({from:'nurse', text:out.hoi_lai || KHONG_HIEU_KHAM}); return }
+  }
+  lamKham(ids);
+  if(cls.length){ const r = chiDinhCLS(cls); v.th.kham.push({from:'nurse', text:'Dạ, phần này là cận lâm sàng, em cho làm luôn: ' + r.join('; ') + '. Kết quả ở tab Cận lâm sàng ạ.'}) }
 }
 /* ================= Tab Cận lâm sàng: dò tên xét nghiệm, trả kết quả ngay ================= */
 function chiDinhCLS(ids){
@@ -389,11 +407,48 @@ function chiDinhCLS(ids){
     v.tests.add(id); v.th.cls.push({from:'res', id, title:t.ten, text:t.r, ab:t.ab, gia:t.gia, bang:t.bang, ghi:t.ghi_chu_mau}); out.push(`${t.ten} có kết quả rồi ạ`) });
   return out;
 }
-function guiCLS(text){
-  const v = V(), ids = doTen(text, CLS, [], 'cls');
+const KHONG_HIEU_CLS = 'Em không tìm thấy xét nghiệm này trong danh mục của phòng khám. Bác sĩ ghi rõ tên giúp em ạ.';
+async function guiCLS(text){
+  const v = V(); let ids = doTen(text, CLS, [], 'cls'), kham = [];
   v.th.cls.push({from:'dr', text}); v.min += 1;
-  if(!ids.length){ v.th.cls.push({from:'nurse', text:'Em không tìm thấy xét nghiệm này trong danh mục của phòng khám. Bác sĩ ghi rõ tên giúp em ạ.'}); return }
+  if(!ids.length){
+    let out = null;
+    try { out = await hieuY(text, 'cls') } catch(e){ v.th.cls.pop(); v.min -= 1; throw e }
+    if(!out){ v.th.cls.push({from:'nurse', text:KHONG_HIEU_CLS}); return }
+    ids = out.cls; kham = out.kham;
+    if(!ids.length && !kham.length){ v.th.cls.push({from:'nurse', text:out.hoi_lai || KHONG_HIEU_CLS}); return }
+  }
   chiDinhCLS(ids);
+  if(kham.length){ lamKham(kham); v.th.cls.push({from:'nurse', text:'Dạ, phần này là khám, kết quả em ghi ở tab Khám: ' + kham.map(id => examInfo(id).ten).join(', ') + '.'}) }
+}
+/* ================= Linh hiểu ý bác sĩ (AI): đổi lời nói tự nhiên, viết tắt, gõ sai dấu thành mục trong danh mục =================
+   Chỉ dùng danh mục chung (không đưa dữ kiện của ca), chỉ lấy đúng những gì bác sĩ yêu cầu: không gợi ý, không thêm. */
+const SCHEMA_HIEU = {type:'object', additionalProperties:false, required:['kham', 'cls', 'sinh_hieu', 'can_do', 'hoi_lai'], properties:{
+  kham:{type:'array', items:{type:'string'}}, cls:{type:'array', items:{type:'string'}}, sinh_hieu:{type:'boolean'}, can_do:{type:'boolean'}, hoi_lai:{type:'string'}}};
+function heThongHieuY(noi){
+  const g = CFG.xung_ho || 'anh';
+  const dm = ds => ds.map(x => `- ${x.id}: ${x.ten}${(x.tu_khoa || []).length ? ' (hay gọi: ' + x.tu_khoa.slice(0, 6).join(', ') + ')' : ''}`).join('\n');
+  return `Bạn là Linh, điều dưỡng phòng khám ngoại trú, đang nhận yêu cầu của bác sĩ ở ${noi === 'kham' ? 'phiếu Khám (bác sĩ ghi phần muốn khám)' : noi === 'cls' ? 'phiếu Cận lâm sàng (bác sĩ ghi xét nghiệm, thăm dò muốn làm)' : 'chỗ nói chuyện với điều dưỡng (bác sĩ nhờ đo, cho đi xét nghiệm, chuẩn bị bệnh nhân để khám)'}.
+Việc của bạn: hiểu ĐÚNG Ý bác sĩ rồi đổi thành mã trong danh mục dưới đây.
+- Hiểu linh hoạt: tiếng Việt không dấu hoặc gõ sai dấu (vd "vết căn" = "vết cắn"), viết tắt (XQ, SA, CTM, ĐTĐ, HA…), tiếng Anh, cách nói đời thường, chỉ vùng cơ thể. Bác sĩ muốn xem/khám/cho xem ảnh một vết, nốt, sẩn, mụn, ban, vết cắn, vết thương, tổn thương ở bất kỳ vùng da nào → mục khám da (id "da"); muốn xem móng, da đầu → "da_dau_mong". "Nghe tim" → tim, "nghe phổi" → phoi, "sờ bụng" → bung…
+- CHỈ lấy những gì bác sĩ yêu cầu. Không thêm mục bác sĩ không nhắc, không gợi ý nên khám hay làm gì.
+- Bác sĩ nói chung chung kiểu "khám hết", "khám toàn bộ", "làm xét nghiệm cơ bản", "kiểm tra tổng quát" mà không nêu cụ thể → không chọn mục nào, hoi_lai hỏi bác sĩ muốn khám/làm cụ thể phần nào.
+- Thật sự không hiểu → hoi_lai một câu ngắn, lễ phép, xưng "em", gọi bác sĩ là "${g}", hỏi lại đúng chỗ chưa rõ. Chỉ được nêu tên mục để hỏi khi lời bác sĩ khớp 2–3 mục cụ thể (vd "${g} muốn khám mắt hay soi đáy mắt ạ?"); không liệt kê danh mục, không gợi ý mục bác sĩ không nhắc.
+- Hiểu được thì hoi_lai = "".
+- sinh_hieu = true nếu bác sĩ nhờ đo/đo lại sinh hiệu (mạch, nhiệt, HA, nhịp thở, SpO₂). can_do = true nếu nhờ cân, đo chiều cao, BMI.
+- kham: chỉ mã trong DANH MỤC KHÁM. cls: chỉ mã trong DANH MỤC CẬN LÂM SÀNG. Không bịa mã.
+
+# DANH MỤC KHÁM
+${dm(KHAM)}
+
+# DANH MỤC CẬN LÂM SÀNG
+${dm(CLS)}`;
+}
+async function hieuY(text, noi){
+  if(!hasKey()) return null;
+  const out = await goiAI(heThongHieuY(noi), [{role:'user', content:text}], SCHEMA_HIEU);
+  const ok = (ds, dm) => [...new Set((ds || []).filter(id => dm.some(x => x.id === id)))];
+  return {kham:ok(out.kham, KHAM), cls:ok(out.cls, CLS), sinh_hieu:!!out.sinh_hieu, can_do:!!out.can_do, hoi_lai:String(out.hoi_lai || '').trim()};
 }
 /* ================= Điều dưỡng Linh: đo sinh hiệu, đo HA, đưa đi xét nghiệm, báo kết quả ================= */
 const DD_KHAM = ['ha_hai_tay', 'ha_tu_the'];
@@ -401,6 +456,15 @@ const DD_KHAM = ['ha_hai_tay', 'ha_tu_the'];
 async function guiDieuDuong(text){
   const v = V();
   v.th.dieuduong.push({from:'dr', text});
+  /* Câu có ý nhờ việc: có khóa AI thì Linh hiểu ý trọn câu (đo gì, khám gì, làm xét nghiệm gì, cách nói tự nhiên, gõ sai) rồi làm; không có khóa thì theo kịch bản từ khóa */
+  if(coYNho(text) && hasKey()){
+    let out; try { out = await hieuY(text, 'dieu_duong') } catch(e){ v.th.dieuduong.pop(); throw e }
+    const rep = lamTheoHieuY(out);
+    if(rep){ v.min += 1; v.th.dieuduong.push({from:'nurse', text:rep}); return }
+    const kb0 = kichBanDieuDuong(text);
+    if(kb0){ v.min += 1; v.th.dieuduong.push({from:'nurse', text:kb0}); return }
+    if(out.hoi_lai){ v.th.dieuduong.push({from:'nurse', text:out.hoi_lai}); return }
+  }
   const kb = kichBanDieuDuong(text);
   if(kb){ v.min += 1; v.th.dieuduong.push({from:'nurse', text:kb}); return }
   if(!hasKey()){ v.th.dieuduong.push({from:'nurse', text:cauLinh(), tg:1}); return }
@@ -450,6 +514,18 @@ function hoSoLinh(){
 - Xét nghiệm, thăm dò đã làm trong lượt này:
 ${xn}${kham ? '\n- Điều dưỡng đã đo:\n' + kham : ''}${truoc ? '\n- Các lượt trước:\n' + truoc : ''}`;
 }
+const coYNho = text => /(^|[^\p{L}])(đo|cho|làm|chụp|lấy|gửi|chỉ định|order|kiểm tra|xem|khám|nghe|soi|cân|test|xét nghiệm|siêu âm|vén|cởi|đỡ|chuẩn bị|giúp|nhờ)([^\p{L}]|$)/u.test(text.toLowerCase().normalize('NFC'));
+/* Thực hiện những gì Linh đã hiểu (sinh hiệu, cân đo, đo HA, chuẩn bị bệnh nhân để bác sĩ khám, cho đi cận lâm sàng) */
+function lamTheoHieuY(out){
+  const v = V(), Lx = L(), sh = Lx.sinh_hieu, rep = [], g = CFG.xung_ho || 'anh', G = g[0].toUpperCase() + g.slice(1);
+  if(out.sinh_hieu) rep.push(`Mạch ${sh.mach} l/p, HA ${sh.ha}, nhiệt độ ${sh.nhiet} °C, nhịp thở ${sh.nhip_tho} l/p, SpO₂ ${sh.spo2}%.`);
+  if(out.can_do) rep.push(`Cân nặng ${P.can_nang} kg, chiều cao ${P.chieu_cao} cm, BMI ${(P.can_nang / ((P.chieu_cao / 100) ** 2)).toFixed(1).replace('.', ',')}.`);
+  const dd = out.kham.filter(id => DD_KHAM.includes(id)), bs = out.kham.filter(id => !DD_KHAM.includes(id));
+  dd.forEach(id => { const e = examInfo(id); if(!v.exams.has(id)){ v.exams.add(id); v.min += e.phut } v.th.kham.push({from:'res', id, mk:++MK, title:e.ten + ' (điều dưỡng đo)', text:e.hien, media:e.media}); rep.push(e.hien) });
+  if(bs.length){ lamKham(bs); rep.push(`Em chuẩn bị bệnh nhân rồi, ${g} khám ${bs.map(id => examInfo(id).ten.toLowerCase()).join(', ')} nha, kết quả em ghi ở tab Khám.`) }
+  if(out.cls.length){ const r = chiDinhCLS(out.cls); rep.push('Em đã cho đi làm. ' + r.join('; ') + `. ${G} xem ở tab Cận lâm sàng nha.`) }
+  return rep.length ? 'Dạ. ' + rep.join(' ') : '';
+}
 function kichBanDieuDuong(text){
   const v = V(), Lx = L(), sh = Lx.sinh_hieu, t = moRong(khongDau(text), 'dieu_duong'), rep = [], g = CFG.xung_ho || 'anh';
   const has = ks => ks.some(k => t.includes(' ' + k + ' ')), co = text.toLowerCase().normalize('NFC');
@@ -466,7 +542,9 @@ function kichBanDieuDuong(text){
   if(rep.length) return 'Dạ. ' + rep.join(' ');
   /* Hỏi chẩn đoán, nhờ việc chuyên môn rõ ràng → kịch bản; phần còn lại để AI tán gẫu tự nhận ra (lien_quan_ca) */
   if(has(['chan doan', 'dap an', 'benh gi', 'bi benh gi', 'nghi benh gi', 'phac do'])) return `Chẩn đoán là việc của bác sĩ mà ${g}, em không nói trước đâu. ${g[0].toUpperCase() + g.slice(1)} khám kỹ rồi tự kết luận nha.`;
-  if(has(['ke don', 'ke toa', 'cho thuoc gi', 'dung thuoc gi', 'nen cho nhap vien', 'co nen nhap vien', 'co nen chuyen', 'lay mau', 'truyen dich', 'kham giup', 'kham dum', 'nghe phoi', 'nghe tim', 'nen lam xet nghiem gi', 'can xet nghiem gi'])) return LINH_CHUYEN_MON_KB();
+  if(has(['kham giup', 'kham dum', 'nghe phoi', 'nghe tim', 'kham cho', 'chuan bi kham'])){ const ids = doTen(text, KHAM.filter(k => !DD_KHAM.includes(k.id)), CUM_CLS, 'kham');
+    if(ids.length){ lamKham(ids); return `Dạ, em chuẩn bị bệnh nhân rồi, ${g} khám ${ids.map(id => examInfo(id).ten.toLowerCase()).join(', ')} nha, kết quả em ghi ở tab Khám.` } }
+  if(has(['ke don', 'ke toa', 'cho thuoc gi', 'dung thuoc gi', 'nen cho nhap vien', 'co nen nhap vien', 'co nen chuyen', 'truyen dich', 'nen lam xet nghiem gi', 'can xet nghiem gi', 'nen kham gi', 'kham gi'])) return LINH_CHUYEN_MON_KB();
   return '';
 }
 /* ================= Tab Kết luận: dò hướng xử trí ================= */
@@ -625,12 +703,10 @@ async function gui(tab, text){
   text = text.trim(); if(!text || S.busy) return;
   S.error[tab] = '';
   if(CAN_AI[tab] && !hasKey()){ openSettings(); return }
-  if(tab === 'kham') guiKham(text);
-  else if(tab === 'cls') guiCLS(text);
-  else if(tab === 'ketluan') guiKetLuan(text);
+  if(tab === 'ketluan') guiKetLuan(text);
   else {
     S.busy = tab; ui();
-    try { if(tab === 'benhnhan') await guiBenhNhan(text); else if(tab === 'dieuduong') await guiDieuDuong(text); else if(tab === 'chandoan') await guiChanDoan(text); else await guiDieuTri(text) }
+    try { if(tab === 'kham') await guiKham(text); else if(tab === 'cls') await guiCLS(text); else if(tab === 'benhnhan') await guiBenhNhan(text); else if(tab === 'dieuduong') await guiDieuDuong(text); else if(tab === 'chandoan') await guiChanDoan(text); else await guiDieuTri(text) }
     catch(e){ S.error[tab] = e.message || String(e); S.retry = {tab, text} }
     S.busy = '';
   }

@@ -73,7 +73,9 @@
     "mang nhi",
     "mui",
     "tai mui hong",
-    "gia mac"
+    "gia mac",
+    "kham hong",
+    "xem hong"
    ]
   },
   {
@@ -106,7 +108,8 @@
    "tu_khoa": [
     "tim",
     "mom tim",
-    "am thoi tim"
+    "am thoi tim",
+    "nghe tim"
    ]
   },
   {
@@ -120,7 +123,8 @@
     "ri rao",
     "go duc",
     "rung thanh",
-    "nhip tho"
+    "nhip tho",
+    "nghe phoi"
    ]
   },
   {
@@ -132,7 +136,10 @@
     "bung",
     "gan lach",
     "murphy",
-    "thuong vi"
+    "thuong vi",
+    "so bung",
+    "nan bung",
+    "kham bung"
    ]
   },
   {
@@ -210,7 +217,34 @@
     "cham xuat huyet",
     "nam da",
     "vung ben",
-    "nep ben"
+    "nep ben",
+    "vet can",
+    "con trung can",
+    "vet thuong",
+    "ton thuong da",
+    "ton thuong",
+    "not san",
+    "san da",
+    "vet loet",
+    "loet da",
+    "tray xuoc",
+    "vet tray",
+    "ban ngua",
+    "mang da",
+    "vet do",
+    "not do",
+    "mun nhot",
+    "nhot",
+    "xem vet",
+    "xem not",
+    "xem ban",
+    "anh vet",
+    "anh da",
+    "hinh vet",
+    "hinh da",
+    "xem anh",
+    "chup anh",
+    "vet"
    ]
   },
   {
@@ -588,7 +622,9 @@
     "ngon tay",
     "cam giac ngon",
     "gap co tay",
-    "phan biet hai diem"
+    "phan biet hai diem",
+    "kham co tay",
+    "kham ban tay"
    ]
   },
   {
