@@ -654,6 +654,17 @@
    "nguon": "SCIN (Google Research & Stanford), case -5863256407851897110, https://storage.googleapis.com/dx-scin-public-data/dataset/images/-6760849338709173764.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0030",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Vết côn trùng đốt đang lui ở mặt sau cẳng tay: dát – sẩn hồng nhạt khoảng 4 mm, ranh giới mờ, không vảy tiết đen (không eschar), không quầng đỏ lan; cạnh đó một nốt ruồi nhỏ.",
+   "tep": "hinh/HA-DA-0030.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -330431243853295711, https://storage.googleapis.com/dx-scin-public-data/dataset/images/705307557695655390.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
