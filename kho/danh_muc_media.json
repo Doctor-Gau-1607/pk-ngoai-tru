@@ -665,6 +665,39 @@
    "nguon": "SCIN (Google Research & Stanford), case -330431243853295711, https://storage.googleapis.com/dx-scin-public-data/dataset/images/705307557695655390.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0031",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Chốc không bọng nước ở đùi – gối trẻ em: cụm khoảng 12 tổn thương tròn hoặc bầu dục 0,5–2 cm, nền đỏ ướt trợt nông, một số có vảy tiết nâu vàng mỏng ở giữa, vài sẩn đỏ nhỏ xung quanh; da vùng khác không tổn thương.",
+   "tep": "hinh/HA-DA-0031.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -5350220404862050225, https://storage.googleapis.com/dx-scin-public-data/dataset/images/-2288434622033194477.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0037",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Vảy nến thể mảng ở cẳng chân: nhiều mảng đỏ hồng ranh giới rõ 0,5–2 cm phủ vảy trắng dày, một số nối theo chiều ngang, sẩn nhỏ cùng tính chất xung quanh.",
+   "tep": "hinh/HA-DA-0037.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 3301384018375137286, dataset/images/-6323838407357716508.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0038",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Vảy nến thể mảng ở cổ chân – cẳng chân đoạn dưới: cụm mảng đỏ phủ vảy trắng dày bong từng mảng, vài sẩn nhỏ có vảy phía trên.",
+   "tep": "hinh/HA-DA-0038.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -500789885194928068, dataset/images/-1578285749986829241.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
