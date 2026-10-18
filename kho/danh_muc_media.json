@@ -775,6 +775,28 @@
    "nguon": "SCIN (Google Research & Stanford), case -7214942537525659338, dataset/images/-7582953284537277597.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0052",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay mạn tự phát ở người lớn (vùng sườn – hông): nhiều sẩn phù hồng nổi gồ nhẹ, tụ thành đám, có chỗ liên kết thành mảng, rải rác vài chấm đỏ nhỏ; vài vệt xước đỏ ở rìa; không mụn nước, không loét, không vảy tiết.",
+   "tep": "hinh/HA-DA-0052.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -8352699628138095738, dataset/images/8977765022181205065.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0054",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay ở cánh tay và cẳng tay: các dải sẩn phù hồng, nổi gờ nhẹ, ngoằn ngoèo, dài, liên kết nhau; da giữa các dải bình thường; không mụn nước, không loét, không vảy, không thâm.",
+   "tep": "hinh/HA-DA-0054.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -4961646511590674396, dataset/images/-1611841910156196691.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
