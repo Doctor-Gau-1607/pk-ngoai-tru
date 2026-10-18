@@ -1,5 +1,5 @@
 {
- "_ghi_chu": "Danh mục cận lâm sàng dùng chung cho mọi ca. nhom dùng để khóa theo rang_buoc_nguon_luc; co_ban = thuộc 'xét nghiệm cơ bản'; gia (đồng) và phut (thời gian có kết quả) là giá tham khảo. mac_dinh = kết quả bình thường khi ca không ghi đè. tu_khoa = các tên gọi viết không dấu; khi bác sĩ chỉ định bằng chat, câu gõ phải chứa ít nhất một tên gọi thì mới được tính. Bổ sung 2026-10-09 (ca HH-0930 bản 2): sa_phoi, xpert, cay, pct, ddimer, ct_nguc; giá và thời gian là ước lượng tham khảo (Xpert ghi 0 đ vì thường do chương trình chống lao chi trả). Bổ sung 2026-10-10: noi_soi (nhóm noi_soi, khóa ở ca không có nội soi). | 11/10/2026: thêm soi_nam, sinh_thiet_da, soi_da, ana, virus_mau, igra, aslo (đề xuất từ DL-0541), pcr_ho_hap (từ HH-1287); giá, thời gian là ước lượng. Bổ sung 2026-10-11 (ca TH-0630, NH-0435): soi_phan, cay_phan. | 18/10/2026 (ca TH-1307): thêm inr (PT/INR riêng, chuyển từ khóa 'inr', 'prothrombin' từ chuc_nang_gan sang), bang_keo_hau_mon; giá, thời gian là ước lượng. | 18/10/2026 (ca TH-0025): thêm hp_ubt (test thở urê), hp_phan (kháng nguyên H. pylori trong phân); giá, thời gian là ước lượng.",
+ "_ghi_chu": "Danh mục cận lâm sàng dùng chung cho mọi ca. nhom dùng để khóa theo rang_buoc_nguon_luc; co_ban = thuộc 'xét nghiệm cơ bản'; gia (đồng) và phut (thời gian có kết quả) là giá tham khảo. mac_dinh = kết quả bình thường khi ca không ghi đè. tu_khoa = các tên gọi viết không dấu; khi bác sĩ chỉ định bằng chat, câu gõ phải chứa ít nhất một tên gọi thì mới được tính. Bổ sung 2026-10-09 (ca HH-0930 bản 2): sa_phoi, xpert, cay, pct, ddimer, ct_nguc; giá và thời gian là ước lượng tham khảo (Xpert ghi 0 đ vì thường do chương trình chống lao chi trả). Bổ sung 2026-10-10: noi_soi (nhóm noi_soi, khóa ở ca không có nội soi). | 11/10/2026: thêm soi_nam, sinh_thiet_da, soi_da, ana, virus_mau, igra, aslo (đề xuất từ DL-0541), pcr_ho_hap (từ HH-1287); giá, thời gian là ước lượng. Bổ sung 2026-10-11 (ca TH-0630, NH-0435): soi_phan, cay_phan. | 18/10/2026 (ca TH-1307): thêm inr (PT/INR riêng, chuyển từ khóa 'inr', 'prothrombin' từ chuc_nang_gan sang), bang_keo_hau_mon; giá, thời gian là ước lượng. | 18/10/2026 (ca TH-0025): thêm hp_ubt (test thở urê), hp_phan (kháng nguyên H. pylori trong phân); giá, thời gian là ước lượng. | 18/10/2026 (ca MT-1226): thêm psg (đa ký giấc ngủ, nhóm tham_do); giá, thời gian là ước lượng.",
  "cls": [
   {
    "id": "ctm",
@@ -2021,6 +2021,23 @@
     "stool antigen",
     "xet nghiem hp phan",
     "hp trong phan"
+   ]
+  },
+  {
+   "id": "psg",
+   "ten": "Đa ký giấc ngủ (polysomnography) hoặc máy đo ngưng thở khi ngủ tại nhà",
+   "nhom": "tham_do",
+   "co_ban": false,
+   "gia": 3000000,
+   "phut": 4320,
+   "mac_dinh": "AHI 4 lần/giờ, SpO₂ thấp nhất 92%",
+   "tu_khoa": [
+    "psg",
+    "da ky giac ngu",
+    "ngung tho khi ngu",
+    "osa",
+    "ahi",
+    "do giac ngu"
    ]
   }
  ]
