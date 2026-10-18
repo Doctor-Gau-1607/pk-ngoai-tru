@@ -2169,6 +2169,23 @@
     "sieu am gang suc",
     "sieu am dobutamine"
    ]
+  },
+  {
+   "id": "elisa_san_la_gan",
+   "ten": "ELISA kháng thể kháng sán lá gan lớn (Fasciola)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 300000,
+   "phut": 10080,
+   "mac_dinh": "ELISA kháng thể kháng sán lá gan lớn (Fasciola): âm tính.",
+   "tu_khoa": [
+    "elisa san la gan",
+    "elisa san la gan lon",
+    "huyet thanh san la gan",
+    "khang the san la gan",
+    "fasciola",
+    "xet nghiem san la gan"
+   ]
   }
  ]
 }
