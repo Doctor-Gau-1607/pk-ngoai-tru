@@ -1,5 +1,5 @@
 {
- "_ghi_chu": "Danh mục thăm khám dùng chung. AI chỉ nhận ra bác sĩ đang khám phần nào (id); kết quả luôn lấy từ ca, nếu ca không ghi thì dùng mac_dinh (bình thường). phut = thời gian khám. tu_khoa = tên gọi viết không dấu; khi khám bằng chat, câu gõ phải chứa ít nhất một tên gọi thì mới được tính. | 11/10/2026: thêm da_dau_mong, cao_vay_brocq (DL-0541), sang_loc_sang (HH-1287). | 11/10/2026: thêm mat_giong_chu_viet, run_nghi, dong_tac_cham, tang_truong_luc, dang_di_thang_bang, nhan_thuc_moca (TK-0479). | 18/10/2026 (ca TK-0512): thêm rang_ham_mat (răng – hàm – niêm mạc miệng), day_v (dây thần kinh sinh ba).",
+ "_ghi_chu": "Danh mục thăm khám dùng chung. AI chỉ nhận ra bác sĩ đang khám phần nào (id); kết quả luôn lấy từ ca, nếu ca không ghi thì dùng mac_dinh (bình thường). phut = thời gian khám. tu_khoa = tên gọi viết không dấu; khi khám bằng chat, câu gõ phải chứa ít nhất một tên gọi thì mới được tính. | 11/10/2026: thêm da_dau_mong, cao_vay_brocq (DL-0541), sang_loc_sang (HH-1287). | 11/10/2026: thêm mat_giong_chu_viet, run_nghi, dong_tac_cham, tang_truong_luc, dang_di_thang_bang, nhan_thuc_moca (TK-0479). | 18/10/2026 (ca TK-0512): thêm rang_ham_mat (răng – hàm – niêm mạc miệng), day_v (dây thần kinh sinh ba). | 18/10/2026: thêm nghiem_phap_day_that (NH-0801).",
  "kham": [
   {
    "id": "ha_hai_tay",
@@ -765,6 +765,19 @@
     "cham nhe",
     "bong gon",
     "day tam thoa"
+   ]
+  },
+  {
+   "id": "nghiem_phap_day_that",
+   "ten": "Nghiệm pháp dây thắt (băng quấn huyết áp kế giữ 5 phút, đếm chấm xuất huyết/6,25 cm²)",
+   "phut": 8,
+   "mac_dinh": "Nghiệm pháp dây thắt âm tính: dưới 20 chấm xuất huyết/6,25 cm² ở nếp khuỷu và cẳng tay sau 5 phút.",
+   "tu_khoa": [
+    "day that",
+    "nghiem phap day that",
+    "lacet",
+    "tourniquet",
+    "suc ben thanh mach"
    ]
   }
  ]
