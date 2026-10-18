@@ -2078,6 +2078,25 @@
     "nuoc tieu ton luu",
     "sieu am tiet nieu"
    ]
+  },
+  {
+   "_thuoc_danh_muc": "danh_muc_cls",
+   "id": "b12",
+   "ten": "Vitamin B12 huyết thanh (cobalamin toàn phần)",
+   "nhom": "xn",
+   "co_ban": true,
+   "gia": 120000,
+   "phut": 60,
+   "mac_dinh": "Vitamin B12 trong giới hạn bình thường.",
+   "tu_khoa": [
+    "b12",
+    "vitamin b12",
+    "vit b12",
+    "cobalamin",
+    "thieu b12",
+    "vitamin b",
+    "dinh duong mau"
+   ]
   }
  ]
 }
