@@ -720,6 +720,28 @@
    "nguon": "SCIN (Google Research & Stanford), case -6159081838523346961, dataset/images/-8325882401892550811.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0041",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Hai dải đỏ hồng hơi nổi, bờ rõ, bề mặt nhiều sẩn li ti, nằm ngang mặt trước – ngoài đùi người lớn (phù hợp viêm da tiếp xúc theo vệt đồ mặc). Chưa ca nào dùng: ca DL-0125 (trẻ 4 tuổi) không dùng vì ảnh là chi người lớn.",
+   "tep": "hinh/HA-DA-0041.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -6781948527342850071, dataset/images/6060584194970876159.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0042",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Dải đỏ mảnh chếch có vảy nhỏ và mảng đỏ có sẩn, mụn nước nhỏ ở chi người lớn có lông (phù hợp viêm da tiếp xúc theo vệt). Chưa ca nào dùng: ca DL-0125 (trẻ 4 tuổi) không dùng vì ảnh là chi người lớn.",
+   "tep": "hinh/HA-DA-0042.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -5863256407851897110, dataset/images/-6760849338709173764.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
