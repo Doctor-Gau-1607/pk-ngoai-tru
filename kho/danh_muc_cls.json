@@ -1,5 +1,5 @@
 {
- "_ghi_chu": "Danh mục cận lâm sàng dùng chung cho mọi ca. nhom dùng để khóa theo rang_buoc_nguon_luc; co_ban = thuộc 'xét nghiệm cơ bản'; gia (đồng) và phut (thời gian có kết quả) là giá tham khảo. mac_dinh = kết quả bình thường khi ca không ghi đè. tu_khoa = các tên gọi viết không dấu; khi bác sĩ chỉ định bằng chat, câu gõ phải chứa ít nhất một tên gọi thì mới được tính. Bổ sung 2026-10-09 (ca HH-0930 bản 2): sa_phoi, xpert, cay, pct, ddimer, ct_nguc; giá và thời gian là ước lượng tham khảo (Xpert ghi 0 đ vì thường do chương trình chống lao chi trả). Bổ sung 2026-10-10: noi_soi (nhóm noi_soi, khóa ở ca không có nội soi). | 11/10/2026: thêm soi_nam, sinh_thiet_da, soi_da, ana, virus_mau, igra, aslo (đề xuất từ DL-0541), pcr_ho_hap (từ HH-1287); giá, thời gian là ước lượng. Bổ sung 2026-10-11 (ca TH-0630, NH-0435): soi_phan, cay_phan. | 18/10/2026 (ca TH-1307): thêm inr (PT/INR riêng, chuyển từ khóa 'inr', 'prothrombin' từ chuc_nang_gan sang), bang_keo_hau_mon; giá, thời gian là ước lượng. | 18/10/2026 (ca TH-0025): thêm hp_ubt (test thở urê), hp_phan (kháng nguyên H. pylori trong phân); giá, thời gian là ước lượng. | 18/10/2026 (ca MT-1226): thêm psg (đa ký giấc ngủ, nhóm tham_do); giá, thời gian là ước lượng. | 18/10/2026 (ca TK-0512, TN-0233, MT-1087, NH-0850): thêm xq_rang, sa_tlt, b12, igm_soi; giá, thời gian là ước lượng. | 18/10/2026 (ca DL-0631): thêm pcr_hsv, tzanck; giá, thời gian là ước lượng. | 18/10/2026 (ca TQ-0001, HH-1413): thêm anti_hbs_hbc (anti-HBs định lượng, anti-HBc toàn phần), ho_hap_ky (hô hấp ký kèm test hồi phục phế quản, nhóm xn vì cần kỹ thuật viên); giá, thời gian là ước lượng. | 18/10/2026 (ca TM-0272): thêm schirmer (nghiệm pháp Schirmer I, nhóm tham_do); giá, thời gian là ước lượng. | 18/10/2026 (ca NH-0678, TH-0614): thêm pcr_entero (RT-PCR enterovirus), cdiff (độc tố/NAAT C. difficile trong phân); giá, thời gian là ước lượng.",
+ "_ghi_chu": "Danh mục cận lâm sàng dùng chung cho mọi ca. nhom dùng để khóa theo rang_buoc_nguon_luc; co_ban = thuộc 'xét nghiệm cơ bản'; gia (đồng) và phut (thời gian có kết quả) là giá tham khảo. mac_dinh = kết quả bình thường khi ca không ghi đè. tu_khoa = các tên gọi viết không dấu; khi bác sĩ chỉ định bằng chat, câu gõ phải chứa ít nhất một tên gọi thì mới được tính. Bổ sung 2026-10-09 (ca HH-0930 bản 2): sa_phoi, xpert, cay, pct, ddimer, ct_nguc; giá và thời gian là ước lượng tham khảo (Xpert ghi 0 đ vì thường do chương trình chống lao chi trả). Bổ sung 2026-10-10: noi_soi (nhóm noi_soi, khóa ở ca không có nội soi). | 11/10/2026: thêm soi_nam, sinh_thiet_da, soi_da, ana, virus_mau, igra, aslo (đề xuất từ DL-0541), pcr_ho_hap (từ HH-1287); giá, thời gian là ước lượng. Bổ sung 2026-10-11 (ca TH-0630, NH-0435): soi_phan, cay_phan. | 18/10/2026 (ca TH-1307): thêm inr (PT/INR riêng, chuyển từ khóa 'inr', 'prothrombin' từ chuc_nang_gan sang), bang_keo_hau_mon; giá, thời gian là ước lượng. | 18/10/2026 (ca TH-0025): thêm hp_ubt (test thở urê), hp_phan (kháng nguyên H. pylori trong phân); giá, thời gian là ước lượng. | 18/10/2026 (ca MT-1226): thêm psg (đa ký giấc ngủ, nhóm tham_do); giá, thời gian là ước lượng. | 18/10/2026 (ca TK-0512, TN-0233, MT-1087, NH-0850): thêm xq_rang, sa_tlt, b12, igm_soi; giá, thời gian là ước lượng. | 18/10/2026 (ca DL-0631): thêm pcr_hsv, tzanck; giá, thời gian là ước lượng. | 18/10/2026 (ca TQ-0001, HH-1413): thêm anti_hbs_hbc (anti-HBs định lượng, anti-HBc toàn phần), ho_hap_ky (hô hấp ký kèm test hồi phục phế quản, nhóm xn vì cần kỹ thuật viên); giá, thời gian là ước lượng. | 18/10/2026 (ca TM-0272): thêm schirmer (nghiệm pháp Schirmer I, nhóm tham_do); giá, thời gian là ước lượng. | 18/10/2026 (ca NH-0678, TH-0614): thêm pcr_entero (RT-PCR enterovirus), cdiff (độc tố/NAAT C. difficile trong phân); giá, thời gian là ước lượng. | 18/10/2026 (ca NT-0098): thêm prl (prolactin), fsh_lh (FSH, LH, estradiol), mri_yen (MRI tuyến yên, nhóm ct); giá, thời gian là ước lượng.",
  "cls": [
   {
    "id": "ctm",
@@ -2276,6 +2276,47 @@
     "gdh phan"
    ],
    "co_ban": false
+  },
+  {
+   "id": "prl",
+   "ten": "Prolactin huyết thanh",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 150000,
+   "phut": 60,
+   "mac_dinh": "Prolactin trong giới hạn bình thường",
+   "tu_khoa": [
+    "prolactin",
+    "prl"
+   ]
+  },
+  {
+   "id": "fsh_lh",
+   "ten": "FSH, LH, estradiol huyết thanh",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 300000,
+   "phut": 90,
+   "mac_dinh": "FSH, LH, estradiol trong giới hạn bình thường",
+   "tu_khoa": [
+    "fsh",
+    "estradiol",
+    "fsh lh",
+    "luteinizing"
+   ]
+  },
+  {
+   "id": "mri_yen",
+   "ten": "MRI vùng yên (tuyến yên) có thuốc đối quang từ",
+   "nhom": "ct",
+   "co_ban": false,
+   "gia": 2500000,
+   "phut": 60,
+   "mac_dinh": "Tuyến yên không thấy tổn thương bất thường.",
+   "tu_khoa": [
+    "mri yen",
+    "mri tuyen yen"
+   ]
   }
  ]
 }
