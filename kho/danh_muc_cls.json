@@ -2154,6 +2154,21 @@
     "te bao da nhan khong lo",
     "soi dich mun nuoc"
    ]
+  },
+  {
+   "id": "sa_tim_gang_suc",
+   "ten": "Siêu âm tim gắng sức",
+   "nhom": "sieu_am",
+   "co_ban": false,
+   "gia": 600000,
+   "phut": 60,
+   "mac_dinh": "Không rối loạn vận động vùng khi nghỉ và khi gắng sức, EF tăng khi gắng sức",
+   "tu_khoa": [
+    "sieu am tim gang suc",
+    "stress echo",
+    "sieu am gang suc",
+    "sieu am dobutamine"
+   ]
   }
  ]
 }
