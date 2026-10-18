@@ -2039,6 +2039,45 @@
     "ahi",
     "do giac ngu"
    ]
+  },
+  {
+   "id": "xq_rang",
+   "ten": "X-quang răng (cận chóp / toàn cảnh)",
+   "nhom": "xquang",
+   "co_ban": false,
+   "gia": 60000,
+   "phut": 30,
+   "mac_dinh": "Không thấy tổn thương quanh chóp, không sâu răng lan tủy, xoang hàm trên trong.",
+   "tu_khoa": [
+    "xq rang",
+    "x quang rang",
+    "chup rang",
+    "can chop",
+    "toan canh",
+    "panorex",
+    "chup xquang rang",
+    "phim rang"
+   ]
+  },
+  {
+   "id": "sa_tlt",
+   "ten": "Siêu âm bàng quang – tuyến tiền liệt (qua thành bụng hoặc qua trực tràng): thể tích tuyến, nước tiểu tồn lưu, ổ áp xe, ứ nước thận",
+   "nhom": "sieu_am",
+   "gia": 200000,
+   "phut": 20,
+   "mac_dinh": "Bàng quang thành mỏng, không tồn lưu đáng kể. Tuyến tiền liệt kích thước bình thường, cấu trúc đồng nhất, không ổ giảm âm. Hai thận không ứ nước.",
+   "tu_khoa": [
+    "sieu am tuyen tien liet",
+    "sieu am tlt",
+    "sieu am tien liet tuyen",
+    "sieu am bang quang",
+    "sieu am bang quang tuyen tien liet",
+    "sieu am qua truc trang",
+    "sieu am tuyen tien liet qua bung",
+    "sa tuyen tien liet",
+    "nuoc tieu ton luu",
+    "sieu am tiet nieu"
+   ]
   }
  ]
 }

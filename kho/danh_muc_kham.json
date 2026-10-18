@@ -724,6 +724,44 @@
     "tang truong",
     "bieu do tang truong"
    ]
+  },
+  {
+   "id": "rang_ham_mat",
+   "ten": "Khám răng – hàm – niêm mạc miệng",
+   "phut": 4,
+   "mac_dinh": "Răng đều, không sâu, gõ không đau, nướu và niêm mạc miệng hồng, không loét.",
+   "tu_khoa": [
+    "rang",
+    "kham rang",
+    "ham mat",
+    "niem mac mieng",
+    "go rang",
+    "nuou",
+    "long rang",
+    "sau rang",
+    "o rang",
+    "vom mieng"
+   ]
+  },
+  {
+   "id": "day_v",
+   "ten": "Khám dây thần kinh sinh ba (V): cảm giác ba nhánh, bông gòn, phản xạ giác mạc, cơ nhai",
+   "phut": 5,
+   "mac_dinh": "Cảm giác chạm nhẹ và kim châm ba nhánh V hai bên đều và bình thường. Phản xạ giác mạc hai bên bình thường. Cơ cắn, cơ thái dương đều.",
+   "tu_khoa": [
+    "day v",
+    "day sinh ba",
+    "than kinh so v",
+    "sinh ba",
+    "cam giac mat",
+    "cam giac ba nhanh",
+    "phan xa giac mac",
+    "co nhai",
+    "allodynia",
+    "cham nhe",
+    "bong gon",
+    "day tam thoa"
+   ]
   }
  ]
 }
