@@ -698,6 +698,17 @@
    "nguon": "SCIN (Google Research & Stanford), case -500789885194928068, dataset/images/-1578285749986829241.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0039",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Herpes simplex tái phát ở chi dưới (đùi): một đám da hồng đỏ có hai cụm mụn nước nhỏ 1–3 mm tụ sát nhau như chùm, dịch trong đến hơi đục, vài mụn rời ở rìa; chưa loét, chưa đóng vảy.",
+   "tep": "hinh/HA-DA-0039.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -2604354007631102660, dataset/images/7535774685227033078.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
