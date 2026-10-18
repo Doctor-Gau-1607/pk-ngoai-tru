@@ -742,6 +742,28 @@
    "nguon": "SCIN (Google Research & Stanford), case -5863256407851897110, dataset/images/-6760849338709173764.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0047",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Chốc kèm viêm mô tế bào nhẹ ở nếp khoeo (ảnh người lớn) (nhìn rộng): tổn thương trợt ướt bóng dịch, vài chỗ vảy tiết mỏng, quầng đỏ lan quanh vài cm, da quanh hơi nề.",
+   "tep": "hinh/HA-DA-0047.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 5401849228462329257, dataset/images/-1729319674501519998.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0048",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Chốc kèm viêm mô tế bào nhẹ ở nếp khoeo (ảnh người lớn) (nhìn gần): cụm tổn thương trợt nhỏ liên kết, vài mụn nước vỡ ở rìa, bề mặt ướt bóng, nền hồng đỏ, quầng đỏ lan đều quanh tổn thương.",
+   "tep": "hinh/HA-DA-0048.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 5401849228462329257, dataset/images/-4483786918718030260.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
