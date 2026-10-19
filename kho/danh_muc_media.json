@@ -797,6 +797,17 @@
    "nguon": "SCIN (Google Research & Stanford), case -4961646511590674396, dataset/images/-1611841910156196691.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0058",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Trứng cá ở ngực và vai: rất nhiều sẩn đỏ nhỏ 2–4 mm rải khắp, vài sẩn có đầu mủ, nền da hơi đỏ, không có cục lớn, không loét.",
+   "tep": "hinh/HA-DA-0058.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 3043670062961372946, dataset/images/-3786514405980384774.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
