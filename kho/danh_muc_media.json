@@ -819,6 +819,28 @@
    "nguon": "SCIN (Google Research & Stanford), case 8172216046510123797, dataset/images/-4474737344378911992.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0060",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Sẩn côn trùng đốt bội nhiễm sớm ở cẳng chân (nữ 60–69 tuổi, da sạm): một sẩn đỏ khoảng 1 cm, nền đỏ tươi, giữa có điểm mủ trắng nhỏ và vảy tiết, quanh có quầng hồng nhạt.",
+   "tep": "hinh/HA-DA-0060.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 2428548180168795187, dataset/images/-5998002369685042996.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0061",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Vết côn trùng đốt ở cẳng chân (nữ 60–69 tuổi): vài sẩn đỏ hồng 3–5 mm, riêng rẽ hoặc thành cụm, nhiều sẩn có chấm đỏ sẫm ở giữa, quầng hồng nhạt quanh sẩn.",
+   "tep": "hinh/HA-DA-0061.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 5474620883199342408, dataset/images/1337969540709121168.png (nhãn SCIN: ACNE)",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
