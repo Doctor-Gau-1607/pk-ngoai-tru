@@ -779,6 +779,19 @@
     "tourniquet",
     "suc ben thanh mach"
    ]
+  },
+  {
+   "id": "le_dao",
+   "ten": "Khám lệ đạo (ấn túi lệ, điểm lệ)",
+   "phut": 3,
+   "mac_dinh": "Ấn túi lệ hai bên không có mủ nhầy trào ra, góc trong mắt không sưng đỏ.",
+   "tu_khoa": [
+    "le dao",
+    "tui le",
+    "an tui le",
+    "tac le dao",
+    "diem le"
+   ]
   }
  ]
 }
