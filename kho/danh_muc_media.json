@@ -841,6 +841,17 @@
    "nguon": "SCIN (Google Research & Stanford), case 5474620883199342408, dataset/images/1337969540709121168.png (nhãn SCIN: ACNE)",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0062",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Nếp khuỷu: viêm da cơ địa, da dày lichen hóa, trầy xước, ít dịch thanh",
+   "tep": "hinh/HA-DA-0062.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -7706133768652999375, dataset/images/5959129552905070493.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
