@@ -2382,6 +2382,21 @@
     "hysteroscopy",
     "sinh thiet noi mac tu cung"
    ]
+  },
+  {
+   "id": "paracetamol_mau",
+   "ten": "Định lượng paracetamol (acetaminophen) máu",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 300000,
+   "phut": 120,
+   "mac_dinh": "Dưới ngưỡng phát hiện",
+   "tu_khoa": [
+    "paracetamol mau",
+    "acetaminophen mau",
+    "dinh luong paracetamol",
+    "nong do paracetamol"
+   ]
   }
  ]
 }
