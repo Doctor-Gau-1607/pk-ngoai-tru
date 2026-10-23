@@ -792,6 +792,24 @@
     "tac le dao",
     "diem le"
    ]
+  },
+  {
+   "id": "quan_sat_nuot",
+   "ten": "Quan sát nuốt thử (từng ngụm nước, miếng bánh mì mềm: ho sặc, giọng ướt, vị trí vướng, thời gian trôi)",
+   "phut": 3,
+   "mac_dinh": "Uống nước từng ngụm và nuốt bánh mì mềm trôi liền, không ho sặc, giọng không ướt, không đau.",
+   "tu_khoa": [
+    "nuot thu",
+    "quan sat nuot",
+    "uong nuoc",
+    "ho sac",
+    "nuot nghen",
+    "kho nuot",
+    "banh mi mem",
+    "test nuot",
+    "nuot dau",
+    "vuong"
+   ]
   }
  ]
 }
