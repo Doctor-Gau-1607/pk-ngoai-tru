@@ -717,6 +717,21 @@
    ]
   },
   {
+   "id": "ct_hoc_mat",
+   "ten": "CT hốc mắt (có cản quang)",
+   "nhom": "ct",
+   "co_ban": false,
+   "gia": 1500000,
+   "phut": 45,
+   "mac_dinh": "Tổ chức hốc mắt, cơ vận nhãn, thị thần kinh bình thường; không ổ áp xe dưới màng xương",
+   "tu_khoa": [
+    "ct hoc mat",
+    "cat lop hoc mat",
+    "ct orbit",
+    "chup ct hoc mat"
+   ]
+  },
+  {
    "id": "soi_phan",
    "ten": "Soi phân (hồng cầu, bạch cầu, ký sinh trùng)",
    "nhom": "xn",
