@@ -2349,6 +2349,39 @@
     "cuong androgen",
     "hormon nam"
    ]
+  },
+  {
+   "id": "pap_hpv",
+   "ten": "Tế bào học cổ tử cung (Pap) hoặc xét nghiệm HPV nguy cơ cao",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 300000,
+   "phut": 30,
+   "mac_dinh": "Tế bào học cổ tử cung âm tính với tổn thương nội biểu mô hoặc ác tính; HPV nguy cơ cao âm tính",
+   "tu_khoa": [
+    "pap",
+    "pap smear",
+    "hpv",
+    "te bao co tu cung",
+    "tam soat ung thu co tu cung",
+    "thinprep"
+   ]
+  },
+  {
+   "id": "soi_buong_tc",
+   "ten": "Soi buồng tử cung kèm sinh thiết nội mạc tử cung",
+   "nhom": "noi_soi",
+   "co_ban": false,
+   "gia": 2500000,
+   "phut": 45,
+   "mac_dinh": "Buồng tử cung trơn láng, không polyp, không u xơ dưới niêm mạc; nội mạc lành tính",
+   "tu_khoa": [
+    "soi buong tu cung",
+    "sinh thiet noi mac",
+    "nao niem mac",
+    "hysteroscopy",
+    "sinh thiet noi mac tu cung"
+   ]
   }
  ]
 }
