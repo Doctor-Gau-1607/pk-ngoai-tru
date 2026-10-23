@@ -852,6 +852,28 @@
    "nguon": "SCIN (Google Research & Stanford), case -7706133768652999375, dataset/images/5959129552905070493.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0064",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Viêm da tiếp xúc ở cẳng tay (mặt trong, nửa dưới): vệt chéo dài cụm mụn nước nhỏ và vảy tiết vàng cam trên nền hồng nhạt, một vết trợt đỏ nhỏ ở phía dưới, vài chấm vàng rải rác cạnh vệt.",
+   "tep": "hinh/HA-DA-0064.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -4919518317184666095, dataset/images/7190421899691362883.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0065",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Viêm da tiếp xúc ở cẳng tay (cận cảnh): vệt cụm mụn nước nhỏ và vảy tiết vàng cam theo đường thẳng, một vết trợt đỏ nhỏ.",
+   "tep": "hinh/HA-DA-0065.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -4164508719774231343, dataset/images/382205097892683569.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
