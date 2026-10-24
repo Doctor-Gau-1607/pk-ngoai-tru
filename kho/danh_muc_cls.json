@@ -2414,6 +2414,22 @@
     "phim xuong chum",
     "chup xuong chum"
    ]
+  },
+  {
+   "id": "hla_b5801",
+   "ten": "Xét nghiệm HLA-B*58:01 (trước khi dùng allopurinol)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 1000000,
+   "phut": 2880,
+   "mac_dinh": "HLA-B*58:01 âm tính",
+   "tu_khoa": [
+    "hla b5801",
+    "hla b58",
+    "hla b*58",
+    "gen hla allopurinol",
+    "di ung allopurinol"
+   ]
   }
  ]
 }
