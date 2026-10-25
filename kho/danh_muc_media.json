@@ -1006,6 +1006,28 @@
    "nguon": "SCIN (Google Research & Stanford), case 5735444028555177462, dataset/images/2321842199772092520.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0148",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Sốt phát ban do virus (nhãn SCIN: Viral Exanthem, trọng số 1,0), ban lan ở hai gối và đùi: hồng ban dát sẩn nhỏ 2–5 mm, nhiều đám hợp lại quanh gối, thưa dần ở đùi và cẳng chân; không chấm xuất huyết, không bọng nước.",
+   "tep": "hinh/HA-DA-0148.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -8741066554619028845, dataset/images/2423705427124294223.png (https://storage.googleapis.com/dx-scin-public-data/dataset/images/2423705427124294223.png)",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0149",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Sốt phát ban do virus (nhãn SCIN: Viral Exanthem, trọng số 1,0), ban mới mọc ở đùi và gối: hồng ban dát sẩn nhỏ 2–4 mm thưa, vài nốt hợp lại phía trên gối; không chấm xuất huyết.",
+   "tep": "hinh/HA-DA-0149.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -8741066554619028845, dataset/images/2880743758939774962.png (https://storage.googleapis.com/dx-scin-public-data/dataset/images/2880743758939774962.png)",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
