@@ -2519,6 +2519,40 @@
     "psa toan phan",
     "ung thu tuyen tien liet"
    ]
+  },
+  {
+   "id": "pche",
+   "ten": "Cholinesterase huyết tương (pChE)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 180000,
+   "phut": 120,
+   "mac_dinh": "Cholinesterase huyết tương trong giới hạn bình thường.",
+   "tu_khoa": [
+    "cholinesterase",
+    "pche",
+    "che huyet tuong",
+    "ngo doc thuoc tru sau",
+    "phospho huu co",
+    "carbamat"
+   ]
+  },
+  {
+   "id": "oae_abr",
+   "ten": "Đo âm ốc tai (OAE) / điện thính giác thân não (ABR)",
+   "nhom": "tham_do",
+   "co_ban": false,
+   "gia": 300000,
+   "phut": 40,
+   "mac_dinh": "OAE đạt (PASS) cả hai tai; ABR có ngưỡng nghe bình thường hai tai.",
+   "tu_khoa": [
+    "oae",
+    "abr",
+    "do am oc tai",
+    "dien thinh giac than nao",
+    "sang loc thinh luc so sinh",
+    "do thinh luc tre nho"
+   ]
   }
  ]
 }
