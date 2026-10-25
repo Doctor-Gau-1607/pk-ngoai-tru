@@ -2504,6 +2504,21 @@
     "thoracentesis",
     "choc dich nguc"
    ]
+  },
+  {
+   "id": "psa",
+   "ten": "PSA toàn phần huyết thanh (kháng nguyên đặc hiệu tuyến tiền liệt)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 150000,
+   "phut": 60,
+   "mac_dinh": "1,2 ng/mL",
+   "tu_khoa": [
+    "psa",
+    "khang nguyen dac hieu tuyen tien liet",
+    "psa toan phan",
+    "ung thu tuyen tien liet"
+   ]
   }
  ]
 }
