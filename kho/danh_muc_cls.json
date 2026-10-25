@@ -2467,6 +2467,43 @@
     "mo benh hoc co tu cung",
     "sinh thiet dinh huong"
    ]
+  },
+  {
+   "id": "ct_xuong_thai_duong",
+   "ten": "CT xương thái dương (xương chũm, tai giữa, tai trong)",
+   "nhom": "ct",
+   "co_ban": false,
+   "gia": 900000,
+   "phut": 60,
+   "mac_dinh": "Thông bào xương chũm thông khí tốt, tai giữa và xương con bình thường, không hủy xương.",
+   "tu_khoa": [
+    "ct xuong thai duong",
+    "ct xuong chum",
+    "ct tai",
+    "ct tai giua",
+    "chup ct tai",
+    "ct xuong da"
+   ]
+  },
+  {
+   "id": "choc_dich_mp",
+   "ten": "Chọc dò dưới siêu âm và xét nghiệm dịch màng phổi (pH, glucose, LDH, protein, tế bào, Gram, cấy, ADA)",
+   "nhom": "sieu_am",
+   "co_ban": false,
+   "gia": 350000,
+   "phut": 60,
+   "mac_dinh": "Không có dịch màng phổi để chọc",
+   "tu_khoa": [
+    "choc mang phoi",
+    "choc do mang phoi",
+    "choc dich mang phoi",
+    "xet nghiem dich mang phoi",
+    "dich mang phoi",
+    "ph dich mang phoi",
+    "dich mp",
+    "thoracentesis",
+    "choc dich nguc"
+   ]
   }
  ]
 }
