@@ -810,6 +810,27 @@
     "nuot dau",
     "vuong"
    ]
+  },
+  {
+   "id": "quan_sat_bu_me",
+   "ten": "Quan sát một cữ bú mẹ (tư thế, ngậm bắt vú, mút – nuốt, thời gian bú)",
+   "phut": 15,
+   "mac_dinh": "Mẹ ngồi thoải mái, bé áp bụng mẹ, đầu và thân thẳng hàng. Ngậm bắt vú tốt: quầng vú lộ phía trên nhiều hơn phía dưới, miệng mở rộng, môi dưới đưa ra ngoài, cằm chạm vú. Mút chậm sâu, có tiếng nuốt, thỉnh thoảng nghỉ.",
+   "tu_khoa": [
+    "quan sat bu",
+    "cu bu",
+    "bu me",
+    "ngam bat vu",
+    "ngam vu",
+    "tu the bu",
+    "cho con bu",
+    "cho bu",
+    "mut nuot",
+    "khop vu",
+    "kham bu",
+    "sua me",
+    "bu sua me"
+   ]
   }
  ]
 }
