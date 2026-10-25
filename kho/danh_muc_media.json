@@ -918,6 +918,28 @@
    "nguon": "SCIN (Google Research & Stanford), case -5256429932634187395, dataset/images/4995323676833943296.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0137",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Viêm da tiếp xúc: mảng đỏ có vảy mịn ở cổ tay – cẳng tay dưới",
+   "tep": "hinh/HA-DA-0137.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -2986702064294375651, dataset/images/3358565101040151385.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0139",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Viêm da tiếp xúc: mảng đỏ vảy mịn, sẩn nhỏ ở mu bàn tay",
+   "tep": "hinh/HA-DA-0139.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -5839100568591720751, dataset/images/-38602240568937495.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
