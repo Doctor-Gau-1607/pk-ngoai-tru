@@ -940,6 +940,28 @@
    "nguon": "SCIN (Google Research & Stanford), case -5839100568591720751, dataset/images/-38602240568937495.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0140",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay cấp: nhiều sẩn phù đỏ hồng nổi gồ vùng hông – sườn, kèm vệt xước",
+   "tep": "hinh/HA-DA-0140.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -8352699628138095738, dataset/images/8977765022181205065.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0141",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay cấp: mảng đỏ hồng nhạt, bờ không rõ, nổi nhẹ ở mặt trong cẳng tay",
+   "tep": "hinh/HA-DA-0141.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -6903160896710638127, dataset/images/6276334615397287053.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
