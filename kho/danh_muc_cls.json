@@ -2430,6 +2430,43 @@
     "gen hla allopurinol",
     "di ung allopurinol"
    ]
+  },
+  {
+   "id": "soi_ctc",
+   "ten": "Soi cổ tử cung (acid acetic 3–5%, Lugol) theo thang IFCPC 2011",
+   "nhom": "tham_do",
+   "co_ban": false,
+   "gia": 400000,
+   "phut": 30,
+   "mac_dinh": "Soi cổ tử cung đạt: thấy toàn bộ ranh giới lát – trụ, không biểu mô trắng sau acid acetic, bắt màu iod đều, không mạch máu không điển hình.",
+   "tu_khoa": [
+    "soi co tu cung",
+    "soi ctc",
+    "colposcopy",
+    "colposcope",
+    "soi co tu cung acid acetic",
+    "test lugol",
+    "test schiller",
+    "hinselmann",
+    "ifcpc"
+   ]
+  },
+  {
+   "id": "sinh_thiet_ctc",
+   "ten": "Sinh thiết cổ tử cung định hướng qua soi, gửi giải phẫu bệnh (mô bệnh học)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 800000,
+   "phut": 30,
+   "mac_dinh": "Biểu mô vảy và tuyến cổ tử cung bình thường hoặc viêm mạn nhẹ, không loạn sản, không ác tính.",
+   "tu_khoa": [
+    "sinh thiet co tu cung",
+    "sinh thiet ctc",
+    "bam sinh thiet co tu cung",
+    "giai phau benh co tu cung",
+    "mo benh hoc co tu cung",
+    "sinh thiet dinh huong"
+   ]
   }
  ]
 }
