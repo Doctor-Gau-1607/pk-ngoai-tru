@@ -896,6 +896,28 @@
    "nguon": "SCIN (Google Research & Stanford), case -7901710788064822966, dataset/images/1204879450422885052.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0071",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Trứng cá: sẩn đỏ rải rác ở thân mình (ngực, sườn), vết thâm sau viêm",
+   "tep": "hinh/HA-DA-0071.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 5373485488810311376, dataset/images/-1116085972492150093.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0069",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Viêm da cơ địa ở vùng nếp khuỷu (cẳng tay, da sẫm): mảng đỏ nâu nhạt ranh giới không rõ, da khô bong vảy mịn, vài sẩn nhỏ và vết xước do gãi, không rỉ dịch, không mủ.",
+   "tep": "hinh/HA-DA-0069.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -5256429932634187395, dataset/images/4995323676833943296.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
