@@ -2553,6 +2553,40 @@
     "sang loc thinh luc so sinh",
     "do thinh luc tre nho"
    ]
+  },
+  {
+   "id": "mycoplasma",
+   "ten": "Xét nghiệm Mycoplasma pneumoniae (huyết thanh IgM hoặc PCR)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 300000,
+   "phut": 240,
+   "mac_dinh": "Âm tính",
+   "tu_khoa": [
+    "mycoplasma",
+    "mycoplasma pneumoniae",
+    "igm mycoplasma",
+    "pcr mycoplasma",
+    "phoi khong dien hinh",
+    "vi khuan khong dien hinh"
+   ]
+  },
+  {
+   "id": "test_rota",
+   "ten": "Test nhanh kháng nguyên rotavirus trong phân",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 150000,
+   "phut": 30,
+   "mac_dinh": "Kháng nguyên rotavirus trong phân: âm tính.",
+   "tu_khoa": [
+    "test rota",
+    "rotavirus",
+    "xet nghiem rota",
+    "khang nguyen rota",
+    "test nhanh phan",
+    "rota phan"
+   ]
   }
  ]
 }
