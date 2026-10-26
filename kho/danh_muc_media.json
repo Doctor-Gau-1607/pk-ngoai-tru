@@ -1105,6 +1105,39 @@
    "nguon": "SCIN (Google Research & Stanford), case -6528630824527555826, dataset/images/-7135055716999173117.png (nhãn bác sĩ da liễu: Cutaneous lupus)",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0169",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay cấp không điển hình ở cẳng tay (da Fitzpatrick 3): vùng da hồng nhạt, bờ không rõ, vài sẩn rất nhỏ nổi nhẹ; không vảy, không mụn nước",
+   "tep": "hinh/HA-DA-0169.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -7820093713010813140, dataset/images/-1389929707845299281.png (nhãn bác sĩ da liễu: Urticaria)",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0170",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay cấp ở hông – đùi (da Fitzpatrick 3): nhiều sẩn phù tròn hồng đỏ 0,5–2 cm, rời rạc, vài sẩn nối nhau",
+   "tep": "hinh/HA-DA-0170.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -5424985950276316702, dataset/images/4793777024686540807.png (nhãn bác sĩ da liễu: Urticaria)",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0171",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay cấp ở đùi – gối (da Fitzpatrick 3): các mảng đỏ hồng đa cung, bờ rõ, xen vùng da nhạt hơn",
+   "tep": "hinh/HA-DA-0171.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -3674218230973070176, dataset/images/-4055387610466540879.png (nhãn bác sĩ da liễu: Urticaria)",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }

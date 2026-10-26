@@ -2587,6 +2587,25 @@
     "test nhanh phan",
     "rota phan"
    ]
+  },
+  {
+   "id": "hbv_khang_thuoc",
+   "ten": "Giải trình tự gen kháng thuốc HBV (vùng polymerase)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 2500000,
+   "phut": 10080,
+   "mac_dinh": "Không phát hiện đột biến kháng thuốc nucleos(t)ide ở vùng polymerase HBV.",
+   "tu_khoa": [
+    "khang thuoc hbv",
+    "giai trinh tu hbv",
+    "dot bien khang thuoc",
+    "giai trinh tu gen hbv",
+    "genotype khang thuoc",
+    "sequencing hbv",
+    "polymerase hbv",
+    "xet nghiem khang thuoc viem gan b"
+   ]
   }
  ]
 }
