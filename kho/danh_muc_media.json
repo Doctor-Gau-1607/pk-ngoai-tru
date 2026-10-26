@@ -1028,6 +1028,28 @@
    "nguon": "SCIN (Google Research & Stanford), case -8741066554619028845, dataset/images/2880743758939774962.png (https://storage.googleapis.com/dx-scin-public-data/dataset/images/2880743758939774962.png)",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0161",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Viêm da tiếp xúc: dải đỏ hồng đến sẫm, vảy mịn, bề mặt thô, theo vùng đai quấn ngang bụng trên rốn",
+   "tep": "hinh/HA-DA-0161.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -408534567856996060, dataset/images/-99974083044280801.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0157",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Viêm da tiếp xúc dị ứng: mảng đỏ sẫm hơi tím, vảy mịn, bờ không rõ ở cẳng tay",
+   "tep": "hinh/HA-DA-0157.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -3406507834674402591, dataset/images/-164146060936976148.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
