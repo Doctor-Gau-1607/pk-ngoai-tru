@@ -2606,6 +2606,22 @@
     "polymerase hbv",
     "xet nghiem khang thuoc viem gan b"
    ]
+  },
+  {
+   "id": "ma_tuy_nt",
+   "ten": "Test nhanh ma túy nước tiểu (benzodiazepine, opioid, amphetamin, THC)",
+   "nhom": "tham_do",
+   "co_ban": true,
+   "gia": 60000,
+   "phut": 10,
+   "mac_dinh": "Âm tính các chất.",
+   "tu_khoa": [
+    "test nhanh ma tuy",
+    "ma tuy nuoc tieu",
+    "xet nghiem benzodiazepine nuoc tieu",
+    "drug screen",
+    "toxicology nuoc tieu"
+   ]
   }
  ]
 }
