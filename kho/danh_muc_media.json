@@ -1083,6 +1083,28 @@
    "nguon": "SCIN (Google Research & Stanford), case -7916510062591897740, dataset/images/7576219887292331130.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0167",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Ban nhạy cảm ánh sáng trong lupus da/lupus ban đỏ hệ thống ở mặt duỗi cẳng tay (da Fitzpatrick 4): vùng đỏ nhạt hơi nâu hồng, bờ không rõ, phẳng, không vảy",
+   "tep": "hinh/HA-DA-0167.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -6528630824527555826, dataset/images/7644405420835594929.png (nhãn bác sĩ da liễu: Cutaneous lupus)",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0168",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Ban nhạy cảm ánh sáng trong lupus da/lupus ban đỏ hệ thống ở cánh tay gần khuỷu (da Fitzpatrick 4): mảng đỏ tím nhạt, bờ không rõ, phẳng, không vảy",
+   "tep": "hinh/HA-DA-0168.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -6528630824527555826, dataset/images/-7135055716999173117.png (nhãn bác sĩ da liễu: Cutaneous lupus)",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
