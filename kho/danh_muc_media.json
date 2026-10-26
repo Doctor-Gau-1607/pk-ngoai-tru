@@ -1138,6 +1138,17 @@
    "nguon": "SCIN (Google Research & Stanford), case -3674218230973070176, dataset/images/-4055387610466540879.png (nhãn bác sĩ da liễu: Urticaria)",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0172",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay cấp ở má – góc hàm (da Fitzpatrick 5): mảng sẩn phù hơi nhạt màu hơn da xung quanh, bờ gồ, hình cung, bề mặt lỗ chân lông rõ (kiểu vỏ cam); không vảy, không mụn nước",
+   "tep": "hinh/HA-DA-0172.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -8859705766164733610, dataset/images/-8926425952664189068.png (nhãn bác sĩ da liễu: Urticaria)",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
