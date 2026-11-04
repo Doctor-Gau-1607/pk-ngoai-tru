@@ -831,6 +831,22 @@
     "sua me",
     "bu sua me"
    ]
+  },
+  {
+   "id": "quan_sat_hau_mon",
+   "ten": "Quan sát vùng quanh hậu môn, tầng sinh môn (đỏ, xước, nứt, giun, trĩ ngoại, dò)",
+   "phut": 2,
+   "mac_dinh": "Quanh hậu môn da bình thường, không đỏ, không xước, không nứt, không dò; không thấy giun.",
+   "tu_khoa": [
+    "quanh hau mon",
+    "tang sinh mon",
+    "ngua hau mon",
+    "nep hau mon",
+    "nut hau mon",
+    "quan sat hau mon",
+    "nhin hau mon",
+    "vung ta"
+   ]
   }
  ]
 }
