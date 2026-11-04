@@ -1160,6 +1160,17 @@
    "nguon": "SCIN (Google Research & Stanford), case -1876369085985161417, dataset/images/2869044007360673347.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0179",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Herpes simplex tái phát: cụm mụn nước, vết trợt nhỏ phủ vảy tiết sẫm màu, xếp dạng chữ X, kèm vài sẩn hồng nhỏ rời, ở hông – mông bên (ca DL-0643)",
+   "tep": "hinh/HA-DA-0179.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -2994712363562385732, dataset/images/-6547124628053406003.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
