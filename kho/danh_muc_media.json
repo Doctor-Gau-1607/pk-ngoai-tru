@@ -1171,6 +1171,17 @@
    "nguon": "SCIN (Google Research & Stanford), case -2994712363562385732, dataset/images/-6547124628053406003.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0219",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Viêm da cơ địa, nếp khuỷu và mặt trong cẳng tay: da khô, nhiều sẩn nhỏ hồng nhạt – trắng hồng rải đều quanh nếp gấp, đỏ nhẹ, vài vệt xước mảnh; chưa mụn nước, chưa rỉ dịch, chưa dày da (ca NH-0999). Ảnh có vùng đen che sẵn từ nguồn.",
+   "tep": "hinh/HA-DA-0219.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -5385363078483571059, dataset/images/-5385363078483571059.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
