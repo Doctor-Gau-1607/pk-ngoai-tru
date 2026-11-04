@@ -2673,6 +2673,43 @@
     "ft tinh",
     "calculated free testosterone"
    ]
+  },
+  {
+   "id": "xq_nguc_nghieng",
+   "ten": "X-quang ngực nghiêng",
+   "nhom": "xquang",
+   "co_ban": false,
+   "gia": 100000,
+   "phut": 30,
+   "mac_dinh": "Phim nghiêng: không tổn thương nhu mô, góc sườn hoành sau sáng.",
+   "tu_khoa": [
+    "x quang nghieng",
+    "xquang nghieng",
+    "phim nghieng",
+    "chup nghieng",
+    "phim phoi nghieng",
+    "phim nguc nghieng"
+   ],
+   "ghi_chu": "BYT: áp xe phổi cần phim nghiêng để định vị ổ (QĐ 4235/2012, Áp xe phổi, mục 2.1.2). Ca HH-1482 tạm ghi kết quả nghiêng trong cxr."
+  },
+  {
+   "id": "noi_soi_pq",
+   "ten": "Nội soi phế quản ống mềm (kèm hút mủ, sinh thiết, rửa phế quản)",
+   "nhom": "noi_soi",
+   "co_ban": false,
+   "gia": 1800000,
+   "phut": 60,
+   "mac_dinh": "Khí phế quản, các phế quản thùy và phân thùy bình thường, không u, không dị vật, không tắc nghẽn.",
+   "tu_khoa": [
+    "noi soi phe quan",
+    "soi phe quan",
+    "nspq",
+    "soi pq",
+    "hut mu phe quan",
+    "sinh thiet phe quan",
+    "rua phe quan"
+   ],
+   "ghi_chu": "QĐ 4235/2012, Áp xe phổi, mục 2.3, 3.1.2; QĐ 2147/2026, mục 3.1.6. Hiện danh mục chỉ có noi_soi = nội soi dạ dày."
   }
  ]
 }
