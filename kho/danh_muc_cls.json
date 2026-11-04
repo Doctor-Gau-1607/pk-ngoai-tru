@@ -2657,6 +2657,22 @@
     "cystoscopy",
     "noi soi tiet nieu duoi"
    ]
+  },
+  {
+   "id": "shbg",
+   "ten": "SHBG huyết thanh (kèm albumin để tính testosterone tự do)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 250000,
+   "phut": 120,
+   "mac_dinh": "SHBG 18 nmol/L",
+   "tu_khoa": [
+    "shbg",
+    "globulin gan hormon sinh duc",
+    "testosterone tu do",
+    "ft tinh",
+    "calculated free testosterone"
+   ]
   }
  ]
 }
