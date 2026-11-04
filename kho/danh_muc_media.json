@@ -1182,6 +1182,39 @@
    "nguon": "SCIN (Google Research & Stanford), case -5385363078483571059, dataset/images/-5385363078483571059.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0240",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Nhiễm khuẩn da (chốc, viêm mô tế bào nhẹ) ở đùi và quanh gối: nhiều sẩn đỏ rải rác, vài chỗ nền đỏ hợp thành mảng nhạt.",
+   "tep": "hinh/HA-DA-0240.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -6387971651752188617, https://storage.googleapis.com/dx-scin-public-data/dataset/images/5092072349779526314.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0241",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Nhiễm khuẩn da (chốc) ở đùi, cận cảnh: sẩn đỏ 3–8 mm có chấm mủ nhỏ hoặc vảy nhỏ ở đỉnh, rải rác.",
+   "tep": "hinh/HA-DA-0241.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -4695767486983535562, https://storage.googleapis.com/dx-scin-public-data/dataset/images/-3290459357811788031.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0242",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Nhiễm khuẩn da (chốc) ở cẳng chân: nhiều sẩn đỏ nhỏ rải rác, nền hồng nhạt.",
+   "tep": "hinh/HA-DA-0242.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -962251279953702051, https://storage.googleapis.com/dx-scin-public-data/dataset/images/-2805054034077058173.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
