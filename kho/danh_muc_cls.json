@@ -394,6 +394,24 @@
    ]
   },
   {
+   "id": "doppler_canh",
+   "ten": "Siêu âm Doppler động mạch cảnh (hai bên)",
+   "nhom": "sieu_am",
+   "co_ban": false,
+   "gia": 350000,
+   "phut": 30,
+   "mac_dinh": "Không thấy mảng xơ vữa hay hẹp động mạch cảnh",
+   "tu_khoa": [
+    "doppler canh",
+    "sieu am canh",
+    "sieu am mach canh",
+    "sieu am dong mach canh",
+    "sieu am mach co",
+    "mach mau co",
+    "mang xo vua canh"
+   ]
+  },
+  {
    "id": "ct_bung",
    "ten": "CT bụng có cản quang",
    "nhom": "ct",
