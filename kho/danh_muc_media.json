@@ -1149,6 +1149,17 @@
    "nguon": "SCIN (Google Research & Stanford), case -8859705766164733610, dataset/images/-8926425952664189068.png (nhãn bác sĩ da liễu: Urticaria)",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0175",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Đùi, gối người lớn: nhiều sẩn/mảng đỏ nhỏ, vài tổn thương đóng vảy – nghĩ chốc",
+   "tep": "hinh/HA-DA-0175.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -1876369085985161417, dataset/images/2869044007360673347.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
