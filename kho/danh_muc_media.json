@@ -1248,6 +1248,28 @@
    "nguon": "SCIN (Google Research & Stanford), case 935346003160692168, dataset/images/-8779903138873713227.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0270",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Vảy nến lòng bàn tay: mảng đỏ hồng phủ vảy trắng vàng khô ở lòng bàn tay, đầu ngón bong vảy, nứt nếp gốc ngón",
+   "tep": "hinh/HA-DA-0270.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -3737463860398593041, dataset/images/-619209901050286350.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0272",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Vảy nến lòng bàn tay (nhìn gần): mảng đỏ hồng phủ vảy khô dày, bờ rõ, nứt nông; đầu ngón bong vảy",
+   "tep": "hinh/HA-DA-0272.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -3737463860398593041, dataset/images/9217123691717628423.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
