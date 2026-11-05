@@ -1226,6 +1226,28 @@
    "nguon": "SCIN (Google Research & Stanford), case -4919518317184666095, dataset/images/7190421899691362883.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0247",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Vảy nến thể mảng nhỏ ở đùi ngoài, gần gối: nhiều sẩn và mảng nhỏ 3–10 mm nền hồng, phủ vảy trắng mịn khô, ranh giới rõ, rải rác trên da có lông",
+   "tep": "hinh/HA-DA-0247.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 8379699954361855633, dataset/images/-5845128085834186917.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0248",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Vảy nến thể mảng nhỏ ở hông – thắt lưng, ngay trên cạp quần: các dát, mảng tròn hoặc bầu dục 5–15 mm màu hồng đỏ, bề mặt có vảy mịn, ranh giới rõ, nằm rải rác trên da lành",
+   "tep": "hinh/HA-DA-0248.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 935346003160692168, dataset/images/-8779903138873713227.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
