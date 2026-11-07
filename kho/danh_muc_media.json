@@ -1292,6 +1292,28 @@
    "nguon": "SCIN (Google Research & Stanford), case 833670545830613221, dataset/images/-2104633817570290804.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0278",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Viêm da cơ địa: dát sẩn đỏ nhỏ, khô, vài vết trầy ở mặt duỗi cẳng tay.",
+   "tep": "hinh/HA-DA-0278.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -4662194556963063742, https://storage.googleapis.com/dx-scin-public-data/dataset/images/3087583442204718089.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0279",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Viêm da cơ địa: da đỏ, khô, hơi dày, xù xì gần khuỷu, rải rác sẩn nhỏ.",
+   "tep": "hinh/HA-DA-0279.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -845380407717415265, https://storage.googleapis.com/dx-scin-public-data/dataset/images/-1487279598764450262.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
