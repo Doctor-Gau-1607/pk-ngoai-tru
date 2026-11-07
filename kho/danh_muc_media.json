@@ -1270,6 +1270,28 @@
    "nguon": "SCIN (Google Research & Stanford), case -3737463860398593041, dataset/images/9217123691717628423.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0276",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Sẩn ngứa do côn trùng đốt: nhiều sẩn đỏ hồng 3–8 mm rải rác trên cẳng chân",
+   "tep": "hinh/HA-DA-0276.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -7999991740162950505, dataset/images/6026127895130784339.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0273",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Sẩn ngứa do côn trùng đốt: vài sẩn đỏ nhạt nhỏ rải rác ở cẳng tay gần cổ tay",
+   "tep": "hinh/HA-DA-0273.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 833670545830613221, dataset/images/-2104633817570290804.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
