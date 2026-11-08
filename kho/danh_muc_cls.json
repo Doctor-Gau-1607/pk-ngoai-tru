@@ -2728,6 +2728,24 @@
     "pheochromocytoma",
     "phaeochromocytoma"
    ]
+  },
+  {
+   "id": "bicarbonat",
+   "ten": "Bicarbonat huyết thanh (CO₂ toàn phần)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 40000,
+   "phut": 60,
+   "mac_dinh": "Bicarbonat huyết thanh 24 mmol/L",
+   "tu_khoa": [
+    "bicarbonat",
+    "bicarbonate",
+    "hco3",
+    "co2 toan phan",
+    "co2 mau",
+    "kiem du",
+    "toan kiem"
+   ]
   }
  ]
 }
