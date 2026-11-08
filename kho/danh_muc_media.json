@@ -1402,6 +1402,28 @@
    "nguon": "SCIN (Google Research & Stanford), case 8128164574096404797, dataset/images/-7729431579580044113.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0298",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay cấp ở cánh tay – cẳng tay: các mảng sẩn phù đỏ hồng tròn, vòng cung, hơi nổi gồ, bờ khá rõ; da giữa các mảng bình thường; không vảy, không mụn nước, không thâm.",
+   "tep": "hinh/HA-DA-0298.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 7518955504313873550, dataset/images/7051800646857177598.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0300",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay cấp ở đùi: nhiều sẩn phù nhỏ đỏ hồng nổi gồ, rải rác và tụ thành đám trên mặt trước đùi; không vảy, không mụn nước, không thâm.",
+   "tep": "hinh/HA-DA-0300.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -1800345024210002541, dataset/images/-3613755685489918074.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
