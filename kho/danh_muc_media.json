@@ -1358,6 +1358,17 @@
    "nguon": "SCIN (Google Research & Stanford), case -3944824307861448611, dataset/images/-8614320058673555741.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0293",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Chốc kèm quầng viêm mô tế bào nhẹ: vùng đỏ lan rộng quanh một trợt nhỏ phủ vảy tiết vàng ở trung tâm, mặt trước gối",
+   "tep": "hinh/HA-DA-0293.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -5048121674534375075, dataset/images/-5283377864158606515.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
