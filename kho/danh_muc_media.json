@@ -1369,6 +1369,39 @@
    "nguon": "SCIN (Google Research & Stanford), case -5048121674534375075, dataset/images/-5283377864158606515.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0294",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay cấp: nhiều sẩn phù đỏ hồng, tròn, bầu dục, nổi gồ, rải rác ở hông – bụng bên",
+   "tep": "hinh/HA-DA-0294.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -5424985950276316702, dataset/images/4793777024686540807.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0295",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay cấp: sẩn phù hình vòng, đa cung ở đùi và gối",
+   "tep": "hinh/HA-DA-0295.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -3674218230973070176, dataset/images/-4055387610466540879.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0296",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay cấp đỡ: vài sẩn phù nhỏ thưa ở hông – bụng bên",
+   "tep": "hinh/HA-DA-0296.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 8128164574096404797, dataset/images/-7729431579580044113.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
