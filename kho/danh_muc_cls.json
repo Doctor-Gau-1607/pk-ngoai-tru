@@ -2746,6 +2746,27 @@
     "kiem du",
     "toan kiem"
    ]
+  },
+  {
+   "id": "naat_mgen",
+   "ten": "NAAT Mycoplasma genitalium và Trichomonas vaginalis (nước tiểu đầu dòng hoặc phết niệu đạo; kèm xét nghiệm đột biến kháng macrolid nếu có)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 700000,
+   "phut": 2880,
+   "mac_dinh": "Không phát hiện M. genitalium, không phát hiện T. vaginalis.",
+   "tu_khoa": [
+    "naat mycoplasma genitalium",
+    "mycoplasma genitalium",
+    "m genitalium",
+    "mgen",
+    "pcr mycoplasma genitalium",
+    "t vaginalis",
+    "naat trichomonas",
+    "pcr trichomonas",
+    "khang macrolid",
+    "dot bien khang macrolid"
+   ]
   }
  ]
 }
