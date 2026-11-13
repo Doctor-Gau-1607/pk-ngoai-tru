@@ -1424,6 +1424,50 @@
    "nguon": "SCIN (Google Research & Stanford), case -1800345024210002541, dataset/images/-3613755685489918074.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0301",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Viêm da cơ địa (chàm) ở mặt ngoài cánh tay: ba đám hồng đỏ hình tròn, ranh giới mờ, vài chấm trợt nhỏ do gãi, ít vảy; không mủ, không bọng nước.",
+   "tep": "hinh/HA-DA-0301.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -7625656626952816481, dataset/images/511979391207585843.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0303",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Viêm da cơ địa (chàm) ở mặt ngoài chi: sẩn đỏ li ti hợp thành mảng ranh giới không rõ, da khô, vài vết xước; không mủ, không dịch vàng.",
+   "tep": "hinh/HA-DA-0303.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -6428053927743852697, dataset/images/-7197702636067718462.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0306",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay mạn: mảng hồng nổi gờ nhẹ, ranh giới mờ, liền thành mảng ở mặt duỗi cẳng tay",
+   "tep": "hinh/HA-DA-0306.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 7555277930479653112, dataset/images/-298848235389824552.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0308",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay mạn: nhiều sẩn phù hồng tụ thành đám ở lưng và thắt lưng",
+   "tep": "hinh/HA-DA-0308.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -1822381819381484229, dataset/images/7779758798320382398.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }

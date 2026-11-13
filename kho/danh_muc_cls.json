@@ -2767,6 +2767,23 @@
     "khang macrolid",
     "dot bien khang macrolid"
    ]
+  },
+  {
+   "id": "soi_ghe",
+   "ten": "Cạo vảy da soi tìm cái ghẻ, trứng ghẻ (kính hiển vi, có thể nhỏ dầu soi)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 60000,
+   "phut": 30,
+   "mac_dinh": "Không thấy cái ghẻ, trứng ghẻ hay phân ghẻ.",
+   "tu_khoa": [
+    "soi ghe",
+    "cao da",
+    "cai ghe",
+    "trung ghe",
+    "luong ghe",
+    "cao vay"
+   ]
   }
  ]
 }
