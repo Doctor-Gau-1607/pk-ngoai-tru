@@ -1468,6 +1468,17 @@
    "nguon": "SCIN (Google Research & Stanford), case -1822381819381484229, dataset/images/7779758798320382398.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0309",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Ban đỏ do ánh nắng (bỏng nắng) ở cổ tay và mặt duỗi cẳng tay: ban đỏ hồng, ranh giới rõ với dải da nhạt màu hình vòng ôm cổ tay chỗ đeo đồng hồ.",
+   "tep": "hinh/HA-DA-0309.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -809308834374841162, dataset/images/-5079215425353209980.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
