@@ -1479,6 +1479,28 @@
    "nguon": "SCIN (Google Research & Stanford), case -809308834374841162, dataset/images/-5079215425353209980.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0310",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Ban đỏ do ánh nắng (viêm da do ánh nắng/bỏng nắng) ở vai và lưng trên: da đỏ hồng đến đỏ sẫm lan rộng, ranh giới mờ về phía da lành, có các sẩn sáng màu nhỏ rải rác",
+   "tep": "hinh/HA-DA-0310.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -8503409389836429709, dataset/images/-7440488722533254464.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0313",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Ban đỏ do ánh nắng đang bong vảy ở cẳng tay: da đỏ hồng, vảy mịn li ti và dải bong da mỏng (một phần ảnh nguồn được che đen)",
+   "tep": "hinh/HA-DA-0313.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -43247409637295721, dataset/images/-8459145659515458181.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
