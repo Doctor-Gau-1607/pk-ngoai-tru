@@ -2784,6 +2784,26 @@
     "luong ghe",
     "cao vay"
    ]
+  },
+  {
+   "id": "dxa",
+   "ten": "Đo mật độ xương DXA (cổ xương đùi, cột sống thắt lưng)",
+   "nhom": "xquang",
+   "co_ban": false,
+   "gia": 200000,
+   "phut": 30,
+   "mac_dinh": "T-score cổ xương đùi và cột sống thắt lưng ≥ −1,0 (mật độ xương bình thường)",
+   "tu_khoa": [
+    "dxa",
+    "dexa",
+    "do mat do xuong",
+    "mat do xuong",
+    "do loang xuong",
+    "loang xuong",
+    "t-score",
+    "t score",
+    "tam soat loang xuong"
+   ]
   }
  ]
 }
