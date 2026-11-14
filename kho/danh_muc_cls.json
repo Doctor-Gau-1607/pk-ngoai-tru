@@ -2804,6 +2804,27 @@
     "t score",
     "tam soat loang xuong"
    ]
+  },
+  {
+   "id": "doppler_tm_chi",
+   "ten": "Siêu âm Doppler tĩnh mạch chi dưới (nghiệm pháp ép, hai bẹn và hai khoeo)",
+   "nhom": "sieu_am",
+   "co_ban": false,
+   "gia": 200000,
+   "phut": 30,
+   "mac_dinh": "Tĩnh mạch đùi chung, đùi nông, khoeo hai bên xẹp hoàn toàn khi ép, dòng chảy bình thường, không huyết khối.",
+   "tu_khoa": [
+    "sieu am doppler tinh mach",
+    "sieu am tinh mach chi duoi",
+    "sieu am tinh mach chan",
+    "doppler tinh mach",
+    "sieu am chan",
+    "sieu am ep",
+    "nghiem phap ep",
+    "huyet khoi tinh mach sau",
+    "dvt",
+    "cuc mau dong chan"
+   ]
   }
  ]
 }
