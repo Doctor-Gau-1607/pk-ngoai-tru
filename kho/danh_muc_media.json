@@ -1523,6 +1523,28 @@
    "nguon": "SCIN (Google Research & Stanford), case -3106778686281302656, dataset/images/3720678921295897597.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0321",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Chốc: mảng đỏ trợt ướt khoảng 2–3 cm có nhiều mụn nhỏ ở rìa, vài sẩn đỏ rải rác ở cẳng chân",
+   "tep": "hinh/HA-DA-0321.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -3364861318434448691, dataset/images/-9022204978269318431.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0322",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Chốc: vài mảng đỏ cam 1–1,5 cm phủ vảy tiết mỏng, xen sẩn đỏ nhỏ rải rác ở cẳng chân",
+   "tep": "hinh/HA-DA-0322.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -7800004629114489202, dataset/images/8100994483792481876.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
