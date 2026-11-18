@@ -2825,6 +2825,37 @@
     "dvt",
     "cuc mau dong chan"
    ]
+  },
+  {
+   "id": "doppler_dm_chi",
+   "ten": "Siêu âm Doppler động mạch chi dưới (vị trí hẹp tắc, phổ dòng chảy)",
+   "nhom": "sieu_am",
+   "co_ban": false,
+   "gia": 250000,
+   "phut": 30,
+   "mac_dinh": "Các động mạch chi dưới thông, phổ ba pha, không hẹp có ý nghĩa",
+   "tu_khoa": [
+    "sieu am doppler dong mach chi duoi",
+    "doppler dong mach chan",
+    "sieu am mach mau chan",
+    "hep tac dong mach chi",
+    "duplex dong mach chi duoi"
+   ]
+  },
+  {
+   "id": "abi_gang_suc",
+   "ten": "ABI sau gắng sức (thảm chạy hoặc nghiệm pháp đi bộ có Doppler)",
+   "nhom": "tham_do",
+   "co_ban": false,
+   "gia": 120000,
+   "phut": 30,
+   "mac_dinh": "ABI sau gắng sức không giảm so với lúc nghỉ",
+   "tu_khoa": [
+    "abi gang suc",
+    "abi sau di bo",
+    "nghiem phap di bo abi",
+    "treadmill abi"
+   ]
   }
  ]
 }
