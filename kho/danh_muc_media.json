@@ -1501,6 +1501,17 @@
    "nguon": "SCIN (Google Research & Stanford), case -43247409637295721, dataset/images/-8459145659515458181.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0317",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Herpes simplex tái phát ở da gáy: cụm mụn nước nhỏ trên nền hồng",
+   "tep": "hinh/HA-DA-0317.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -7295998636663856875, dataset/images/8674103200640488965.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
