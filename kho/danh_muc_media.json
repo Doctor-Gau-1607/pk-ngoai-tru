@@ -1512,6 +1512,17 @@
    "nguon": "SCIN (Google Research & Stanford), case -7295998636663856875, dataset/images/8674103200640488965.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0319",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Trứng cá: hai sẩn viêm có chấm vảy máu do nặn ở cổ bên – vai trên, vài vết thâm nhạt",
+   "tep": "hinh/HA-DA-0319.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -3106778686281302656, dataset/images/3720678921295897597.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
