@@ -847,6 +847,19 @@
     "nhin hau mon",
     "vung ta"
    ]
+  },
+  {
+   "id": "tanner_day_thi",
+   "ten": "Đánh giá dậy thì (Tanner)",
+   "phut": 4,
+   "mac_dinh": "Dậy thì phù hợp tuổi.",
+   "tu_khoa": [
+    "tanner",
+    "day thi",
+    "giai doan day thi",
+    "long mu",
+    "phat trien tuyen vu"
+   ]
   }
  ]
 }

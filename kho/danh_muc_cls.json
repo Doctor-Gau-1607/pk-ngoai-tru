@@ -2872,6 +2872,25 @@
     "c3 c4",
     "complement"
    ]
+  },
+  {
+   "id": "phospho_mg",
+   "ten": "Phospho và magie huyết thanh",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 80000,
+   "phut": 60,
+   "mac_dinh": "Phospho 1,2 mmol/L · Magie 0,85 mmol/L.",
+   "tu_khoa": [
+    "phospho",
+    "phosphat",
+    "photpho",
+    "magie",
+    "magnesi",
+    "mg mau",
+    "hoi chung nuoi an lai",
+    "refeeding"
+   ]
   }
  ]
 }
