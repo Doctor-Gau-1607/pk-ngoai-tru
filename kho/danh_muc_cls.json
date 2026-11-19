@@ -2856,6 +2856,22 @@
     "nghiem phap di bo abi",
     "treadmill abi"
    ]
+  },
+  {
+   "id": "bo_the",
+   "ten": "Bổ thể C3, C4 huyết thanh",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 200000,
+   "phut": 1440,
+   "mac_dinh": "C3 và C4 trong giới hạn bình thường.",
+   "tu_khoa": [
+    "bo the",
+    "c3",
+    "c4",
+    "c3 c4",
+    "complement"
+   ]
   }
  ]
 }
