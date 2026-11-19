@@ -2920,6 +2920,36 @@
     "eus",
     "sieu am noi soi mat tuy"
    ]
+  },
+  {
+   "id": "tg",
+   "ten": "Thyroglobulin (Tg) và kháng thể kháng Tg",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 250000,
+   "phut": 120,
+   "mac_dinh": "Tg 1,0 ng/mL · kháng thể kháng Tg âm tính",
+   "tu_khoa": [
+    "tg",
+    "thyroglobulin",
+    "khang the khang tg",
+    "anti tg",
+    "tgab",
+    "chi diem u giap"
+   ]
+  },
+  {
+   "id": "calcitonin",
+   "ten": "Calcitonin huyết thanh",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 300000,
+   "phut": 120,
+   "mac_dinh": "Calcitonin < 5 pg/mL",
+   "tu_khoa": [
+    "calcitonin",
+    "ung thu tuy giap"
+   ]
   }
  ]
 }
