@@ -2891,6 +2891,35 @@
     "hoi chung nuoi an lai",
     "refeeding"
    ]
+  },
+  {
+   "id": "mrcp",
+   "ten": "MRCP (cộng hưởng từ mật tụy)",
+   "nhom": "ct",
+   "co_ban": false,
+   "gia": 2500000,
+   "phut": 60,
+   "mac_dinh": "Đường mật trong và ngoài gan không giãn, không thấy sỏi ống mật chủ.",
+   "tu_khoa": [
+    "mrcp",
+    "cong huong tu mat tuy",
+    "cong huong tu duong mat",
+    "mri duong mat"
+   ]
+  },
+  {
+   "id": "sieu_am_noi_soi",
+   "ten": "Siêu âm nội soi (EUS) mật tụy",
+   "nhom": "noi_soi",
+   "co_ban": false,
+   "gia": 3500000,
+   "phut": 60,
+   "mac_dinh": "Ống mật chủ không giãn, không thấy sỏi; tụy bình thường.",
+   "tu_khoa": [
+    "sieu am noi soi",
+    "eus",
+    "sieu am noi soi mat tuy"
+   ]
   }
  ]
 }
