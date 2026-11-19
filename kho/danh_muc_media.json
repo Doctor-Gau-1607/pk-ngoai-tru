@@ -1545,6 +1545,17 @@
    "nguon": "SCIN (Google Research & Stanford), case -7800004629114489202, dataset/images/8100994483792481876.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0323",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Trứng cá ở má và vùng hàm bên trái: vài sẩn đỏ nâu nhỏ 2–4 mm, nhiều dát tăng sắc tố sau viêm nâu đỏ phẳng 3–6 mm, vài chấm đen nhỏ; không cục, không sẹo lõm rõ.",
+   "tep": "hinh/HA-DA-0323.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 3265629636014353715, https://storage.googleapis.com/dx-scin-public-data/dataset/images/-6544442737462623993.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
