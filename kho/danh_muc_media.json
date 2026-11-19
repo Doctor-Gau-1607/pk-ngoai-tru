@@ -1589,6 +1589,17 @@
    "nguon": "SCIN (Google Research & Stanford), case -925898841639418610, dataset/images/347108597815692432.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0333",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Viêm da tiếp xúc bán cấp ở hông – bụng bên sát cạp quần: mảng hồng đỏ nhạt, ranh giới không rõ, phủ vảy trắng mịn",
+   "tep": "hinh/HA-DA-0333.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -5325265352903772815, dataset/images/868934104334055227.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
