@@ -2134,6 +2134,23 @@
    ]
   },
   {
+   "_thuoc_danh_muc": "danh_muc_cls",
+   "id": "folat",
+   "ten": "Folate huyết thanh",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 120000,
+   "phut": 60,
+   "mac_dinh": "Folate huyết thanh trong giới hạn bình thường.",
+   "tu_khoa": [
+    "folat",
+    "folate",
+    "acid folic",
+    "vitamin b9",
+    "thieu folat"
+   ]
+  },
+  {
    "id": "igm_soi",
    "ten": "Xét nghiệm sởi: IgM kháng sởi huyết thanh hoặc RT-PCR sởi dịch tỵ hầu",
    "nhom": "xn",
