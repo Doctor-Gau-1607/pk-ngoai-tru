@@ -429,6 +429,22 @@
    ]
   },
   {
+   "id": "ct_nieu",
+   "ten": "CT hệ tiết niệu nhiều thì (CT urogram) có tiêm cản quang",
+   "nhom": "ct",
+   "co_ban": false,
+   "gia": 1800000,
+   "phut": 90,
+   "mac_dinh": "Thận, niệu quản, bàng quang không thấy tổn thương; không sỏi, không khối.",
+   "tu_khoa": [
+    "ct nieu",
+    "ct he tiet nieu",
+    "ct urogram",
+    "chup cat lop duong tiet nieu",
+    "ct tiet nieu"
+   ]
+  },
+  {
    "id": "ct_nao",
    "ten": "CT sọ não không cản quang",
    "nhom": "ct",
