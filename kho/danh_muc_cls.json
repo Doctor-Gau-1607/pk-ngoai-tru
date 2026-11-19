@@ -2983,6 +2983,22 @@
     "calcitonin",
     "ung thu tuy giap"
    ]
+  },
+  {
+   "_thuoc_danh_muc": "danh_muc_cls",
+   "id": "tinh_dich_do",
+   "ten": "Tinh dịch đồ",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 250000,
+   "phut": 120,
+   "mac_dinh": "Thể tích, mật độ, độ di động và hình thái tinh trùng trong giới hạn tham chiếu.",
+   "tu_khoa": [
+    "tinh dich do",
+    "tinh trung",
+    "xet nghiem tinh dich",
+    "semen"
+   ]
   }
  ]
 }
