@@ -1567,6 +1567,28 @@
    "nguon": "SCIN (Google Research & Stanford), case 3001411411444146079, https://storage.googleapis.com/dx-scin-public-data/dataset/images/8943452377015009675.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0329",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay mạn tự phát ở bụng dưới – hông: nhiều mảng sẩn phù đỏ hồng nổi nhẹ, bờ đa cung, nối nhau thành đám lớn 5–15 cm, vùng da giữa các mảng bình thường; không mụn nước, loét, vảy",
+   "tep": "hinh/HA-DA-0329.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 4794328114598571570, dataset/images/-2240571180590354799.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0330",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay mạn tự phát ở thành ngực bên – sát nách: đám ban đỏ hồng sẫm lan rộng, vài dải hồng mảnh phía trên; không mụn nước, loét, vảy",
+   "tep": "hinh/HA-DA-0330.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -925898841639418610, dataset/images/347108597815692432.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
