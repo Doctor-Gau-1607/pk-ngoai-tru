@@ -1655,6 +1655,28 @@
    "nguon": "SCIN (Google Research & Stanford), case 1830225513860057803, dataset/images/-5817078376032596655.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0353",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay: sẩn phù hồng vòng cung, ranh giới rõ, liền thành dải ở cẳng tay",
+   "tep": "hinh/HA-DA-0353.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -1829868329489860851, dataset/images/8343761304166770754.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0354",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay: nhiều sẩn và mảng phù hồng, vài chỗ liền thành mảng lớn ở đùi",
+   "tep": "hinh/HA-DA-0354.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -1571750243156555704, dataset/images/4257292375769197926.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
