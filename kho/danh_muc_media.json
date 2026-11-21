@@ -1688,6 +1688,28 @@
    "nguon": "SCIN (Google Research & Stanford), case 1655608594195465621, dataset/images/-7844304727613012144.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0361",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Vảy nến thể mảng nhỏ: nhiều mảng và sẩn 0,5–1,5 cm nền hồng đỏ phủ vảy trắng bạc ở bụng quanh rốn",
+   "tep": "hinh/HA-DA-0361.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 1713680792880426853, dataset/images/-4387878168031721243.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0362",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Vảy nến thể mảng: cụm tổn thương 0,5–2 cm nền đỏ phủ vảy trắng đục dày ở cẳng chân, vài chỗ trầy phủ vảy tiết máu do cạy vảy",
+   "tep": "hinh/HA-DA-0362.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -3061907967183722226, dataset/images/-6278770007527874596.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
