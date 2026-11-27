@@ -1776,6 +1776,17 @@
    "nguon": "SCIN (Google Research & Stanford), case 6239403484086737017, dataset/images/3274473114853778021.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0375",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Herpes simplex tái phát: đám da hồng nhạt ở đùi nam giới, nhiều mụn nước nhỏ 1–2 mm tụ thành cụm lỏng lẻo, dịch trong, vài mụn đục nhẹ, một vảy tiết nhỏ, da nhiều lông",
+   "tep": "hinh/HA-DA-0375.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -1235573782679771458, dataset/images/-1082823433701111185.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
