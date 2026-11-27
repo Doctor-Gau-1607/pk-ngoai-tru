@@ -1754,6 +1754,28 @@
    "nguon": "SCIN (Google Research & Stanford), case -8741066554619028845, dataset/images/2423705427124294223.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0371",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Herpes simplex tái phát: đám da hồng đỏ có nhiều mụn nước nhỏ 1–2 mm tụ thành cụm, dịch trong đến hơi đục, chưa vỡ, chưa vảy tiết",
+   "tep": "hinh/HA-DA-0371.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 562561751881066366, dataset/images/3434201760584703211.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0372",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Herpes simplex tái phát: hai cụm mụn nước nhỏ 1–3 mm trên nền hồng ở hông, một mụn rời bên cạnh, dịch trong",
+   "tep": "hinh/HA-DA-0372.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 6239403484086737017, dataset/images/3274473114853778021.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }

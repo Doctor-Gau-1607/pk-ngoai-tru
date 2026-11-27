@@ -1,5 +1,5 @@
 {
- "_ghi_chu": "Danh mục thăm khám dùng chung. AI chỉ nhận ra bác sĩ đang khám phần nào (id); kết quả luôn lấy từ ca, nếu ca không ghi thì dùng mac_dinh (bình thường). phut = thời gian khám. tu_khoa = tên gọi viết không dấu; khi khám bằng chat, câu gõ phải chứa ít nhất một tên gọi thì mới được tính. | 11/10/2026: thêm da_dau_mong, cao_vay_brocq (DL-0541), sang_loc_sang (HH-1287). | 11/10/2026: thêm mat_giong_chu_viet, run_nghi, dong_tac_cham, tang_truong_luc, dang_di_thang_bang, nhan_thuc_moca (TK-0479). | 18/10/2026 (ca TK-0512): thêm rang_ham_mat (răng – hàm – niêm mạc miệng), day_v (dây thần kinh sinh ba). | 18/10/2026: thêm nghiem_phap_day_that (NH-0801).",
+ "_ghi_chu": "Danh mục thăm khám dùng chung. AI chỉ nhận ra bác sĩ đang khám phần nào (id); kết quả luôn lấy từ ca, nếu ca không ghi thì dùng mac_dinh (bình thường). phut = thời gian khám. tu_khoa = tên gọi viết không dấu; khi khám bằng chat, câu gõ phải chứa ít nhất một tên gọi thì mới được tính. | 11/10/2026: thêm da_dau_mong, cao_vay_brocq (DL-0541), sang_loc_sang (HH-1287). | 11/10/2026: thêm mat_giong_chu_viet, run_nghi, dong_tac_cham, tang_truong_luc, dang_di_thang_bang, nhan_thuc_moca (TK-0479). | 18/10/2026 (ca TK-0512): thêm rang_ham_mat (răng – hàm – niêm mạc miệng), day_v (dây thần kinh sinh ba). | 18/10/2026: thêm nghiem_phap_day_that (NH-0801). | 27/11/2026: thêm ky_thuat_hit (HH-1234).",
  "kham": [
   {
    "id": "ha_hai_tay",
@@ -859,6 +859,22 @@
     "giai doan day thi",
     "long mu",
     "phat trien tuyen vu"
+   ]
+  },
+  {
+   "id": "ky_thuat_hit",
+   "ten": "Quan sát bệnh nhân làm mẫu kỹ thuật dùng ống hít, bình xịt, buồng đệm",
+   "phut": 3,
+   "mac_dinh": "Làm mẫu đúng: lắc hoặc chuẩn bị thuốc, thở ra hết, hít sâu đồng thì với nhấn thuốc, nín thở 10 giây, chờ ít nhất 30 giây trước liều kế tiếp.",
+   "tu_khoa": [
+    "ky thuat hit",
+    "lam mau hit thuoc",
+    "cach hit thuoc",
+    "cach xit thuoc",
+    "quan sat hit thuoc",
+    "buong dem",
+    "ong hit",
+    "binh xit"
    ]
   }
  ]
