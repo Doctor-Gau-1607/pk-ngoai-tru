@@ -1743,6 +1743,17 @@
    "nguon": "SCIN (Google Research & Stanford), case -3285402640896594530, dataset/images/-6385477427467728982.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0369",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Sốt phát ban do virus: các dát và sẩn hồng 3–8 mm tập trung quanh hai đầu gối, vài nốt gộp thành mảng, rải rác lên đùi và xuống cẳng chân",
+   "tep": "hinh/HA-DA-0369.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -8741066554619028845, dataset/images/2423705427124294223.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
