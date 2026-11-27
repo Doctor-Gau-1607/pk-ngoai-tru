@@ -2999,6 +2999,22 @@
     "xet nghiem tinh dich",
     "semen"
    ]
+  },
+  {
+   "id": "tbi",
+   "ten": "Áp lực ngón chân và chỉ số ngón chân–cánh tay (TBI) bằng cảm biến quang thể tích",
+   "nhom": "tham_do",
+   "co_ban": false,
+   "gia": 150000,
+   "phut": 20,
+   "mac_dinh": "TBI hai bên > 0,70; áp lực ngón chân > 30 mmHg",
+   "tu_khoa": [
+    "tbi",
+    "ap luc ngon chan",
+    "toe pressure",
+    "chi so ngon chan canh tay",
+    "clti"
+   ]
   }
  ]
 }
