@@ -1721,6 +1721,28 @@
    "nguon": "SCIN (Google Research & Stanford), case -4909724744026259530, dataset/images/-7940147518821418046.png (nhãn SCIN: Insect Bite)",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0367",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Vảy nến thể mảng: mảng đỏ hồng lớn ranh giới rõ ở hông, rìa phủ vảy trắng mịn, có mảng nhỏ bên dưới",
+   "tep": "hinh/HA-DA-0367.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -5870484252477872901, dataset/images/-587499434771640236.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0368",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Vảy nến thể mảng: nhiều mảng đỏ nhỏ phủ vảy trắng quanh đầu gối",
+   "tep": "hinh/HA-DA-0368.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -3285402640896594530, dataset/images/-6385477427467728982.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
