@@ -3015,6 +3015,24 @@
     "chi so ngon chan canh tay",
     "clti"
    ]
+  },
+  {
+   "id": "ky_sinh_trung_sot_ret",
+   "ten": "Ký sinh trùng sốt rét (lam máu giọt đặc, giọt mỏng hoặc test nhanh)",
+   "nhom": "xn",
+   "co_ban": false,
+   "gia": 60000,
+   "phut": 45,
+   "mac_dinh": "Không thấy ký sinh trùng sốt rét.",
+   "tu_khoa": [
+    "sot ret",
+    "ky sinh trung sot ret",
+    "lam mau",
+    "lam mau sot ret",
+    "test nhanh sot ret",
+    "soi ky sinh trung mau",
+    "plasmodium"
+   ]
   }
  ]
 }
