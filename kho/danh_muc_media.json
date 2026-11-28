@@ -1787,6 +1787,28 @@
    "nguon": "SCIN (Google Research & Stanford), case -1235573782679771458, dataset/images/-1082823433701111185.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0376",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Sẩn do côn trùng đốt: hai sẩn đỏ hồng nổi cao 5–7 mm ở mặt duỗi chi, giữa hơi lõm có vảy mỏng, riêng rẽ trên nền da lành; không mụn nước, không mủ, không quầng đỏ lan",
+   "tep": "hinh/HA-DA-0376.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 790360683690520778, dataset/images/7868956471890038999.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0380",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Sẩn do côn trùng đốt: ba sẩn đỏ nhỏ 2–4 mm rải rác trên da đùi, nền da lành, không mụn nước, không mủ, không vảy tiết vàng",
+   "tep": "hinh/HA-DA-0380.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 3958546394143844695, dataset/images/-3885286575232299536.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
