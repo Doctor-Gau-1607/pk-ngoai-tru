@@ -1809,6 +1809,28 @@
    "nguon": "SCIN (Google Research & Stanford), case 3958546394143844695, dataset/images/-3885286575232299536.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0383",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Vảy nến thể mảng ở khuỷu tay: mảng đỏ hồng ranh giới rõ phủ vảy trắng mỏng dính ở mặt duỗi khuỷu, kèm một mảng nhỏ vảy trắng phía trên; không loét, không mụn mủ",
+   "tep": "hinh/HA-DA-0383.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -1964801097019886136, dataset/images/8252971736179589032.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0384",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Vảy nến thể giọt ở lưng: nhiều sẩn tròn đỏ hồng 3–8 mm, vảy mỏng, rải rác từ vai tới thắt lưng, tập thành dải dày ngang thắt lưng; không mụn mủ, không loét",
+   "tep": "hinh/HA-DA-0384.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -9081999645065295765, dataset/images/2608619041636383300.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
