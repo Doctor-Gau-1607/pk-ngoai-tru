@@ -1842,6 +1842,28 @@
    "nguon": "SCIN (Google Research & Stanford), case -6781948527342850071, dataset/images/6060584194970876159.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0389",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay mạn: mảng hồng đỏ nhạt ranh giới không rõ, liên kết thành đám ở lưng – hông",
+   "tep": "hinh/HA-DA-0389.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case 920332081415138775, dataset/images/8891739565533954556.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0396",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Mày đay: các mảng hồng tròn, bầu dục, bờ rõ, vài chỗ liên kết thành hình vòng cung ở hai cẳng tay",
+   "tep": "hinh/HA-DA-0396.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -642335626870393371, dataset/images/-362715643741333868.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
