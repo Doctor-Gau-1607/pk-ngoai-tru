@@ -1864,6 +1864,17 @@
    "nguon": "SCIN (Google Research & Stanford), case -642335626870393371, dataset/images/-362715643741333868.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0467",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Sốt phát ban do virus: các sẩn hồng tụ thành mảng quanh hai gối và đùi dưới, nền da quanh mảng không đỏ",
+   "tep": "hinh/HA-DA-0467.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -8741066554619028845, dataset/images/-7812914816262673311.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
