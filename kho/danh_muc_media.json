@@ -1831,6 +1831,17 @@
    "nguon": "SCIN (Google Research & Stanford), case -9081999645065295765, dataset/images/2608619041636383300.png",
    "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
    "trang_thai": "dung_duoc"
+  },
+  {
+   "id": "HA-DA-0388",
+   "loai": "hinh",
+   "nhom": "da",
+   "mo_ta": "Viêm da tiếp xúc: hai dải đỏ nhạt nổi sẩn li ti chạy ngang mặt trước đùi",
+   "tep": "hinh/HA-DA-0388.jpg",
+   "kho": 1,
+   "nguon": "SCIN (Google Research & Stanford), case -6781948527342850071, dataset/images/6060584194970876159.png",
+   "giay_phep": "SCIN Data Use License – ghi nguồn; không tìm cách nhận dạng người trong ảnh",
+   "trang_thai": "dung_duoc"
   }
  ]
 }
